@@ -46,6 +46,43 @@ function skillsCheck(q){const req=q.skills||{},entries=Object.entries(req);if(!e
 function reqChain(q,seen=new Set()){let arr=[];for(let name of q.quests||[]){let matched=quests.find(x=>normalizeName(x.name)===normalizeName(name));let key=matched?.name||name;if(seen.has(key))continue;seen.add(key);if(matched)arr.push(...reqChain(matched,seen));arr.push(key)}return arr}
 function renderList(){let query=$('search').value.toLowerCase(),filter=$('filter').value;let filtered=quests.filter(q=>{const r=skillsCheck(q);return q.name.toLowerCase().includes(query)&&(filter==='all'||(filter==='done'&&state.done[q.name])||(filter==='todo'&&!state.done[q.name])||(filter==='ready'&&r.verified&&!r.missing.length)||(filter==='locked'&&r.verified&&r.missing.length))});$('count').textContent=`(${filtered.length})`;$('questList').innerHTML=filtered.map(q=>{let r=skillsCheck(q);return `<button class="quest-item ${q.name===state.selected.name?'active':''}" data-quest="${escapeHtml(q.name)}"><strong>${escapeHtml(q.name)}</strong><div class="badgeRow">${state.done[q.name]?'<span class="pill good">Completed</span>':''}${r.verified?`<span class="pill ${r.missing.length?'bad':'good'}">${r.missing.length?r.missing.length+' skills missing':'Skills met'}</span>`:'<span class="pill">Requirements to verify</span>'}</div></button>`}).join('')||'<div class="empty">No matching quests.</div>';
  $('questList').querySelectorAll('[data-quest]').forEach(btn=>btn.addEventListener('click',()=>{state.selected=quests.find(q=>q.name===btn.dataset.quest);render();}));}
+// Resolve OSRS Wiki quest links to our RunicWorld quest catalogue.
+// Supports canonical wiki titles, in-game aliases, underscore URLs and quick-guide links.
+const questLinkIndex=new Map();
+for(const quest of quests){
+ for(const title of [quest.name, wikiTitleAlias(quest.name)]){
+  if(!title)continue;
+  questLinkIndex.set(normalizeName(title),quest);
+  questLinkIndex.set(normalizeName(title.replace(/\/Quick_guide$/i,'')),quest);
+ }
+}
+function wikiTitleAlias(name){return Object.prototype.hasOwnProperty.call(wikiAliases,name)?wikiAliases[name]:name}
+function resolveGuideQuest(href){
+ try{
+  const url=new URL(href,'https://oldschool.runescape.wiki');
+  if(!['oldschool.runescape.wiki','oldschool.runescape.wiki.org'].includes(url.hostname))return null;
+  let title='';
+  const match=url.pathname.match(/^\/(?:w|wiki)\/(.+)$/i);
+  if(match)title=decodeURIComponent(match[1]);
+  else if(url.pathname==='/w/index.php')title=url.searchParams.get('title')||'';
+  if(!title)return null;
+  title=title.replace(/_/g,' ').replace(/\/Quick guide$/i,'').replace(/\/Quick_guide$/i,'');
+  return questLinkIndex.get(normalizeName(title))||null;
+ }catch{return null}
+}
+// One delegated handler also works for walkthroughs inserted asynchronously.
+$('detail').addEventListener('click',event=>{
+ const anchor=event.target.closest('a[href]');
+ if(!anchor||!anchor.closest('#guideBody'))return;
+ const target=resolveGuideQuest(anchor.href);
+ if(!target)return; // Non-quest subjects continue to the OSRS Wiki.
+ event.preventDefault();
+ state.selected=target;
+ $('search').value=''; // Ensure the destination quest is visible in the sidebar.
+ $('filter').value='all';
+ render();
+ $('detail').scrollIntoView({behavior:'smooth',block:'start'});
+});
 function wikiTitle(name){return Object.prototype.hasOwnProperty.call(wikiAliases,name)?wikiAliases[name]:name}
 function wikiUrl(q){let title=wikiTitle(q.name);return title?`https://oldschool.runescape.wiki/w/${encodeURIComponent(title.replace(/ /g,'_'))}/Quick_guide`:null}
 function renderDetail(){let q=state.selected,r=skillsCheck(q),allItems=q.items||[],prereqs=reqChain(q);let current=state.items[q.name]||{};let reqs=Object.entries(q.skills||{});let missing=r.missing.length;
