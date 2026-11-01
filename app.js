@@ -3,7 +3,7 @@ const $=id=>document.getElementById(id), escapeHtml=x=>String(x??'').replace(/[&
 const SKILLS=['Attack','Defence','Strength','Hitpoints','Ranged','Prayer','Magic','Cooking','Woodcutting','Fletching','Fishing','Firemaking','Crafting','Smithing','Mining','Herblore','Agility','Thieving','Slayer','Farming','Runecraft','Hunter','Construction'];
 const LEGACY=[...SKILLS]; const xpForLevel=n=>{let xp=0;for(let i=1;i<n;i++)xp+=Math.floor(i+300*Math.pow(2,i/7));return Math.floor(xp/4)};
 const levelFromXp=x=>{x=Number(x)||0;let l=1;while(l<99&&xpForLevel(l+1)<=x)l++;return l};
-const state={xp:{},name:localStorage.getItem('rqh_name')||'',skills:{},selected:quests.find(q=>q.name==='Monkey Madness')||quests[0],guideCache:new Map(),done:JSON.parse(localStorage.getItem('rqh_done')||'{}'),items:JSON.parse(localStorage.getItem('rqh_items')||'{}')};
+const state={activeTrainingSkill:null,view:'quest',xp:{},name:localStorage.getItem('rqh_name')||'',skills:{},selected:quests.find(q=>q.name==='Monkey Madness')||quests[0],guideCache:new Map(),done:JSON.parse(localStorage.getItem('rqh_done')||'{}'),items:JSON.parse(localStorage.getItem('rqh_items')||'{}')};
 function store(){localStorage.setItem('rqh_done',JSON.stringify(state.done));localStorage.setItem('rqh_items',JSON.stringify(state.items))}
 // Same public Cloudflare Worker and hiscores response handling as the GE Profit Finder.
 // The API responds with { skills: [skill names], players: [{ name, xp: {"0": totalXP, ...} }] }.
@@ -27,9 +27,12 @@ function parseHiscores(blob,name){
  if(matched<3)throw Error('Too few skill IDs could be matched to RunicWorld skills.');
  return {name:player.name,skills:out,xp:Object.fromEntries(Object.entries(out).map(([skill])=>{const i=blob.skills.findIndex(s=>{const raw=String(s).toLowerCase().replace(/[^a-z]/g,'');return raw===skill.toLowerCase()||(skill==='Runecraft'&&raw==='runecrafting')});return [skill,Number(player.xp[String(i)]??xpForLevel(out[skill]))]})),ironman:!!player.ironman};
 }
-async function lookup(){
+let lookupInFlight=false;
+async function lookup({silent=false}={}){
+ if(lookupInFlight)return;
  const name=$('username').value.trim();if(!name)return;
- $('status').className='status loading';$('status').textContent=`Searching RunicWorld hiscores for ${name}…`;$('fetch').disabled=true;
+ lookupInFlight=true;
+ if(!silent){$('status').className='status loading';$('status').textContent=`Searching RunicWorld hiscores for ${name}…`;} $('fetch').disabled=true;
  try{
   const res=await fetch(API_HISCORES,{headers:{Accept:'application/json'},cache:'no-store'});
   if(!res.ok)throw Error(`HTTP ${res.status}`);
@@ -37,10 +40,11 @@ async function lookup(){
   if($('username').value.trim()!==name)throw Error('Username changed while loading. Search again.');
   state.name=data.name;state.skills=data.skills;state.xp=data.xp;
   localStorage.setItem('rqh_name',data.name);localStorage.setItem('rqh_skills',JSON.stringify(data.skills));localStorage.setItem('rqh_xp',JSON.stringify(data.xp));
-  $('status').className='status';$('status').textContent=`Imported ${data.name} (${data.ironman?'Ironman':'Normal'}) — ${Object.keys(data.skills).length} skills loaded from XP.`;
-  render();
- }catch(e){$('status').className='status error';$('status').textContent=`Hiscores lookup failed: ${e.message}. Previous saved levels are unchanged.`}
- finally{$('fetch').disabled=false;}
+  $('status').className='status';$('status').textContent=`${silent?'Auto-refreshed':'Imported'} ${data.name} (${data.ironman?'Ironman':'Normal'}) — ${Object.keys(data.skills).length} skills • ${new Date().toLocaleTimeString()}.`;
+  renderList();if(state.view==='skills')renderSkillsView();else renderDetail();
+  if(state.activeTrainingSkill&&!skillModal.classList.contains('hidden'))fillTraining(state.activeTrainingSkill);
+ }catch(e){$('status').className='status error';$('status').textContent=`${silent?'Auto-refresh':'Hiscores lookup'} failed: ${e.message}. Previous saved levels are unchanged.`}
+ finally{lookupInFlight=false;$('fetch').disabled=false;}
 }
 function skillsCheck(q){const req=q.skills||{},entries=Object.entries(req);if(!entries.length)return {verified:false,missing:[]};if(!Object.keys(state.skills).length)return {verified:false,missing:[]};return {verified:true,missing:entries.filter(([k,v])=>(state.skills[k]||1)<v)}}
 function reqChain(q,seen=new Set()){let arr=[];for(let name of q.quests||[]){let matched=quests.find(x=>normalizeName(x.name)===normalizeName(name));let key=matched?.name||name;if(seen.has(key))continue;seen.add(key);if(matched)arr.push(...reqChain(matched,seen));arr.push(key)}return arr}
@@ -85,7 +89,7 @@ $('detail').addEventListener('click',event=>{
 });
 function wikiTitle(name){return Object.prototype.hasOwnProperty.call(wikiAliases,name)?wikiAliases[name]:name}
 function wikiUrl(q){let title=wikiTitle(q.name);return title?`https://oldschool.runescape.wiki/w/${encodeURIComponent(title.replace(/ /g,'_'))}/Quick_guide`:null}
-function renderDetail(){let q=state.selected,r=skillsCheck(q),allItems=q.items||[],prereqs=reqChain(q);let current=state.items[q.name]||{};let reqs=Object.entries(q.skills||{});let missing=r.missing.length;
+function renderDetail(){state.view='quest';let q=state.selected,r=skillsCheck(q),allItems=q.items||[],prereqs=reqChain(q);let current=state.items[q.name]||{};let reqs=Object.entries(q.skills||{});let missing=r.missing.length;
  $('detail').innerHTML=`<div class="head-detail"><div><div class="eyebrow">Quest planner</div><h1>${escapeHtml(q.name)}</h1><div class="small">${q.skills||q.quests||q.items?'Curated starter metadata • verify against game':'Live wiki guide • requirements not yet curated locally'}</div></div><button id="completed" class="${state.done[q.name]?'primary':''}">${state.done[q.name]?'✓ Completed':'Mark completed'}</button></div><div class="summary"><div class="metric"><span>Skills</span><strong>${!reqs.length?'Not verified':!Object.keys(state.skills).length?'Load player':missing?missing+' missing':'Met'}</strong></div><div class="metric"><span>Prerequisite quests</span><strong>${prereqs.length||'—'}</strong></div><div class="metric"><span>Quest points needed</span><strong>${q.questPoints??'Not verified'}</strong></div></div><div class="note">RunicWorld may use altered quest data. Missing requirements in the local database are <b>unknown</b>, not proof that a quest has none. Load the full wiki quick guide below for instructions and additional requirements.</div><section><h2>Skill requirements</h2><div class="reqs">${reqs.length?reqs.map(([skill,lvl])=>{let have=state.skills[skill];return `<button type="button" class="req skill-trigger ${have!=null?(have>=lvl?'good':'bad'):''}" data-skill="${escapeHtml(skill)}" data-target="${lvl}" title="Open ${escapeHtml(skill)} training calculator"><b>${escapeHtml(skill)} ${lvl}</b>${have!=null?` <span class="small">(yours: ${have})</span>`:''} <span aria-hidden="true">↗</span></button>`}).join(''):'<span class="muted">Not verified locally — consult the guide.</span>'}</div></section><section><h2>Required prerequisite quests</h2>${prereqs.length?prereqs.map(name=>`<div class="check"><input type="checkbox" disabled ${state.done[name]?'checked':''}><span><a href="#" class="jump" data-jump="${escapeHtml(name)}">${escapeHtml(name)}</a> <span class="small">${state.done[name]?'(marked complete)':'(not marked complete)'}</span></span></div>`).join(''):'<div class="muted">None documented locally, or requirements not yet verified.</div>'}</section><section><h2>Items checklist</h2>${allItems.length?allItems.map((item,i)=>`<label class="check"><input type="checkbox" data-item="${i}" ${current[i]?'checked':''}><span>${escapeHtml(item)}</span></label>`).join(''):'<div class="muted">See the live guide for a complete item list.</div>'}</section>${q.steps?.length?`<section><h2>Quick outline</h2><ol>${q.steps.map(s=>`<li>${escapeHtml(s)}</li>`).join('')}</ol></section>`:''}<div class="guide"><div class="head-detail"><h2>Full step-by-step walkthrough</h2><div class="tabbar"><button id="reloadGuide">Reload guide</button>${wikiUrl(q)?`<a href="${wikiUrl(q)}" target="_blank" rel="noopener noreferrer">Open on OSRS Wiki ↗</a>`:''}</div></div><div id="guideBody" class="guide-content"><span class="loading">Loading quest guide...</span></div></div>`;
  $('detail').querySelectorAll('[data-skill]').forEach(b=>b.onclick=()=>openTraining(b.dataset.skill,Number(b.dataset.target)));$('completed').onclick=()=>{state.done[q.name]=!state.done[q.name];store();render()};$('detail').querySelectorAll('[data-item]').forEach(x=>x.onchange=()=>{state.items[q.name]??={};state.items[q.name][x.dataset.item]=x.checked;store()});$('detail').querySelectorAll('.jump').forEach(x=>x.onclick=e=>{e.preventDefault();let found=quests.find(v=>v.name===x.dataset.jump);if(found){state.selected=found;render()}});$('reloadGuide').onclick=()=>{state.guideCache.delete(q.name);loadGuide(q)};loadGuide(q);
 }
@@ -93,17 +97,18 @@ function safeWikiHTML(html){let dom=new DOMParser().parseFromString(html,'text/h
 async function loadGuide(q){let dest=$('guideBody');if(!dest)return;if(state.guideCache.has(q.name)){dest.innerHTML=state.guideCache.get(q.name);return}dest.innerHTML='<span class="loading">Loading OSRS Wiki quick guide...</span>';let canonical=wikiTitle(q.name);if(!canonical){dest.innerHTML='<p class="muted">No matching OSRS Wiki quest quick guide is available for this activity or custom quest. Details must be confirmed in RunicWorld.</p>';return;}let title=canonical+'/Quick guide';let url=`https://oldschool.runescape.wiki/api.php?action=parse&format=json&formatversion=2&prop=text&origin=*&page=${encodeURIComponent(title)}`;try{const response=await fetch(url,{headers:{Accept:'application/json'}});if(!response.ok)throw Error('Wiki HTTP '+response.status);const payload=await response.json();if(payload.error||!payload.parse?.text)throw Error(payload.error?.info||'Guide not found');let clean=safeWikiHTML(payload.parse.text);state.guideCache.set(q.name,clean);if(state.selected.name===q.name)$('guideBody').innerHTML=clean}catch(e){if(state.selected.name===q.name)$('guideBody').innerHTML=`<p class="error">Could not embed this guide (${escapeHtml(e.message)}). The wiki may block cross-site requests, or the page may have a different title.</p><p><a href="${wikiUrl(q)}" target="_blank" rel="noopener noreferrer">Read the full step-by-step guide on the OSRS Wiki ↗</a></p>`}}
 function render(){renderList();renderDetail()}
 $('username').value=state.name;$('fetch').onclick=lookup;$('username').addEventListener('keydown',e=>{if(e.key==='Enter')lookup()});$('search').oninput=renderList;$('filter').onchange=renderList;
-$('showSkills').onclick=()=>{let html=`<div class="head-detail"><h1>${escapeHtml(state.name||'Player')} skills</h1><button id="back">Back to quest</button></div>${Object.keys(state.skills).length?`<div class="stats">${SKILLS.map(s=>`<button class="stat skill-trigger" data-skill="${s}" type="button"><small>${s}</small><span class="level">${state.skills[s]??'?'}</span></button>`).join('')}</div>`:'<p class="muted">Look up a RunicWorld character to see their skills.</p>'}`;$('detail').innerHTML=html;$('back').onclick=renderDetail;$('detail').querySelectorAll('[data-skill]').forEach(b=>b.onclick=()=>openTraining(b.dataset.skill,Math.min(99,(state.skills[b.dataset.skill]||1)+10)))};$('resetProgress').onclick=()=>{if(confirm('Clear all locally saved completed quests and item checklists?')){state.done={};state.items={};store();render()}};
-try{state.xp=JSON.parse(localStorage.getItem('rqh_xp')||'{}');state.skills=JSON.parse(localStorage.getItem('rqh_skills')||'{}');if(state.name&&Object.keys(state.skills).length)$('status').textContent=`Saved skills for ${state.name} loaded. Press Fetch my skills to refresh.`}catch{}render();
+function renderSkillsView(){state.view='skills';let html=`<div class="head-detail"><h1>${escapeHtml(state.name||'Player')} skills</h1><button id="back">Back to quest</button></div>${Object.keys(state.skills).length?`<div class="stats">${SKILLS.map(s=>`<button class="stat skill-trigger" data-skill="${s}" type="button"><small>${s}</small><span class="level">${state.skills[s]??'?'}</span></button>`).join('')}</div>`:'<p class="muted">Look up a RunicWorld character to see their skills.</p>'}`;$('detail').innerHTML=html;$('back').onclick=renderDetail;$('detail').querySelectorAll('[data-skill]').forEach(b=>b.onclick=()=>openTraining(b.dataset.skill,Math.min(99,(state.skills[b.dataset.skill]||1)+10)))};$('showSkills').onclick=renderSkillsView;$('resetProgress').onclick=()=>{if(confirm('Clear all locally saved completed quests and item checklists?')){state.done={};state.items={};store();render()}};
+try{state.xp=JSON.parse(localStorage.getItem('rqh_xp')||'{}');state.skills=JSON.parse(localStorage.getItem('rqh_skills')||'{}');if(state.name&&Object.keys(state.skills).length)$('status').textContent=`Saved skills for ${state.name} loaded. Automatic refresh every 60 seconds while this tab is open.`}catch{}render();
 
 // Modal stays on the current quest, and skill buttons remain clickable in player-skills view.
 const skillModal=$('skillModal');
-function closeTraining(){skillModal.classList.add('hidden');document.body.style.overflow='';}
+function closeTraining(){state.activeTrainingSkill=null;skillModal.classList.add('hidden');document.body.style.overflow='';}
 $('closeTraining').onclick=closeTraining;
 skillModal.addEventListener('click',e=>{if(e.target===skillModal)closeTraining()});
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!skillModal.classList.contains('hidden'))closeTraining()});
 const fmt=n=>Math.ceil(n).toLocaleString('en-US');
 function openTraining(skill,target){
+ state.activeTrainingSkill=skill;
  const have=state.skills[skill]??1,known=state.xp[skill]!=null;
  const xp=known?Number(state.xp[skill]):xpForLevel(have);
  target=Math.max(1,Math.min(99,target||have+1));
@@ -111,6 +116,9 @@ function openTraining(skill,target){
  $('trainingTitle').textContent=skill+' training';
  $('trainingTarget').value=target;
  $('trainingTarget').oninput=()=>fillTraining(skill);
+ $('trainingSort').onchange=()=>fillTraining(skill);
+ $('trainingAvailableOnly').onchange=()=>fillTraining(skill);
+ $('trainingMethods').scrollTop=0;
  skillModal.classList.remove('hidden');document.body.style.overflow='hidden';
  fillTraining(skill);
  $('closeTraining').focus();
@@ -120,12 +128,18 @@ function fillTraining(skill){
  const xp=xpKnown?Number(state.xp[skill]):xpForLevel(level);
  const target=Math.max(1,Math.min(99,parseInt($('trainingTarget').value,10)||level+1));
  const remaining=Math.max(0,xpForLevel(target)-xp);
- const rows=(TRAINING[skill]||[]).filter(([minLevel])=>minLevel<=target).sort((a,b)=>a[0]-b[0]);
+ const sortOrder=$('trainingSort').value;
+ const availableOnly=$('trainingAvailableOnly').checked;
+ const rows=[...(TRAINING[skill]||[])].filter(([req])=>!availableOnly||req<=level).sort((a,b)=>sortOrder==='xp-desc'?(b[1]-a[1]||a[0]-b[0]):sortOrder==='level'?(a[0]-b[0]||a[1]-b[1]):(a[1]-b[1]||a[0]-b[0]));
+ $('trainingCount').textContent=rows.length+' shown • '+(TRAINING[skill]||[]).filter(([req])=>req<=level).length+' currently unlocked';
  $('trainingSummary').innerHTML=`<div class="training-metrics"><div><span>Current level</span><b>${level}</b></div><div><span>Target level</span><b>${target}</b></div><div><span>XP remaining</span><b>${fmt(remaining)}</b></div></div><p class="small">${xpKnown?'Exact hiscores XP: '+fmt(xp):'XP estimated from the start of level '+level+'. Fetch skills for an exact remainder.'} Level ${target} begins at ${fmt(xpForLevel(target))} XP.</p>`;
  $('trainingMethods').innerHTML=rows.length?rows.map(([req,gain,action,materials])=>{
   const unlocked=req<=level,usable=unlocked&&remaining>0;
   const count=gain>0?fmt(remaining/gain):'—';
-  return `<div class="training-method ${unlocked?'':'training-locked'}"><div><b>${escapeHtml(action)}</b><div class="small">Level ${req} • ${escapeHtml(materials)}</div></div><div class="training-numbers"><strong>${gain.toLocaleString('en-US')} XP</strong><span class="small">${usable?count+' actions':unlocked?'Target met': 'Unlock at '+req}</span></div></div>`
+  return `<div class="training-method ${unlocked?'':'training-locked'}"><div><b>${escapeHtml(action)}</b><div class="small">Level ${req} • ${escapeHtml(materials)}</div><span class="training-availability">${unlocked?'✓ Available now':'🔒 Unlock at level '+req}</span></div><div class="training-numbers"><strong>${gain.toLocaleString('en-US')} XP/action</strong><span class="small">${usable?count+' actions to target':unlocked?'Target met':'Not yet available'}</span></div></div>`
  }).join(''):'<p class="muted">No classic training entries listed for this skill and target.</p>';
  $('trainingNote').textContent='Action counts are comparisons assuming you use one method for all remaining XP. Locked methods require training to their unlock level first. Combat XP depends on damage; failure/burning rates, quest rewards, and server modifiers are not included. Modern OSRS-only activities are identified when included. Verify available recipes and XP in RunicWorld.';
 }
+
+// Refresh at most once per minute, using the same Worker as manual lookup.
+setInterval(()=>{if(!document.hidden&&state.name&&$('username').value.trim().toLowerCase()===state.name.toLowerCase())lookup({silent:true});},60000);
