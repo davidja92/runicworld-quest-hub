@@ -90,48 +90,55 @@ function extractRequirements(html,currentQuest){
  // Avoid claiming no prerequisites when a page structure is unrecognized.
  return matchedSection?[...found]:null;
 }
-async function loadWikiPrerequisites(q,depth=0,visited=new Set()){
- if(visited.has(q.name)||depth>12)return;
- visited.add(q.name);
+// Resolve one quest at a time. Never recursively trigger renderDetail() from
+// renderDetail()'s own asynchronous prerequisite loader.
+// Local prerequisites remain available immediately; wiki entries are cached.
+async function loadWikiPrerequisites(q){
  if(Object.prototype.hasOwnProperty.call(q,'quests')){
   q.prereqsVerified=true;
- } else if(wikiReqCache[q.name] && Array.isArray(wikiReqCache[q.name].quests)){
+  return;
+ }
+ if(wikiReqCache[q.name] && Array.isArray(wikiReqCache[q.name].quests)){
   q.quests=wikiReqCache[q.name].quests.filter(n=>questLinkIndex.has(normalizeName(n)));
   q.prereqsVerified=true;
   q.requirementsSource='OSRS Wiki reference';
- } else if(wikiTitle(q.name) && !wikiReqPending.has(q.name) && !wikiReqUnavailable.has(q.name)){
-  const task=(async()=>{
-   const title=wikiTitle(q.name);
-   const pages=[title,title+'/Quick guide'];
-   for(const page of pages){
-    try{
-     const url=`https://oldschool.runescape.wiki/api.php?action=parse&format=json&formatversion=2&prop=text&origin=*&page=${encodeURIComponent(page)}`;
-     const response=await fetch(url,{headers:{Accept:'application/json'}});
-     if(!response.ok)continue;
-     const data=await response.json();
-     if(!data.parse?.text)continue;
-     const req=extractRequirements(safeWikiHTML(data.parse.text),q);
-     if(req===null)continue;
-     q.quests=req;q.prereqsVerified=true;q.requirementsSource='OSRS Wiki reference';
-     wikiReqCache[q.name]={quests:req};
-     try{localStorage.setItem(wikiReqCacheKey,JSON.stringify(wikiReqCache))}catch{}
-     if(state.selected.name===q.name){renderList();renderDetail();}
-     return;
-    }catch{}
-   }
-   wikiReqUnavailable.add(q.name);
-  })().finally(()=>wikiReqPending.delete(q.name));
-  wikiReqPending.set(q.name,task);
-  await task;
- }else if(wikiReqPending.has(q.name))await wikiReqPending.get(q.name);
- // Recursively populate prerequisites when their pages are available.
- if(depth<12 && q.quests?.length){
-  for(const name of q.quests){
-   const child=questLinkIndex.get(normalizeName(name));
-   if(child&&!visited.has(child.name))await loadWikiPrerequisites(child,depth+1,visited);
-  }
-  if(state.selected.name===q.name){renderList();renderDetail();}
+  // Called during render: do not re-render just to read the cache.
+  return;
  }
+ if(!wikiTitle(q.name)||wikiReqUnavailable.has(q.name))return;
+ if(wikiReqPending.has(q.name))return wikiReqPending.get(q.name);
+ const task=(async()=>{
+  const title=wikiTitle(q.name);
+  for(const page of [title,title+'/Quick guide']){
+   try{
+    const controller=new AbortController();
+    const timeout=setTimeout(()=>controller.abort(),10000);
+    let response;
+    try{
+     response=await fetch(`https://oldschool.runescape.wiki/api.php?action=parse&format=json&formatversion=2&prop=text&origin=*&page=${encodeURIComponent(page)}`,{headers:{Accept:'application/json'},signal:controller.signal});
+    }finally{clearTimeout(timeout)}
+    if(!response.ok)continue;
+    const data=await response.json();
+    if(!data.parse?.text)continue;
+    const req=extractRequirements(safeWikiHTML(data.parse.text),q);
+    if(req===null)continue;
+    q.quests=req;
+    q.prereqsVerified=true;
+    q.requirementsSource='OSRS Wiki reference';
+    wikiReqCache[q.name]={quests:req};
+    try{localStorage.setItem(wikiReqCacheKey,JSON.stringify(wikiReqCache))}catch{}
+    // Update exactly once, without calling the loader again.
+    if(state.selected===q&&state.view==='quest'){
+     renderList();
+     renderDetail({skipWikiPrerequisites:true});
+    }
+    return;
+   }catch{}
+  }
+  wikiReqUnavailable.add(q.name);
+ })().finally(()=>wikiReqPending.delete(q.name));
+ wikiReqPending.set(q.name,task);
+ return task;
 }
 function renderList(){let query=$('search').value.toLowerCase(),filter=$('filter').value;let filtered=quests.filter(q=>{const r=skillsCheck(q);return q.name.toLowerCase().includes(query)&&(filter==='all'||(filter==='done'&&state.done[q.name])||(filter==='todo'&&!state.done[q.name])||(filter==='ready'&&r.verified&&!r.missing.length)||(filter==='locked'&&r.verified&&r.missing.length))});$('count').textContent=`(${filtered.length})`;$('questList').innerHTML=filtered.map(q=>{let r=skillsCheck(q);return `<button class="quest-item ${q.name===state.selected.name?'active':''}" data-quest="${escapeHtml(q.name)}"><strong>${escapeHtml(q.name)}</strong><div class="badgeRow">${state.done[q.name]?'<span class="pill good">Completed</span>':''}${r.verified?`<span class="pill ${r.missing.length?'bad':'good'}">${r.missing.length?r.missing.length+' skills missing':'Skills met'}</span>`:'<span class="pill">Requirements to verify</span>'}</div></button>`}).join('')||'<div class="empty">No matching quests.</div>';
  $('questList').querySelectorAll('[data-quest]').forEach(btn=>btn.addEventListener('click',()=>{state.selected=quests.find(q=>q.name===btn.dataset.quest);render();}));}
@@ -174,9 +181,9 @@ $('detail').addEventListener('click',event=>{
 });
 function wikiTitle(name){return Object.prototype.hasOwnProperty.call(wikiAliases,name)?wikiAliases[name]:name}
 function wikiUrl(q){let title=wikiTitle(q.name);return title?`https://oldschool.runescape.wiki/w/${encodeURIComponent(title.replace(/ /g,'_'))}/Quick_guide`:null}
-function renderDetail(){state.view='quest';let q=state.selected,r=skillsCheck(q),allItems=q.items||[],prereqs=reqChain(q);let progress=completedPrerequisites(q);let current=state.items[q.name]||{};let reqs=Object.entries(q.skills||{});let missing=r.missing.length;
+function renderDetail({skipWikiPrerequisites=false}={}){state.view='quest';let q=state.selected,r=skillsCheck(q),allItems=q.items||[],prereqs=reqChain(q);let progress=completedPrerequisites(q);let current=state.items[q.name]||{};let reqs=Object.entries(q.skills||{});let missing=r.missing.length;
  $('detail').innerHTML=`<div class="head-detail"><div><div class="eyebrow">Quest planner</div><h1>${escapeHtml(q.name)}</h1><div class="small">${q.skills||q.quests||q.items?'Curated starter metadata • verify against game':'Live wiki guide • requirements not yet curated locally'}</div></div><button id="completed" class="${state.done[q.name]?'primary':''}">${state.done[q.name]?'✓ Completed':'Mark completed'}</button></div><div class="summary"><div class="metric"><span>Skills</span><strong>${!reqs.length?'Not verified':!Object.keys(state.skills).length?'Load player':missing?missing+' missing':'Met'}</strong></div><div class="metric"><span>Prerequisite quests</span><strong class="${progress.missing.length?'error':'qp-met'}">${prereqs.length?`${progress.completed.length}/${prereqs.length} completed${progress.missing.length?` · ${progress.missing.length} missing`:' · Met'}`:(q.prereqsVerified||Object.prototype.hasOwnProperty.call(q,'quests')?'None required':'Checking / unverified')}</strong></div><div class="metric"><span>Quest points needed</span><strong class="${q.questPoints!=null&&state.questPoints!=null&&state.questPoints<q.questPoints?'error':q.questPoints!=null&&state.questPoints>=q.questPoints?'qp-met':''}">${escapeHtml(questPointStatus(q))}</strong></div></div><div class="note">RunicWorld may use altered quest data. Missing requirements in the local database are <b>unknown</b>, not proof that a quest has none. Load the full wiki quick guide below for instructions and additional requirements.</div><section><h2>Skill requirements</h2><div class="reqs">${reqs.length?reqs.map(([skill,lvl])=>{let have=state.skills[skill];return `<button type="button" class="req skill-trigger ${have!=null?(have>=lvl?'good':'bad'):''}" data-skill="${escapeHtml(skill)}" data-target="${lvl}" title="Open ${escapeHtml(skill)} training calculator"><b>${escapeHtml(skill)} ${lvl}</b>${have!=null?` <span class="small">(yours: ${have})</span>`:''} <span aria-hidden="true">↗</span></button>`}).join(''):'<span class="muted">Not verified locally — consult the guide.</span>'}</div></section><section><h2>Required prerequisite quests</h2>${prereqs.length?prereqs.map(name=>`<div class="check"><input type="checkbox" class="prereq-done" data-prereq="${escapeHtml(name)}" ${state.done[name]?'checked':''} aria-label="Mark ${escapeHtml(name)} complete"><span><a href="#" class="jump" data-jump="${escapeHtml(name)}">${escapeHtml(name)}</a> <span class="small ${state.done[name]?'qp-met':'error'}">${state.done[name]?'✓ Completed':'✕ Missing'}</span></span></div>`).join(''):'<div class="muted">None documented locally, or requirements not yet verified.</div>'}</section><section><h2>Items checklist</h2>${allItems.length?allItems.map((item,i)=>`<label class="check"><input type="checkbox" data-item="${i}" ${current[i]?'checked':''}><span>${escapeHtml(item)}</span></label>`).join(''):'<div class="muted">See the live guide for a complete item list.</div>'}</section>${q.steps?.length?`<section><h2>Quick outline</h2><ol>${q.steps.map(s=>`<li>${escapeHtml(s)}</li>`).join('')}</ol></section>`:''}<div class="guide"><div class="head-detail"><h2>Full step-by-step walkthrough</h2><div class="tabbar"><button id="reloadGuide">Reload guide</button>${wikiUrl(q)?`<a href="${wikiUrl(q)}" target="_blank" rel="noopener noreferrer">Open on OSRS Wiki ↗</a>`:''}</div></div><div id="guideBody" class="guide-content"><span class="loading">Loading quest guide...</span></div></div>`;
- $('detail').querySelectorAll('[data-skill]').forEach(b=>b.onclick=()=>openTraining(b.dataset.skill,Number(b.dataset.target)));$('completed').onclick=()=>{state.done[q.name]=!state.done[q.name];store();render()};$('detail').querySelectorAll('[data-item]').forEach(x=>x.onchange=()=>{state.items[q.name]??={};state.items[q.name][x.dataset.item]=x.checked;store()});$('detail').querySelectorAll('.prereq-done').forEach(x=>x.onchange=()=>{state.done[x.dataset.prereq]=x.checked;store();render()});$('detail').querySelectorAll('.jump').forEach(x=>x.onclick=e=>{e.preventDefault();let found=quests.find(v=>v.name===x.dataset.jump);if(found){state.selected=found;render()}});$('reloadGuide').onclick=()=>{state.guideCache.delete(q.name);loadGuide(q)};loadGuide(q);loadWikiPrerequisites(q).catch(()=>{});
+ $('detail').querySelectorAll('[data-skill]').forEach(b=>b.onclick=()=>openTraining(b.dataset.skill,Number(b.dataset.target)));$('completed').onclick=()=>{state.done[q.name]=!state.done[q.name];store();render()};$('detail').querySelectorAll('[data-item]').forEach(x=>x.onchange=()=>{state.items[q.name]??={};state.items[q.name][x.dataset.item]=x.checked;store()});$('detail').querySelectorAll('.prereq-done').forEach(x=>x.onchange=()=>{state.done[x.dataset.prereq]=x.checked;store();render()});$('detail').querySelectorAll('.jump').forEach(x=>x.onclick=e=>{e.preventDefault();let found=quests.find(v=>v.name===x.dataset.jump);if(found){state.selected=found;render()}});$('reloadGuide').onclick=()=>{state.guideCache.delete(q.name);loadGuide(q)};loadGuide(q);if(!skipWikiPrerequisites)loadWikiPrerequisites(q).catch(()=>{});
 }
 function safeWikiHTML(html){let dom=new DOMParser().parseFromString(html,'text/html');dom.querySelectorAll('script,iframe,form,style,link,button,input,textarea,select,object,embed').forEach(el=>el.remove());dom.querySelectorAll('*').forEach(el=>{for(const att of [...el.attributes])if(att.name.startsWith('on')||att.name==='srcdoc'||att.name==='style')el.removeAttribute(att.name);for(const att of ['href','src','srcset']){let value=el.getAttribute(att);if(!value)continue;if(att==='srcset'){el.removeAttribute(att);continue}try{let url=new URL(value,'https://oldschool.runescape.wiki');if(!['https:','http:'].includes(url.protocol))el.removeAttribute(att);else el.setAttribute(att,url.href)}catch{el.removeAttribute(att)}}});return dom.body.innerHTML}
 async function loadGuide(q){let dest=$('guideBody');if(!dest)return;if(state.guideCache.has(q.name)){dest.innerHTML=state.guideCache.get(q.name);return}dest.innerHTML='<span class="loading">Loading OSRS Wiki quick guide...</span>';let canonical=wikiTitle(q.name);if(!canonical){dest.innerHTML='<p class="muted">No matching OSRS Wiki quest quick guide is available for this activity or custom quest. Details must be confirmed in RunicWorld.</p>';return;}let title=canonical+'/Quick guide';let url=`https://oldschool.runescape.wiki/api.php?action=parse&format=json&formatversion=2&prop=text&origin=*&page=${encodeURIComponent(title)}`;try{const response=await fetch(url,{headers:{Accept:'application/json'}});if(!response.ok)throw Error('Wiki HTTP '+response.status);const payload=await response.json();if(payload.error||!payload.parse?.text)throw Error(payload.error?.info||'Guide not found');let clean=safeWikiHTML(payload.parse.text);state.guideCache.set(q.name,clean);if(state.selected.name===q.name)$('guideBody').innerHTML=clean}catch(e){if(state.selected.name===q.name)$('guideBody').innerHTML=`<p class="error">Could not embed this guide (${escapeHtml(e.message)}). The wiki may block cross-site requests, or the page may have a different title.</p><p><a href="${wikiUrl(q)}" target="_blank" rel="noopener noreferrer">Read the full step-by-step guide on the OSRS Wiki ↗</a></p>`}}
