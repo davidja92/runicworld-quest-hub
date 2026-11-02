@@ -1,9 +1,6 @@
 // RunicWorld era quest catalogue. Data below is starter metadata; full guides are loaded live.
 const names="Death Plateau|Demon Slayer|Lost City|Prince Ali Rescue|The Harvest Masquerade|A Soul's Bane|A Tail of Two Cats|Alfred Grimhand's Barcrawl|Animal Magnetism|Barbarian Fishing|Between a Rock...|Big Chompy Bird Hunting|Black Knights' Fortress|Cabin Fever|Clock Tower|Cold War|Contact!|Creature of Fenkenstrain|Death to the Dorgeshuun|Desert Treasure|Devious Minds|Doric's Quest|Dragon Slayer|Druidic Ritual|Dwarf Cannon|Eadgar's Ruse|Eagles' Peak|Elemental Workshop I|Elemental Workshop II|Enakhra's Lament|Enlightened Journey|Enter the Abyss|Ernest the Chicken|Fairytale I - Growing Pains|Fairytale II - Cure a Queen|Family Crest|Fishing Contest|Forgettable Tale of a Drunken Dwarf|Garden of Tranquillity|Gertrude's Cat|Ghostly Robes|Ghosts Ahoy|Goblin Diplomacy|Haunted Mine|Hazeel Cult|Heroes' Quest|Holy Grail|Horror from the Deep|Icthlarin's Little Helper|Imp Catcher|In Aid of the Myreque|In Search of the Myreque|Jungle Potion|King's Ransom|Legends' Quest|Lunar Diplomacy|Mage Arena I|Making History|Merlin's Crystal|Monk's Friend|Mountain Daughter|Mourning's End Part I|Murder Mystery|My Arm's Big Adventure|Natural History Quiz|Nature Spirit|Observatory Quest|One Small Favour|Pirate's Treasure|Priest in Peril|RFD - Another Cook's Quest|RFD - Freeing Pirate Pete|RFD - Freeing the Goblin Generals|RFD - Freeing the Mountain Dwarf|Rag and Bone Man I|Ratcatchers|Recruitment Drive|Regicide|Romeo & Juliet|Roving Elves|Rum Deal|Scorpion Catcher|Sea Slug|Shades of Mort'ton|Shadow of the Storm|Sheep Herder|Shield of Arrav|Shilo Village|Skippy and the Mogres|Spirits of the Elid|Swan Song|Tai Bwo Wannai Trio|Tears of Guthix|Temple of Ikov|The Dig Site|The Eyes of Glouphrie|The Feud|The Fremennik Isles|The Fremennik Trials|The Giant Dwarf|The Golem|The Hand in the Sand|The Lost Tribe|The Slug Menace|The Tourist Trap|Throne of Miscellania|Tower of Life|Tribal Totem|Troll Romance|Troll Stronghold|Underground Pass|Vampyre Slayer|Wanted!|Watchtower|Witch's House|Witch's Potion|Zogre Flesh Eaters|Biohazard|Cook's Assistant|Fight Arena|Monkey Madness|Plague City|Rune Mysteries|Sheep Shearer|The Grand Tree|The Knight's Sword|The Restless Ghost|Tree Gnome Village|Tutorial Island|Waterfall Quest".split('|');
 const questOverrides={
-// Requirements shown in the user's Fairy Tale I screenshot. Nested prerequisites
-// are resolved recursively from each referenced quest's own requirements.
-"Fairytale I - Growing Pains":{quests:['Lost City','Nature Spirit']},
 "Cook's Assistant":{items:['Pot of flour','Bucket of milk','Egg'],steps:['Talk to the Cook on the ground floor of Lumbridge Castle.','Collect a pot of flour, a bucket of milk, and an egg.','Return to the Cook and hand over the ingredients.']},
 "Doric's Quest":{items:['6 clay','4 copper ore','2 iron ore'],steps:['Speak to Doric north of Falador.','Gather the listed ores and clay (or purchase them).','Deliver everything to Doric to finish.']},
 "Rune Mysteries":{steps:['Talk to Duke Horacio upstairs in Lumbridge Castle.','Take the air talisman to Sedridor in the Wizards’ Tower basement.','Deliver his research package to Aubury in Varrock.','Return Aubury’s notes to Sedridor.']},
@@ -30,7 +27,7 @@ const questOverrides={
 "Recipe for Disaster":{quests:['Cook’s Assistant'],items:['Varies by subquest'],steps:['Speak to the Cook in Lumbridge Castle.','Complete the introductory meal preparation.','Free each trapped guest by completing their individual subquest.','Meet the overall quest point and prerequisite requirements.','Defeat the Culinaromancer’s encounters to finish.']},
 "Fairytale II - Cure a Queen":{quests:['Fairytale I - Growing Pains'],skills:{Thieving:40,Farming:49,Herblore:57},steps:['Speak to Martin the Master Gardener.','Investigate the missing fairy queen and reach the fairy resistance.','Restore the queen using the requested ingredients.','Unlock broader fairy ring access during the quest.']},
 "Lunar Diplomacy":{quests:['The Fremennik Trials','Lost City','Rune Mysteries','Shilo Village'],skills:{Crafting:61,Defence:40,Firemaking:49,Magic:65,Mining:60,Woodcutting:55},items:['Seal of passage','Pickaxe','Tinderbox'],steps:['Speak to Lokar Searunner in Rellekka.','Reach Lunar Isle and speak to the Oneiromancer.','Create the lunar equipment and prepare for the dream.','Complete the dream trials and unlock Lunar spells.']},
-"Heroes' Quest":{quests:['Shield of Arrav','Lost City','Merlin’s Crystal','Dragon Slayer'],skills:{Cooking:53,Fishing:53,Herblore:25,Mining:50},questPoints:55,steps:['Speak to Achietties in the Heroes’ Guild.','Retrieve the three special items required for entry.','Work with a partner from the opposite gang for the key portion.','Return to Achietties to join the guild.']}
+"Heroes' Quest":{quests:['Shield of Arrav','Lost City','Merlin’s Crystal','Dragon Slayer I'],skills:{Cooking:53,Fishing:53,Herblore:25,Mining:50},questPoints:55,steps:['Speak to Achietties in the Heroes’ Guild.','Retrieve the three special items required for entry.','Work with a partner from the opposite gang for the key portion.','Return to Achietties to join the guild.']}
 };
 const normalizeName=s=>s.toLowerCase().replace(/[’‘]/g,"'").replace(/[^a-z0-9]/g,'');
 const overridesByKey=new Map(Object.entries(questOverrides).map(([k,v])=>[normalizeName(k),v]));
@@ -54,5 +51,35 @@ const wikiAliases={
   'Skippy and the Mogres':null,
   'Tutorial Island':null
 };
+
+// Confirmed common classic quest-point rewards. Other rewards are entered by the player
+// instead of assuming that every RunicWorld quest awards one point.
+const questPointRewards={
+ "Cook's Assistant":1,"Doric's Quest":1,"Rune Mysteries":1,"The Restless Ghost":1,
+ "Goblin Diplomacy":5,"Waterfall Quest":1,"Plague City":1,"Biohazard":3,
+ "The Grand Tree":5,"Tree Gnome Village":2,"Monkey Madness":3,"Lost City":3,
+ "Druidic Ritual":4,"Death Plateau":1,"Priest in Peril":1,"Nature Spirit":2,
+ "The Dig Site":2,"The Knight's Sword":1,"Dragon Slayer":2,"Desert Treasure":3,
+ "Animal Magnetism":1,"Regicide":3,"Fairytale I - Growing Pains":2,
+ "Fairytale II - Cure a Queen":2,"Lunar Diplomacy":2,"Heroes' Quest":1,
+ "Demon Slayer":3,"Prince Ali Rescue":3,"Ernest the Chicken":4,
+ "Imp Catcher":1,"Sheep Shearer":1,"Pirate's Treasure":2,
+ "Romeo & Juliet":5,"Vampyre Slayer":3,"Witch's Potion":1,
+ "Witch's House":4,"Murder Mystery":3,"Black Knights' Fortress":3,
+ "Shield of Arrav":1,"Fight Arena":2,"Fishing Contest":1,
+ "Jungle Potion":1,"Shilo Village":2,"The Tourist Trap":2,
+ "Scorpion Catcher":1,"Merlin's Crystal":6,"Holy Grail":2,
+ "Family Crest":1,"Underground Pass":5,"Horror from the Deep":2,
+ "Hazeel Cult":1,"Elemental Workshop I":1,"Elemental Workshop II":1,
+ "The Golem":1,"Gertrude's Cat":1,"Mountain Daughter":2,
+ "Recruitment Drive":1,"The Fremennik Trials":3,"The Fremennik Isles":1,
+ "Troll Stronghold":1,"Troll Romance":2,"Wanted!":1,
+ "The Lost Tribe":1,"Death to the Dorgeshuun":1,"The Feud":1,
+ "One Small Favour":2,"Icthlarin's Little Helper":2,"Observatory Quest":2,
+ "Clock Tower":1,"Monk's Friend":1,"Tower of Life":2,
+ "Ghosts Ahoy":2,"Sea Slug":1,"Sheep Herder":4,"Temple of Ikov":1,
+ "Watchtower":4,"Tribal Totem":1,"Ratcatchers":2,"Eagles' Peak":2
+};
+
 const screenshotCompleted=['Biohazard', 'Cook\'s Assistant','Fight Arena','Monkey Madness','Plague City','Rune Mysteries','Sheep Shearer','The Grand Tree','The Knight\'s Sword','The Restless Ghost','Tree Gnome Village','Tutorial Island','Waterfall Quest'];
 const quests=[...new Set(names)].filter(x=>!x.includes('Diary')).map(name=>({name,...(overridesByKey.get(normalizeName(name))||{})})).sort((a,b)=>a.name.localeCompare(b.name));
