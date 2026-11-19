@@ -21,3 +21,4 @@ Hunter:[[1,34,'Catch crimson swifts','Bird snare + Feldip Hills'],[9,61,'Catch c
 Construction:[[1,58,'Build crude wooden chair','2 planks + nails'],[19,120,'Build oak chair','2 oak planks'],[33,480,'Build oak larder','8 oak planks'],[52,840,'Build mahogany table','6 mahogany planks']],
 Attack:[[1,4,'Train on low-level monsters','Use Attack combat style; XP = damage × 4']],Strength:[[1,4,'Train on low-level monsters','Use Strength combat style; XP = damage × 4']],Defence:[[1,4,'Train on low-level monsters','Use Defence combat style; XP = damage × 4']],Hitpoints:[[1,1.33,'Train through combat','Hitpoints XP ≈ damage × 1.33']],Ranged:[[1,4,'Attack with ranged weapons','Ranged XP = damage × 4; arrows/bolts']],
 };
+

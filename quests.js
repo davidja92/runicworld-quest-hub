@@ -83,3 +83,4 @@ const questPointRewards={
 
 const screenshotCompleted=['Biohazard', 'Cook\'s Assistant','Fight Arena','Monkey Madness','Plague City','Rune Mysteries','Sheep Shearer','The Grand Tree','The Knight\'s Sword','The Restless Ghost','Tree Gnome Village','Tutorial Island','Waterfall Quest'];
 const quests=[...new Set(names)].filter(x=>!x.includes('Diary')).map(name=>({name,...(overridesByKey.get(normalizeName(name))||{})})).sort((a,b)=>a.name.localeCompare(b.name));
+

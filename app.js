@@ -5,8 +5,19 @@ const LEGACY=[...SKILLS]; const xpForLevel=n=>{let xp=0;for(let i=1;i<n;i++)xp+=
 const levelFromXp=x=>{x=Number(x)||0;let l=1;while(l<99&&xpForLevel(l+1)<=x)l++;return l};
 const questPointKey=name=>'rqh_qp_'+String(name||'').trim().toLowerCase();
 const readQuestPoints=name=>{const value=localStorage.getItem(questPointKey(name));return value===null?null:Math.max(0,Math.floor(Number(value)||0))};
-const state={questPoints:readQuestPoints(localStorage.getItem('rqh_name')||''),activeTrainingSkill:null,view:'quest',xp:{},name:localStorage.getItem('rqh_name')||'',skills:{},selected:quests.find(q=>q.name==='Monkey Madness')||quests[0],guideCache:new Map(),done:JSON.parse(localStorage.getItem('rqh_done')||'{}'),items:JSON.parse(localStorage.getItem('rqh_items')||'{}')};
-function store(){localStorage.setItem('rqh_done',JSON.stringify(state.done));localStorage.setItem('rqh_items',JSON.stringify(state.items))}
+// Keep completed quests separate for each character.
+const completionKey=name=>'rqh_done_'+String(name||'').trim().toLowerCase();
+function loadCharacterDone(name){
+ const key=completionKey(name);
+ try{
+  const saved=localStorage.getItem(key);if(saved!==null)return JSON.parse(saved)||{};
+  const owner=String(localStorage.getItem('rqh_name')||'').trim().toLowerCase();
+  if(name&&String(name).trim().toLowerCase()===owner){const old=JSON.parse(localStorage.getItem('rqh_done')||'{}')||{};localStorage.setItem(key,JSON.stringify(old));return old;}
+ }catch{}
+ return {};
+}
+const state={questPoints:readQuestPoints(localStorage.getItem('rqh_name')||''),activeTrainingSkill:null,view:'quest',xp:{},name:localStorage.getItem('rqh_name')||'',skills:{},selected:quests.find(q=>q.name==='Monkey Madness')||quests[0],guideCache:new Map(),done:loadCharacterDone(localStorage.getItem('rqh_name')||''),items:JSON.parse(localStorage.getItem('rqh_items')||'{}')};
+function store(){localStorage.setItem(completionKey(state.name),JSON.stringify(state.done));localStorage.setItem('rqh_items',JSON.stringify(state.items))}
 // Delta ledger: existing completed quests are treated as part of the manually entered
 // starting total. Only completion changes made after that baseline change the QP number.
 const pointsLedgerKey=name=>'rqh_qp_changes_'+String(name||'').trim().toLowerCase();
@@ -62,7 +73,7 @@ async function lookup({silent=false}={}){
   if(!res.ok)throw Error(`HTTP ${res.status}`);
   const data=parseHiscores(await res.json(),name);
   if($('username').value.trim()!==name)throw Error('Username changed while loading. Search again.');
-  state.name=data.name;state.skills=data.skills;state.xp=data.xp;state.questPoints=readQuestPoints(data.name);loadPointsLedger();renderQuestPointsControl();
+  state.done=loadCharacterDone(data.name);state.name=data.name;state.skills=data.skills;state.xp=data.xp;state.questPoints=readQuestPoints(data.name);loadPointsLedger();renderQuestPointsControl();
   localStorage.setItem('rqh_name',data.name);localStorage.setItem('rqh_skills',JSON.stringify(data.skills));localStorage.setItem('rqh_xp',JSON.stringify(data.xp));
   $('status').className='status';$('status').textContent=`${silent?'Auto-refreshed':'Imported'} ${data.name} (${data.ironman?'Ironman':'Normal'}) — ${Object.keys(data.skills).length} skills • ${new Date().toLocaleTimeString()}.`;
   renderList();if(state.view==='skills')renderSkillsView();else renderDetail();
@@ -200,3 +211,4 @@ function fillTraining(skill){
 
 // Refresh at most once per minute, using the same Worker as manual lookup.
 setInterval(()=>{if(!document.hidden&&state.name&&$('username').value.trim().toLowerCase()===state.name.toLowerCase())lookup({silent:true});},60000);
+
