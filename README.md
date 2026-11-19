@@ -1,5 +1,7 @@
 # Runic Quest Hub
 
+This version adds GE & profits, skill-linked recipe costs, a watchlist, observed trade charts, and client-matched Wiki vendor fallback. Price priority is current directional GE quotes, then actual trade history, then NPC fallback. Guide prices are not trade history. All Wiki shop prices remain reference estimates; client presence does not confirm server stock. Upload every file in this website folder to the repository root. Full use/source/maintenance notes are supplied alongside this folder.
+
 The skill planner now uses the installed RunicWorld client data: 2,177 recipe/training entries and 2,773 skill-guide unlocks. Search and category filters are available. Missing XP, ingredient information, unresolved item names and conflicting XP are shown explicitly. No generic OSRS training fallback or game-sync component is used. See the supplied UPLOAD-INSTRUCTIONS.md for extraction provenance and limits.
 
 Static RunicWorld quest planner for GitHub Pages. Open `index.html` using a local development server or publish these files at the root of a GitHub Pages repository. No build tooling needed.

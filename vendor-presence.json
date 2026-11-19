@@ -1,0 +1,7206 @@
+{
+  "schema": 1,
+  "generatedAt": "2026-11-18",
+  "npcs": [
+    {
+      "name": "Nurmof",
+      "evidence": [
+        {
+          "file": "RW_Shop.lua",
+          "kind": "named shop mapping"
+        }
+      ]
+    },
+    {
+      "name": "Nurmof the Dwarf",
+      "evidence": [
+        {
+          "file": "RW_Shop.lua",
+          "kind": "named shop mapping"
+        }
+      ]
+    },
+    {
+      "name": "Aubury",
+      "evidence": [
+        {
+          "file": "RW_Shop.lua",
+          "kind": "named shop mapping"
+        }
+      ]
+    },
+    {
+      "name": "Zaff",
+      "evidence": [
+        {
+          "file": "RW_Shop.lua",
+          "kind": "named shop mapping"
+        },
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1823
+        }
+      ]
+    },
+    {
+      "name": "Lowe",
+      "evidence": [
+        {
+          "file": "RW_Shop.lua",
+          "kind": "named shop mapping"
+        }
+      ]
+    },
+    {
+      "name": "Horvik",
+      "evidence": [
+        {
+          "file": "RW_Shop.lua",
+          "kind": "named shop mapping"
+        }
+      ]
+    },
+    {
+      "name": "Bob",
+      "evidence": [
+        {
+          "file": "RW_Shop.lua",
+          "kind": "named shop mapping"
+        }
+      ]
+    },
+    {
+      "name": "Gerrant",
+      "evidence": [
+        {
+          "file": "RW_Shop.lua",
+          "kind": "named shop mapping"
+        }
+      ]
+    },
+    {
+      "name": "Fred",
+      "evidence": [
+        {
+          "file": "RW_Shop.lua",
+          "kind": "named shop mapping"
+        }
+      ]
+    },
+    {
+      "name": "Grum",
+      "evidence": [
+        {
+          "file": "RW_Shop.lua",
+          "kind": "named shop mapping"
+        }
+      ]
+    },
+    {
+      "name": "Thessalia",
+      "evidence": [
+        {
+          "file": "RW_Shop.lua",
+          "kind": "named shop mapping"
+        }
+      ]
+    },
+    {
+      "name": "Wydin",
+      "evidence": [
+        {
+          "file": "RW_Shop.lua",
+          "kind": "named shop mapping"
+        }
+      ]
+    },
+    {
+      "name": "Librarian",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1603
+        }
+      ]
+    },
+    {
+      "name": "Dwarven Engineer",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1604
+        }
+      ]
+    },
+    {
+      "name": "Hazelmere",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1605
+        }
+      ]
+    },
+    {
+      "name": "Evil creature",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1606
+        },
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1607
+        },
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1608
+        },
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1609
+        },
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1610
+        },
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1611
+        }
+      ]
+    },
+    {
+      "name": "Rolad",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1612
+        }
+      ]
+    },
+    {
+      "name": "Khorvak",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1613
+        }
+      ]
+    },
+    {
+      "name": "Arzinian Being of Bordanzan",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1614
+        }
+      ]
+    },
+    {
+      "name": "Hild",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1615
+        }
+      ]
+    },
+    {
+      "name": "Bob the cat",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1616
+        }
+      ]
+    },
+    {
+      "name": "Reldo",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1617
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 486
+        }
+      ]
+    },
+    {
+      "name": "Sphinx",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1618
+        }
+      ]
+    },
+    {
+      "name": "Lord Iorwerth",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1619
+        }
+      ]
+    },
+    {
+      "name": "Elf Tracker",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1620
+        }
+      ]
+    },
+    {
+      "name": "General Hining",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1621
+        }
+      ]
+    },
+    {
+      "name": "Tyras guard",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1622
+        }
+      ]
+    },
+    {
+      "name": "Elena",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1623
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 36
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 37
+        }
+      ]
+    },
+    {
+      "name": "Chemist",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1624
+        }
+      ]
+    },
+    {
+      "name": "Islwyn",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1625
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 426
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 427
+        }
+      ]
+    },
+    {
+      "name": "Eluned",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1626
+        },
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1757
+        }
+      ]
+    },
+    {
+      "name": "Ilfeen",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1627
+        },
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1628
+        }
+      ]
+    },
+    {
+      "name": "Osman",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1629
+        }
+      ]
+    },
+    {
+      "name": "Leela",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1630
+        }
+      ]
+    },
+    {
+      "name": "Ned",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1631
+        }
+      ]
+    },
+    {
+      "name": "Aggie",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1632
+        }
+      ]
+    },
+    {
+      "name": "Lady Keli",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1633
+        }
+      ]
+    },
+    {
+      "name": "Joe",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1634
+        }
+      ]
+    },
+    {
+      "name": "Prince Ali",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1635
+        }
+      ]
+    },
+    {
+      "name": "Observatory Professor",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1636
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 354
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 355
+        }
+      ]
+    },
+    {
+      "name": "Observatory Assistant",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1637
+        }
+      ]
+    },
+    {
+      "name": "Spirit of Scorpius",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1638
+        }
+      ]
+    },
+    {
+      "name": "Goblin Guard",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1639
+        }
+      ]
+    },
+    {
+      "name": "Eadgar",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1640
+        }
+      ]
+    },
+    {
+      "name": "Burntmeat",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1641
+        },
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1758
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 828
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 829
+        }
+      ]
+    },
+    {
+      "name": "Tegid",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1642
+        }
+      ]
+    },
+    {
+      "name": "Parroty Pete",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1643
+        }
+      ]
+    },
+    {
+      "name": "Heckel Funch",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1644
+        }
+      ]
+    },
+    {
+      "name": "Ug",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1645
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 696
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 697
+        }
+      ]
+    },
+    {
+      "name": "Aga",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1646
+        }
+      ]
+    },
+    {
+      "name": "Arrg",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1647
+        }
+      ]
+    },
+    {
+      "name": "Tenzing",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1648
+        }
+      ]
+    },
+    {
+      "name": "Dunstan",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1649
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 691
+        }
+      ]
+    },
+    {
+      "name": "Jokul",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1651
+        }
+      ]
+    },
+    {
+      "name": "Ragnar",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1652
+        }
+      ]
+    },
+    {
+      "name": "Svidi",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1653
+        }
+      ]
+    },
+    {
+      "name": "Brundt the Chieftain",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1654
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 534
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 535
+        }
+      ]
+    },
+    {
+      "name": "The Kendal",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1655
+        }
+      ]
+    },
+    {
+      "name": "Skippy",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1656
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 834
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 835
+        }
+      ]
+    },
+    {
+      "name": "Valdez",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1657
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 840
+        }
+      ]
+    },
+    {
+      "name": "Rennard",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1658
+        }
+      ]
+    },
+    {
+      "name": "Kharrim",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1659
+        }
+      ]
+    },
+    {
+      "name": "Lennissa",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1660
+        }
+      ]
+    },
+    {
+      "name": "Dhalak",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1661
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 841
+        }
+      ]
+    },
+    {
+      "name": "Viggora",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1662
+        }
+      ]
+    },
+    {
+      "name": "Guard",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1663
+        },
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1874
+        },
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1875
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 342
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 343
+        }
+      ]
+    },
+    {
+      "name": "Anna",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1664
+        }
+      ]
+    },
+    {
+      "name": "The judge",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1665
+        }
+      ]
+    },
+    {
+      "name": "Merlin and the Round Table knights",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1666
+        }
+      ]
+    },
+    {
+      "name": "Wizard Cromperty",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1667
+        }
+      ]
+    },
+    {
+      "name": "Ghaslor the Elder",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1668
+        }
+      ]
+    },
+    {
+      "name": "Guard Captain",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1669
+        }
+      ]
+    },
+    {
+      "name": "Sandy",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1670
+        }
+      ]
+    },
+    {
+      "name": "Betty",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1671
+        }
+      ]
+    },
+    {
+      "name": "Mazion",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1672
+        }
+      ]
+    },
+    {
+      "name": "Nirrie",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1679
+        }
+      ]
+    },
+    {
+      "name": "Tirrie",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1680
+        }
+      ]
+    },
+    {
+      "name": "Hallak",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1681
+        }
+      ]
+    },
+    {
+      "name": "Genie",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1682
+        }
+      ]
+    },
+    {
+      "name": "Razmire Keelgan",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1683
+        }
+      ]
+    },
+    {
+      "name": "Ulsquire Shauncy",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1684
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 859
+        }
+      ]
+    },
+    {
+      "name": "Florin",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1716
+        }
+      ]
+    },
+    {
+      "name": "Aurel",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1717
+        }
+      ]
+    },
+    {
+      "name": "Cornelius",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1718
+        }
+      ]
+    },
+    {
+      "name": "Razvan",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1719
+        }
+      ]
+    },
+    {
+      "name": "Wiskit",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1720
+        }
+      ]
+    },
+    {
+      "name": "Gadderanks",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1721
+        }
+      ]
+    },
+    {
+      "name": "Drezel",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1722
+        },
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1752
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 348
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 349
+        }
+      ]
+    },
+    {
+      "name": "Drunken Dwarf",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1723
+        }
+      ]
+    },
+    {
+      "name": "Rowdy dwarf",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1724
+        }
+      ]
+    },
+    {
+      "name": "Gauss",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1725
+        }
+      ]
+    },
+    {
+      "name": "Rind the gardener",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1726
+        }
+      ]
+    },
+    {
+      "name": "Blandebir",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1727
+        }
+      ]
+    },
+    {
+      "name": "Launa",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1729
+        }
+      ]
+    },
+    {
+      "name": "Father Badden",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1735
+        }
+      ]
+    },
+    {
+      "name": "Father Reen",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1736
+        },
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1759
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 468
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 469
+        }
+      ]
+    },
+    {
+      "name": "Evil Dave",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1737
+        },
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1784
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 732
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 733
+        }
+      ]
+    },
+    {
+      "name": "Lazim",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1739
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 864
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 865
+        }
+      ]
+    },
+    {
+      "name": "Larry",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1740
+        },
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1741
+        },
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1742
+        },
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1743
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 60
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 61
+        }
+      ]
+    },
+    {
+      "name": "Commander Veldaban",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1744
+        }
+      ]
+    },
+    {
+      "name": "Veliaf Hurtz",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1745
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 780
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 781
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 786
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 787
+        }
+      ]
+    },
+    {
+      "name": "Old Man Ral",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1746
+        }
+      ]
+    },
+    {
+      "name": "Trader Sven",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1747
+        }
+      ]
+    },
+    {
+      "name": "Meiyerditch citizen",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1748
+        }
+      ]
+    },
+    {
+      "name": "Boat",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1749
+        }
+      ]
+    },
+    {
+      "name": "Vertida Sefalatis",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1750
+        }
+      ]
+    },
+    {
+      "name": "Safalaan Hallow",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1751
+        }
+      ]
+    },
+    {
+      "name": "Bush",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1753
+        }
+      ]
+    },
+    {
+      "name": "Aeonisig Raispher",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1754
+        }
+      ]
+    },
+    {
+      "name": "Meiyerditch miner",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1755
+        }
+      ]
+    },
+    {
+      "name": "Vampyre Juvinate",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1756
+        }
+      ]
+    },
+    {
+      "name": "Auguste",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1760
+        },
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1765
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 144
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 145
+        }
+      ]
+    },
+    {
+      "name": "My Arm",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1761
+        },
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1762
+        },
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1763
+        }
+      ]
+    },
+    {
+      "name": "Murcaily",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1764
+        }
+      ]
+    },
+    {
+      "name": "Assistant Stan",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1766
+        }
+      ]
+    },
+    {
+      "name": "Assistant Brock",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1767
+        }
+      ]
+    },
+    {
+      "name": "Assistant Serf",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1768
+        }
+      ]
+    },
+    {
+      "name": "Assistant Marrow",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1769
+        }
+      ]
+    },
+    {
+      "name": "Assistant Le Smith",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1770
+        }
+      ]
+    },
+    {
+      "name": "Barge foreman",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1771
+        }
+      ]
+    },
+    {
+      "name": "Barge guard",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1772
+        }
+      ]
+    },
+    {
+      "name": "Lead Navigator",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1773
+        }
+      ]
+    },
+    {
+      "name": "Junior Navigator",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1774
+        },
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1776
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 109
+        }
+      ]
+    },
+    {
+      "name": "Sawmill operator",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1775
+        }
+      ]
+    },
+    {
+      "name": "Doris",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1783
+        }
+      ]
+    },
+    {
+      "name": "Hellrats",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1785
+        }
+      ]
+    },
+    {
+      "name": "Wizard Traiborn",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1788
+        }
+      ]
+    },
+    {
+      "name": "Aris",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1789
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 90
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 91
+        }
+      ]
+    },
+    {
+      "name": "Cook",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1790
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 72
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 73
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 408
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 409
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 684
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 685
+        }
+      ]
+    },
+    {
+      "name": "Rantz",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1791
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 30
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 31
+        }
+      ]
+    },
+    {
+      "name": "Mizaru",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1794
+        }
+      ]
+    },
+    {
+      "name": "Kikazaru",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1795
+        }
+      ]
+    },
+    {
+      "name": "Iwazaru",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1796
+        }
+      ]
+    },
+    {
+      "name": "Zooknock",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1797
+        }
+      ]
+    },
+    {
+      "name": "Big Snakes",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1798
+        }
+      ]
+    },
+    {
+      "name": "Wise Old Man",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1805
+        }
+      ]
+    },
+    {
+      "name": "Chicken Shrine",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1808
+        }
+      ]
+    },
+    {
+      "name": "Evil Chicken",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1809
+        }
+      ]
+    },
+    {
+      "name": "Strange portal",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1811
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 762
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 763
+        }
+      ]
+    },
+    {
+      "name": "Culinaromancer",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1812
+        }
+      ]
+    },
+    {
+      "name": "Ingrid Hradson",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1814
+        }
+      ]
+    },
+    {
+      "name": "Volf Olafson",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1815
+        }
+      ]
+    },
+    {
+      "name": "Grimgnash",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1818
+        }
+      ]
+    },
+    {
+      "name": "Princess Miazrqa",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1819
+        }
+      ]
+    },
+    {
+      "name": "Rupert the Beard",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1820
+        }
+      ]
+    },
+    {
+      "name": "Anna Jones",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1821
+        }
+      ]
+    },
+    {
+      "name": "Surok Magis",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1822
+        }
+      ]
+    },
+    {
+      "name": "Outlaws",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1824
+        }
+      ]
+    },
+    {
+      "name": "Ambassador Alvijar",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1843
+        }
+      ]
+    },
+    {
+      "name": "Tegdak",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1844
+        },
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1853
+        }
+      ]
+    },
+    {
+      "name": "Zanik",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1845
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 85
+        }
+      ]
+    },
+    {
+      "name": "Goblin scribe",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1846
+        }
+      ]
+    },
+    {
+      "name": "Oldak",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1847
+        }
+      ]
+    },
+    {
+      "name": "General Wartface and General Bentnoze",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1848
+        }
+      ]
+    },
+    {
+      "name": "H.A.M. Archer and H.A.M. Mage",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1849
+        }
+      ]
+    },
+    {
+      "name": "Sergeants Mossfists and Slimetoes",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1850
+        }
+      ]
+    },
+    {
+      "name": "New tunnel ladder",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1851
+        }
+      ]
+    },
+    {
+      "name": "Sigmund",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1852
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 564
+        }
+      ]
+    },
+    {
+      "name": "'Birds-Eye' Jack",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1856
+        }
+      ]
+    },
+    {
+      "name": "Cyrisus",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1857
+        }
+      ]
+    },
+    {
+      "name": "Cave entrance",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1858
+        }
+      ]
+    },
+    {
+      "name": "Cyrisus's fears",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1859
+        }
+      ]
+    },
+    {
+      "name": "Prince Brand",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1862
+        }
+      ]
+    },
+    {
+      "name": "Princess Astrid",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1863
+        }
+      ]
+    },
+    {
+      "name": "Gardener Gunnhild",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1864
+        }
+      ]
+    },
+    {
+      "name": "Lumberjack Leif",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1865
+        }
+      ]
+    },
+    {
+      "name": "Miner Magnus",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1866
+        }
+      ]
+    },
+    {
+      "name": "Queen Sigrid",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1867
+        }
+      ]
+    },
+    {
+      "name": "Matilda",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1868
+        }
+      ]
+    },
+    {
+      "name": "Helga",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1869
+        }
+      ]
+    },
+    {
+      "name": "Ashild",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1870
+        }
+      ]
+    },
+    {
+      "name": "Moldof",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1871
+        }
+      ]
+    },
+    {
+      "name": "Arnor",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1872
+        }
+      ]
+    },
+    {
+      "name": "Sailor",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1873
+        }
+      ]
+    },
+    {
+      "name": "Donal",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1876
+        }
+      ]
+    },
+    {
+      "name": "Armod",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1877
+        }
+      ]
+    },
+    {
+      "name": "Giant Sea Snake",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1878
+        }
+      ]
+    },
+    {
+      "name": "Thorodin",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1879
+        }
+      ]
+    },
+    {
+      "name": "Brother Tranquility",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1890
+        },
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1891
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 552
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 553
+        }
+      ]
+    },
+    {
+      "name": "Dr Fenkenstrain",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1892
+        },
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1893
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 655
+        }
+      ]
+    },
+    {
+      "name": "Rufus",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1894
+        }
+      ]
+    },
+    {
+      "name": "Smith",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1896
+        }
+      ]
+    },
+    {
+      "name": "Murphy",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1897
+        }
+      ]
+    },
+    {
+      "name": "Sorebones",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1898
+        }
+      ]
+    },
+    {
+      "name": "Barrelchest",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1899
+        }
+      ]
+    },
+    {
+      "name": "Bookcase",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1900
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 846
+        }
+      ]
+    },
+    {
+      "name": "Beached ship",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1901
+        }
+      ]
+    },
+    {
+      "name": "Lurgon",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1908
+        }
+      ]
+    },
+    {
+      "name": "Miltog",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1909
+        }
+      ]
+    },
+    {
+      "name": "Reldak",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1910
+        }
+      ]
+    },
+    {
+      "name": "Eudav",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/lletya_poi_data.lua",
+          "kind": "named map/NPC record",
+          "line": 8
+        }
+      ]
+    },
+    {
+      "name": "Gethin",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/lletya_poi_data.lua",
+          "kind": "named map/NPC record",
+          "line": 9
+        }
+      ]
+    },
+    {
+      "name": "Dalldav",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/lletya_poi_data.lua",
+          "kind": "named map/NPC record",
+          "line": 10
+        }
+      ]
+    },
+    {
+      "name": "Oronwen",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/lletya_poi_data.lua",
+          "kind": "named map/NPC record",
+          "line": 11
+        }
+      ]
+    },
+    {
+      "name": "Arianwyn",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/lletya_poi_data.lua",
+          "kind": "named map/NPC record",
+          "line": 12
+        }
+      ]
+    },
+    {
+      "name": "Sir Tiffy Cashien",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 7
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 414
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 415
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 570
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 571
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 606
+        }
+      ]
+    },
+    {
+      "name": "Brother Omad",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 12
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 13
+        }
+      ]
+    },
+    {
+      "name": "Unferth",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 18
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 19
+        }
+      ]
+    },
+    {
+      "name": "Ava",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 24
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 25
+        }
+      ]
+    },
+    {
+      "name": "Sir Amik Varze",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 42
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 43
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 607
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 750
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 751
+        }
+      ]
+    },
+    {
+      "name": "Bill Teach",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 48
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 49
+        }
+      ]
+    },
+    {
+      "name": "Brother Kojo",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 54
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 55
+        }
+      ]
+    },
+    {
+      "name": "High Priest",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 66
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 67
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 259
+        }
+      ]
+    },
+    {
+      "name": "Denulth",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 78
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 79
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 690
+        }
+      ]
+    },
+    {
+      "name": "Mistag",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 84
+        }
+      ]
+    },
+    {
+      "name": "Asgarnia Smith",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 96
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 97
+        }
+      ]
+    },
+    {
+      "name": "Examiner",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 102
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 103
+        }
+      ]
+    },
+    {
+      "name": "Curator Haig Halen",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 108
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 487
+        }
+      ]
+    },
+    {
+      "name": "Doric",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 114
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 115
+        }
+      ]
+    },
+    {
+      "name": "Guildmaster",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 120
+        }
+      ]
+    },
+    {
+      "name": "Oziach",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 121
+        }
+      ]
+    },
+    {
+      "name": "Fallen Man",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 126
+        }
+      ]
+    },
+    {
+      "name": "Oneiromancer",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 127
+        }
+      ]
+    },
+    {
+      "name": "Kaqemeex",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 132
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 133
+        }
+      ]
+    },
+    {
+      "name": "Captain Lawgof",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 138
+        }
+      ]
+    },
+    {
+      "name": "Lollk",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 139
+        }
+      ]
+    },
+    {
+      "name": "Veronica",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 150
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 151
+        }
+      ]
+    },
+    {
+      "name": "Martin the Master Gardener",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 156
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 157
+        }
+      ]
+    },
+    {
+      "name": "Dimintheis",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 162
+        }
+      ]
+    },
+    {
+      "name": "Boot",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 163
+        }
+      ]
+    },
+    {
+      "name": "Ali Morrisane",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 168
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 169
+        }
+      ]
+    },
+    {
+      "name": "Lady Servil",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 174
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 175
+        }
+      ]
+    },
+    {
+      "name": "Vestri",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 180
+        }
+      ]
+    },
+    {
+      "name": "Big Dave",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 181
+        }
+      ]
+    },
+    {
+      "name": "Kjut",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 186
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 187
+        }
+      ]
+    },
+    {
+      "name": "Queen Ellamaria",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 192
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 193
+        }
+      ]
+    },
+    {
+      "name": "Gertrude",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 198
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 402
+        }
+      ]
+    },
+    {
+      "name": "Fluffs",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 199
+        }
+      ]
+    },
+    {
+      "name": "Velorina",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 204
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 205
+        }
+      ]
+    },
+    {
+      "name": "General Bentnoze",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 210
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 211
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 714
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 715
+        }
+      ]
+    },
+    {
+      "name": "Clay golem",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 216
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 217
+        }
+      ]
+    },
+    {
+      "name": "Sylas",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 222
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 223
+        }
+      ]
+    },
+    {
+      "name": "Bert",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 228
+        }
+      ]
+    },
+    {
+      "name": "Zavistic Rarve",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 229
+        }
+      ]
+    },
+    {
+      "name": "Ceril Carnillean",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 234
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 235
+        }
+      ]
+    },
+    {
+      "name": "Achietties",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 240
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 241
+        }
+      ]
+    },
+    {
+      "name": "King Arthur",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 246
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 247
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 277
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 312
+        }
+      ]
+    },
+    {
+      "name": "Larrissa",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 252
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 253
+        }
+      ]
+    },
+    {
+      "name": "Wanderer",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 258
+        }
+      ]
+    },
+    {
+      "name": "Wizard Mizgog",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 264
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 265
+        }
+      ]
+    },
+    {
+      "name": "Trufitus",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 270
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 271
+        }
+      ]
+    },
+    {
+      "name": "Gossip",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 276
+        }
+      ]
+    },
+    {
+      "name": "Grubfoot",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 282
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 283
+        }
+      ]
+    },
+    {
+      "name": "Radimus Erkle",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 288
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 289
+        }
+      ]
+    },
+    {
+      "name": "Warrior",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 294
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 295
+        }
+      ]
+    },
+    {
+      "name": "Lokar Searunner",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 300
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 301
+        }
+      ]
+    },
+    {
+      "name": "Jorral",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 306
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 307
+        }
+      ]
+    },
+    {
+      "name": "Merlin",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 313
+        }
+      ]
+    },
+    {
+      "name": "King Narnode Shareen",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 318
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 319
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 523
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 546
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 547
+        }
+      ]
+    },
+    {
+      "name": "Hamal the Chieftain",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 324
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 325
+        }
+      ]
+    },
+    {
+      "name": "Mourner",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 330
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 331
+        }
+      ]
+    },
+    {
+      "name": "Head Mourner",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 336
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 337
+        }
+      ]
+    },
+    {
+      "name": "Olaf Hradson",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 360
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 361
+        }
+      ]
+    },
+    {
+      "name": "Yanni Salika",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 366
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 367
+        }
+      ]
+    },
+    {
+      "name": "Redbeard Frank",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 372
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 373
+        }
+      ]
+    },
+    {
+      "name": "Edmond",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 378
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 379
+        }
+      ]
+    },
+    {
+      "name": "King Roald",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 384
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 385
+        }
+      ]
+    },
+    {
+      "name": "Chancellor Hassan",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 390
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 391
+        }
+      ]
+    },
+    {
+      "name": "Odd Old Man",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 396
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 397
+        }
+      ]
+    },
+    {
+      "name": "Felkrash",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 403
+        }
+      ]
+    },
+    {
+      "name": "King Lathas",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 420
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 421
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 594
+        }
+      ]
+    },
+    {
+      "name": "Father Aereck",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 432
+        }
+      ]
+    },
+    {
+      "name": "Restless Ghost",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 433
+        }
+      ]
+    },
+    {
+      "name": "Romeo",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 438
+        }
+      ]
+    },
+    {
+      "name": "Apothecary",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 439
+        }
+      ]
+    },
+    {
+      "name": "Pirate Pete",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 444
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 726
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 727
+        }
+      ]
+    },
+    {
+      "name": "Captain Braindeath",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 445
+        }
+      ]
+    },
+    {
+      "name": "Duke Horacio",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 450
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 565
+        }
+      ]
+    },
+    {
+      "name": "Archmage Sedridor",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 451
+        }
+      ]
+    },
+    {
+      "name": "Thormac",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 456
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 457
+        }
+      ]
+    },
+    {
+      "name": "Caroline",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 462
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 463
+        }
+      ]
+    },
+    {
+      "name": "Councillor Halgrive",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 474
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 475
+        }
+      ]
+    },
+    {
+      "name": "Fred the Farmer",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 480
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 481
+        }
+      ]
+    },
+    {
+      "name": "Mosol Rei",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 492
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 493
+        }
+      ]
+    },
+    {
+      "name": "Herman Caranos",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 498
+        }
+      ]
+    },
+    {
+      "name": "Wise Old Woman",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 499
+        }
+      ]
+    },
+    {
+      "name": "Timfraku",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 504
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 505
+        }
+      ]
+    },
+    {
+      "name": "Juna",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 510
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 511
+        }
+      ]
+    },
+    {
+      "name": "Lucien",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 516
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 517
+        }
+      ]
+    },
+    {
+      "name": "Brimstail",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 522
+        }
+      ]
+    },
+    {
+      "name": "Mord Gunnars",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 528
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 529
+        }
+      ]
+    },
+    {
+      "name": "Dwarven Boatman",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 540
+        }
+      ]
+    },
+    {
+      "name": "Nulodion",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 541
+        }
+      ]
+    },
+    {
+      "name": "Squire",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 558
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 559
+        }
+      ]
+    },
+    {
+      "name": "Irena",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 576
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 577
+        }
+      ]
+    },
+    {
+      "name": "King Bolren",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 582
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 583
+        }
+      ]
+    },
+    {
+      "name": "Kangai Mau",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 588
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 589
+        }
+      ]
+    },
+    {
+      "name": "Koftik",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 595
+        }
+      ]
+    },
+    {
+      "name": "Morgan",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 600
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 601
+        }
+      ]
+    },
+    {
+      "name": "Almera",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 612
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 613
+        }
+      ]
+    },
+    {
+      "name": "Rat Burgiss",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 618
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 619
+        }
+      ]
+    },
+    {
+      "name": "Boy",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 624
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 625
+        }
+      ]
+    },
+    {
+      "name": "Hetty",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 630
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 631
+        }
+      ]
+    },
+    {
+      "name": "Grish",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 636
+        }
+      ]
+    },
+    {
+      "name": "Sithik Ints",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 637
+        }
+      ]
+    },
+    {
+      "name": "Barbarian Guard",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 642
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 643
+        }
+      ]
+    },
+    {
+      "name": "Dondakan the Dwarf",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 648
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 649
+        }
+      ]
+    },
+    {
+      "name": "Canifis signpost",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 654
+        }
+      ]
+    },
+    {
+      "name": "Charlie",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 660
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 661
+        }
+      ]
+    },
+    {
+      "name": "Fairy Godfather",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 666
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 667
+        }
+      ]
+    },
+    {
+      "name": "Kolodion",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 672
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 673
+        }
+      ]
+    },
+    {
+      "name": "Otto Godblessed",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 678
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 679
+        }
+      ]
+    },
+    {
+      "name": "Watchtower Wizard",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 702
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 703
+        }
+      ]
+    },
+    {
+      "name": "Grim Reaper",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 708
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 709
+        }
+      ]
+    },
+    {
+      "name": "Dwarf",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 720
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 721
+        }
+      ]
+    },
+    {
+      "name": "Lumbridge Guide",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 738
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 739
+        }
+      ]
+    },
+    {
+      "name": "Skrach Uglogwee",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 744
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 745
+        }
+      ]
+    },
+    {
+      "name": "King Awowogei",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 756
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 757
+        }
+      ]
+    },
+    {
+      "name": "Mage of Zamorak",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 768
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 769
+        }
+      ]
+    },
+    {
+      "name": "Vanstrom Klause",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 774
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 775
+        }
+      ]
+    },
+    {
+      "name": "Orlando Smith",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 792
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 793
+        }
+      ]
+    },
+    {
+      "name": "Effigy",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 798
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 799
+        }
+      ]
+    },
+    {
+      "name": "Dresser",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 804
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 805
+        }
+      ]
+    },
+    {
+      "name": "King Vargas",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 810
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 811
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 817
+        }
+      ]
+    },
+    {
+      "name": "Advisor Ghrim",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 816
+        }
+      ]
+    },
+    {
+      "name": "Sanfew",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 822
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 823
+        }
+      ]
+    },
+    {
+      "name": "Workbench",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 847
+        }
+      ]
+    },
+    {
+      "name": "Awusah the Mayor",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 852
+        }
+      ]
+    },
+    {
+      "name": "Shiratti the Custodian",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 853
+        }
+      ]
+    },
+    {
+      "name": "Dusty shelf",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 858
+        }
+      ]
+    },
+    {
+      "name": "Ur-tag",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 872
+        },
+        {
+          "file": "RunicWorldMap/data/quest_map_data.lua",
+          "kind": "named map/NPC record",
+          "line": 873
+        }
+      ]
+    }
+  ],
+  "shops": [
+    {
+      "name": "Nurmof's Pickaxes",
+      "evidence": [
+        {
+          "file": "RW_Shop.lua",
+          "kind": "named shop mapping"
+        }
+      ]
+    },
+    {
+      "name": "Aubury's Rune Shop",
+      "evidence": [
+        {
+          "file": "RW_Shop.lua",
+          "kind": "named shop mapping"
+        }
+      ]
+    },
+    {
+      "name": "Zaff's Staff Shop",
+      "evidence": [
+        {
+          "file": "RW_Shop.lua",
+          "kind": "named shop mapping"
+        }
+      ]
+    },
+    {
+      "name": "Lowe's Archery Emporium",
+      "evidence": [
+        {
+          "file": "RW_Shop.lua",
+          "kind": "named shop mapping"
+        }
+      ]
+    },
+    {
+      "name": "Horvik's Armour Shop",
+      "evidence": [
+        {
+          "file": "RW_Shop.lua",
+          "kind": "named shop mapping"
+        }
+      ]
+    },
+    {
+      "name": "Bob's Brilliant Axes",
+      "evidence": [
+        {
+          "file": "RW_Shop.lua",
+          "kind": "named shop mapping"
+        }
+      ]
+    },
+    {
+      "name": "Gerrant's Fishy Business",
+      "evidence": [
+        {
+          "file": "RW_Shop.lua",
+          "kind": "named shop mapping"
+        }
+      ]
+    },
+    {
+      "name": "Grum's Gold Exchange",
+      "evidence": [
+        {
+          "file": "RW_Shop.lua",
+          "kind": "named shop mapping"
+        }
+      ]
+    },
+    {
+      "name": "Thessalia's Fine Clothes",
+      "evidence": [
+        {
+          "file": "RW_Shop.lua",
+          "kind": "named shop mapping"
+        }
+      ]
+    },
+    {
+      "name": "Wydin's Food Store",
+      "evidence": [
+        {
+          "file": "RW_Shop.lua",
+          "kind": "named shop mapping"
+        }
+      ]
+    },
+    {
+      "name": "Gunslik's Assorted Items",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 465
+        }
+      ]
+    },
+    {
+      "name": "Rune Store",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 482
+        }
+      ]
+    },
+    {
+      "name": "Woodcutting Guild sawmill",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 493
+        }
+      ]
+    },
+    {
+      "name": "Melee Combat Tutor",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 539
+        }
+      ]
+    },
+    {
+      "name": "Woodcutting Tutor",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 547
+        }
+      ]
+    },
+    {
+      "name": "Solihib's Food Stall",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 750
+        }
+      ]
+    },
+    {
+      "name": "Hamab's Crafting Emporium",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 751
+        }
+      ]
+    },
+    {
+      "name": "Ifaba's General Store",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 752
+        }
+      ]
+    },
+    {
+      "name": "Tutab's Magical Market",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 753
+        }
+      ]
+    },
+    {
+      "name": "Oobapohk's Javelin Store",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 754
+        }
+      ]
+    },
+    {
+      "name": "Daga's Scimitar Smithy",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 755
+        }
+      ]
+    },
+    {
+      "name": "Enter Elemental Workshop",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 906
+        }
+      ]
+    },
+    {
+      "name": "Baba Yaga's Magic Shop",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1510
+        }
+      ]
+    },
+    {
+      "name": "Void Knights' General Store",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1548
+        }
+      ]
+    },
+    {
+      "name": "Void Knight Archery Store",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1550
+        }
+      ]
+    },
+    {
+      "name": "Void Knight Magic Store",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1551
+        }
+      ]
+    },
+    {
+      "name": "Flosi's Fishmongers",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1561
+        }
+      ]
+    },
+    {
+      "name": "Keepa's Kitchen",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1562
+        }
+      ]
+    },
+    {
+      "name": "Hring Hring's Ores",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1564
+        }
+      ]
+    },
+    {
+      "name": "Raum's Armour",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1565
+        }
+      ]
+    },
+    {
+      "name": "Skuli's Weapons",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1566
+        }
+      ]
+    },
+    {
+      "name": "Sir Vyvin",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1575
+        }
+      ]
+    },
+    {
+      "name": "Razmire Keelgan",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1683
+        }
+      ]
+    },
+    {
+      "name": "Quartermaster's Stores",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1685
+        }
+      ]
+    },
+    {
+      "name": "Prifddinas Foodstuffs",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1686
+        }
+      ]
+    },
+    {
+      "name": "Branwen's Farming Shop",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1688
+        }
+      ]
+    },
+    {
+      "name": "Gwyn's Mining Emporium",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1689
+        }
+      ]
+    },
+    {
+      "name": "Sian's Ranged Weaponry",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1690
+        }
+      ]
+    },
+    {
+      "name": "Prifddinas General Store",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1691
+        }
+      ]
+    },
+    {
+      "name": "Aneirin's Armour",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1692
+        },
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1693
+        },
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1694
+        },
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1695
+        }
+      ]
+    },
+    {
+      "name": "Iorwerth's Arms",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1696
+        },
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1697
+        }
+      ]
+    },
+    {
+      "name": "Guinevere's Dyes",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1698
+        }
+      ]
+    },
+    {
+      "name": "Prifddinas' Seamstress",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1699
+        }
+      ]
+    },
+    {
+      "name": "Amlodd's Magical Supplies",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1700
+        }
+      ]
+    },
+    {
+      "name": "Elgan's Exceptional Staffs!",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1701
+        }
+      ]
+    },
+    {
+      "name": "Iwan's Maces",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1702
+        }
+      ]
+    },
+    {
+      "name": "Hura's Crossbow Shop",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1713
+        }
+      ]
+    },
+    {
+      "name": "Holoy's Crossbow Shop",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1714
+        }
+      ]
+    },
+    {
+      "name": "Hirko's Crossbow Shop",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1715
+        }
+      ]
+    },
+    {
+      "name": "Aurel",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1717
+        }
+      ]
+    },
+    {
+      "name": "Gadderanks",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1721
+        }
+      ]
+    },
+    {
+      "name": "Auguste",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1760
+        }
+      ]
+    },
+    {
+      "name": "My Arm",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1763
+        }
+      ]
+    },
+    {
+      "name": "Sawmill operator",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1775
+        }
+      ]
+    },
+    {
+      "name": "Volf Olafson",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1815
+        }
+      ]
+    },
+    {
+      "name": "Temple Supplies",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1832
+        }
+      ]
+    },
+    {
+      "name": "Miscellanian Clothes Shop",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1880
+        }
+      ]
+    },
+    {
+      "name": "Miscellanian Food Shop",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1881
+        }
+      ]
+    },
+    {
+      "name": "Miscellanian General Store",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1882
+        }
+      ]
+    },
+    {
+      "name": "Dorgesh-Kaan General Supplies (Lurgon), market overseer",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1908
+        }
+      ]
+    },
+    {
+      "name": "Miltog's Lamps (Miltog)",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1909
+        }
+      ]
+    },
+    {
+      "name": "Reldak's Leather Armour (Reldak), frog-leather",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1910
+        }
+      ]
+    },
+    {
+      "name": "Gundik",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1911
+        }
+      ]
+    },
+    {
+      "name": "Durgok",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1912
+        }
+      ]
+    },
+    {
+      "name": "Markog",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1913
+        }
+      ]
+    },
+    {
+      "name": "Tindar",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1914
+        }
+      ]
+    },
+    {
+      "name": "Turgok",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1915
+        }
+      ]
+    },
+    {
+      "name": "Zenkog",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/RW_MapData.lua",
+          "kind": "named map/NPC record",
+          "line": 1916
+        }
+      ]
+    },
+    {
+      "name": "Lletya General Store (Eudav)",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/lletya_poi_data.lua",
+          "kind": "named map/NPC record",
+          "line": 8
+        }
+      ]
+    },
+    {
+      "name": "Lletya Food Store (Gethin)",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/lletya_poi_data.lua",
+          "kind": "named map/NPC record",
+          "line": 9
+        }
+      ]
+    },
+    {
+      "name": "Lletya Archery Shop (Dalldav)",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/lletya_poi_data.lua",
+          "kind": "named map/NPC record",
+          "line": 10
+        }
+      ]
+    },
+    {
+      "name": "Lletya Seamstress (Oronwen)",
+      "evidence": [
+        {
+          "file": "RunicWorldMap/data/lletya_poi_data.lua",
+          "kind": "named map/NPC record",
+          "line": 11
+        }
+      ]
+    }
+  ],
+  "sourceHashes": {
+    "RW_Shop.lua": "dd8141fdeb2fca74b504ee6da80ff714bf7eabbc47e770daf441e57b043badb7",
+    "RunicWorldMap/data/RW_MapData.lua": "ac7e95ba65706ed76f445113762025bb14cc961a89f020c3c1c2f2250e91a970",
+    "RunicWorldMap/data/lletya_poi_data.lua": "5df340d8a813fa74769806612bb14cc8329b1e286ecd9e6f05baf8f2a065f7f2",
+    "RunicWorldMap/data/quest_map_data.lua": "365056d5a285244870104b8ee7c44935ca60a5221f1445f5de08e5199cd0ed10"
+  },
+  "runicItemNames": [
+    "abyssalashes",
+    "abyssalashesaltar",
+    "babydragonbones",
+    "babydragonbonesaltar",
+    "batbones",
+    "batbonesaltar",
+    "beardedgorillabones",
+    "beardedgorillabonesaltar",
+    "bigbones",
+    "bigbonesaltar",
+    "bones",
+    "bonesaltar",
+    "dagannothbones",
+    "dagannothbonesaltar",
+    "dragonbones",
+    "dragonbonesaltar",
+    "drakebones",
+    "drakebonesaltar",
+    "fayrgbones",
+    "fayrgbonesaltar",
+    "fiendishashes",
+    "fiendishashesaltar",
+    "gorillabones",
+    "gorillabonesaltar",
+    "hydrabones",
+    "hydrabonesaltar",
+    "jogrebones",
+    "jogrebonesaltar",
+    "largezombiemonkeybones",
+    "largezombiemonkeybonesaltar",
+    "lavadragonbones",
+    "lavadragonbonesaltar",
+    "maliciousashes",
+    "maliciousashesaltar",
+    "monkeybones",
+    "monkeybonesaltar",
+    "ourgbones",
+    "ourgbonesaltar",
+    "shaikahanbones",
+    "shaikahanbonesaltar",
+    "smallninjamonkeybones",
+    "smallninjamonkeybonesaltar",
+    "superiordragonbones",
+    "superiordragonbonesaltar",
+    "vileashes",
+    "vileashesaltar",
+    "wolfbones",
+    "wolfbonesaltar",
+    "wyrmbones",
+    "wyrmbonesaltar",
+    "wyvernbones",
+    "wyvernbonesaltar",
+    "zogrebones",
+    "zogrebonesaltar",
+    "hometeleport",
+    "windstrike",
+    "confuse",
+    "waterstrike",
+    "lvl1enchant",
+    "earthstrike",
+    "weaken",
+    "firestrike",
+    "bonestobananas",
+    "windbolt",
+    "curse",
+    "bind",
+    "lowlevelalchemy",
+    "waterbolt",
+    "varrockteleport",
+    "lvl2enchant",
+    "earthbolt",
+    "lumbridgeteleport",
+    "telekineticgrab",
+    "firebolt",
+    "faladorteleport",
+    "crumbleundead",
+    "teleporttohouse",
+    "windblast",
+    "superheatitem",
+    "camelotteleport",
+    "waterblast",
+    "lvl3enchant",
+    "ibanblast",
+    "magicdart",
+    "smokerush",
+    "snare",
+    "ardougneteleport",
+    "shadowrush",
+    "earthblast",
+    "paddewwateleport",
+    "highlevelalchemy",
+    "bloodrush",
+    "chargewaterorb",
+    "lvl4enchant",
+    "icerush",
+    "watchtowerteleport",
+    "fireblast",
+    "bonestopeaches",
+    "chargeearthorb",
+    "clawsofguthix",
+    "flamesofzamorak",
+    "saradominstrike",
+    "senntistenteleport",
+    "trollheimteleport",
+    "smokeburst",
+    "windwave",
+    "chargefireorb",
+    "apeatollteleport",
+    "shadowburst",
+    "waterwave",
+    "chargeairorb",
+    "kharyrllteleport",
+    "vulnerability",
+    "bloodburst",
+    "lvl5enchant",
+    "earthwave",
+    "iceburst",
+    "lassarteleport",
+    "enfeeble",
+    "smokeblitz",
+    "teleotherlumbridge",
+    "firewave",
+    "shadowblitz",
+    "dareeyakteleport",
+    "entangle",
+    "bloodblitz",
+    "charge",
+    "stun",
+    "windsurge",
+    "iceblitz",
+    "teleotherfalador",
+    "carrallangerteleport",
+    "teleblock",
+    "watersurge",
+    "smokebarrage",
+    "lvl6enchant",
+    "shadowbarrage",
+    "annakarlteleport",
+    "earthsurge",
+    "teleothercamelot",
+    "bloodbarrage",
+    "lvl7enchant",
+    "icebarrage",
+    "firesurge",
+    "ghorrockteleport",
+    "add2bucketsofwaterthen2barleymalt",
+    "addaleyeast",
+    "addtheingredientsforyourdrink",
+    "anchovies",
+    "bread",
+    "burntjogrebones",
+    "cookedchicken",
+    "cookedmeat",
+    "fillbeerglassesfromthebarrel",
+    "findafermentingvat",
+    "karambwanji",
+    "optionallyaddthestuff",
+    "orfillcalquatkegsfromthebarrel",
+    "poisonkarambwan",
+    "sardine",
+    "shrimps",
+    "sinew",
+    "turnthevalve",
+    "wait3cyclesof640minutes",
+    "wheretogetthestuff",
+    "herring",
+    "bakedpotato",
+    "mackerel",
+    "redberrypie",
+    "roastbirdmeat",
+    "trout",
+    "cod",
+    "meatpie",
+    "nettletea",
+    "pike",
+    "potofcream",
+    "salmon",
+    "stew",
+    "applepie",
+    "cookedkarambwan",
+    "tuna",
+    "cookedfishcake",
+    "jugofwine",
+    "plainpizza",
+    "patofbutterbucketofmilk",
+    "patofbutterpotofcream",
+    "cake",
+    "lobster",
+    "bass",
+    "meatpizza",
+    "swordfish",
+    "cheese",
+    "cheesebucketofmilk",
+    "cheesepatofbutter",
+    "chocolatecake",
+    "lavaeel",
+    "anchovypizza",
+    "monkfishfreshmonkfish",
+    "monkfishrawmonkfish",
+    "pineapplepizza",
+    "shark",
+    "mantaray",
+    "acheytreelogs",
+    "logs",
+    "oaklogs",
+    "willowlogs",
+    "teaklogs",
+    "dramenbranch",
+    "maplelogs",
+    "mahoganylogs",
+    "yewlogs",
+    "magiclogs",
+    "redwoodlogs",
+    "arrowshaft",
+    "arrowshaftlogs",
+    "bronzearrows",
+    "bronzedart",
+    "headlessarrows",
+    "flightedogrearrow",
+    "ogrearrow",
+    "ogrearrowshaft",
+    "shortbow",
+    "shortbowunstrung",
+    "wolfbonearrowtips",
+    "bronzebrutal",
+    "bronzebolts",
+    "bronzecrossbow",
+    "bronzecrossbowunstrung",
+    "woodenstock",
+    "bronzedarts",
+    "longbow",
+    "longbowunstrung",
+    "prototypedart",
+    "opalbolttips",
+    "opalbolts",
+    "arrowshaftoaklogs",
+    "ironarrows",
+    "ironbrutal",
+    "oakshortbow",
+    "oakshortbowunstrung",
+    "irondart",
+    "irondarts",
+    "bluritecrossbow",
+    "bluritecrossbowunstrung",
+    "oakstock",
+    "oaklongbow",
+    "oaklongbowunstrung",
+    "jadebolttips",
+    "jadebolts",
+    "oakshield",
+    "arrowshaftwillowlogs",
+    "compogrebow",
+    "ogrebow",
+    "steelarrows",
+    "unstrungcompbow",
+    "steeldart",
+    "kebbitbolts",
+    "steelbrutal",
+    "willowshortbow",
+    "willowshortbowunstrung",
+    "steeldarts",
+    "blackbrutal",
+    "ironbolts",
+    "ironcrossbow",
+    "ironcrossbowunstrung",
+    "willowstock",
+    "willowlongbow",
+    "willowlongbowunstrung",
+    "pearlbolttips",
+    "pearlbolts",
+    "longkebbitbolts",
+    "willowshield",
+    "silverbolts",
+    "arrowshaftmaplelogs",
+    "mithrilarrows",
+    "steelbolts",
+    "steelcrossbow",
+    "steelcrossbowunstrung",
+    "teakstock",
+    "topazbolttips",
+    "topazbolts",
+    "mithrilbrutal",
+    "bowsword",
+    "mapleshortbow",
+    "mapleshortbowunstrung",
+    "mithrildart",
+    "mithrildarts",
+    "maplestock",
+    "mithrilbolts",
+    "mithrilcrossbow",
+    "mithrilcrossbowunstrung",
+    "maplelongbow",
+    "maplelongbowunstrung",
+    "sapphirebolttips",
+    "sapphirebolts",
+    "mapleshield",
+    "emeraldbolttips",
+    "emeraldbolts",
+    "mithgrappleunf",
+    "mithrilgrapple",
+    "adamantarrows",
+    "arrowshaftyewlogs",
+    "adamantbolts",
+    "adamantcrossbow",
+    "adamantcrossbowunstrung",
+    "adamantdart",
+    "mahoganystock",
+    "adamantbrutal",
+    "rubybolttips",
+    "rubybolts",
+    "diamondbolttips",
+    "diamondbolts",
+    "yewshortbow",
+    "yewshortbowunstrung",
+    "adamantdarts",
+    "runecrossbow",
+    "runitebolts",
+    "runitecrossbowunstrung",
+    "yewstock",
+    "yewlongbow",
+    "yewlongbowunstrung",
+    "dragonstonebolttips",
+    "dragonstonebolts",
+    "yewshield",
+    "onyxbolttips",
+    "onyxbolts",
+    "arrowshaftmagiclogs",
+    "runearrows",
+    "runebrutal",
+    "dragoncrossbow",
+    "magicstock",
+    "magicshortbow",
+    "magicshortbowunstrung",
+    "runedart",
+    "runedarts",
+    "magiclongbow",
+    "magiclongbowunstrung",
+    "magicshield",
+    "redwoodhikingstaff",
+    "redwoodshield",
+    "dragondarts",
+    "rawshrimps",
+    "rawsardine",
+    "rawherring",
+    "rawtrout",
+    "rawsalmon",
+    "rawtuna",
+    "rawlobster",
+    "monkfish",
+    "karambwan",
+    "ballofwool",
+    "beerglass",
+    "goldenwool",
+    "leathergloves",
+    "moltenglass",
+    "opal",
+    "opalring",
+    "pot",
+    "potlid",
+    "unfiredpot",
+    "emptycandlelantern",
+    "birdhouse",
+    "goldring",
+    "goldnecklace",
+    "bowl",
+    "goldbracelet",
+    "leatherboots",
+    "unfiredbowl",
+    "goldamuletunstrung",
+    "leathercowl",
+    "bowstring",
+    "crossbowstring",
+    "leathervambraces",
+    "emptyoillamp",
+    "limestonebrick",
+    "jade",
+    "jadering",
+    "leatherbody",
+    "oakbirdhouse",
+    "opalnecklace",
+    "redtopaz",
+    "topazring",
+    "unstrungsymbol",
+    "leatherchaps",
+    "silversickle",
+    "piedish",
+    "unfiredpiedish",
+    "conductor",
+    "sapphire",
+    "sapphirering",
+    "silverboltsunf",
+    "opalbracelet",
+    "sapphirenecklace",
+    "sapphirebracelet",
+    "tiara",
+    "sapphireamuletunstrung",
+    "jadenecklace",
+    "unfiredpotlid",
+    "willowbirdhouse",
+    "emerald",
+    "emeraldring",
+    "opalamuletunstrung",
+    "hardleatherbody",
+    "emeraldnecklace",
+    "jadebracelet",
+    "emeraldbracelet",
+    "rope",
+    "dramenstaff",
+    "emeraldamuletunstrung",
+    "topaznecklace",
+    "vial",
+    "jadeamuletunstrung",
+    "ruby",
+    "rubyring",
+    "teakbirdhouse",
+    "coif",
+    "topazbracelet",
+    "rubynecklace",
+    "studdedbody",
+    "fishbowl",
+    "rubybracelet",
+    "diamond",
+    "diamondring",
+    "studdedchaps",
+    "maplebirdhouse",
+    "snakeskinboots",
+    "topazamuletunstrung",
+    "unpoweredorb",
+    "snakeskinvambraces",
+    "snakeskinbandana",
+    "lanternlens",
+    "mahoganybirdhouse",
+    "rubyamuletunstrung",
+    "snakeskinchaps",
+    "snakeskinbody",
+    "waterbattlestaff",
+    "dragonstone",
+    "dragonstonering",
+    "slayerhelmet",
+    "diamondnecklace",
+    "snakeskinshield",
+    "greendhidevambraces",
+    "diamondbracelet",
+    "earthbattlestaff",
+    "greendhidechaps",
+    "yewbirdhouse",
+    "firebattlestaff",
+    "greendhidebody",
+    "airbattlestaff",
+    "bluedhidevambraces",
+    "onyx",
+    "onyxring",
+    "bluedhidechaps",
+    "diamondamuletunstrung",
+    "bluedhidebody",
+    "dragonnecklace",
+    "reddhidevambraces",
+    "dragonstonebracelet",
+    "magicbirdhouse",
+    "reddhidechaps",
+    "reddhidebody",
+    "blackdhidevambraces",
+    "dragonstoneamuletunstrung",
+    "blackdhidechaps",
+    "onyxnecklace",
+    "blackdhidebody",
+    "onyxbracelet",
+    "onyxamuletunstrung",
+    "redwoodbirdhouse",
+    "zenytenecklace",
+    "zenytebracelet",
+    "bronzearrowtips",
+    "bronzeaxe",
+    "bronzebar",
+    "bronzedagger",
+    "bronzewire",
+    "demonicsigil",
+    "lunarbar",
+    "lunarhelm",
+    "quicklime",
+    "bronzemace",
+    "bronzeboltsunf",
+    "bronzemedhelm",
+    "bronzedarttips",
+    "bronzenails",
+    "bronzesword",
+    "bronzescimitar",
+    "bronzelimbs",
+    "bronzelongsword",
+    "bronzefullhelm",
+    "bronzeknife",
+    "bronzesqshield",
+    "bronzewarhammer",
+    "bronzebattleaxe",
+    "bronzechainbody",
+    "bronzekiteshield",
+    "bluritebar",
+    "bluritelimbs",
+    "bronzeclaws",
+    "bronze2hsword",
+    "bronzeplatebody",
+    "ironarrowtips",
+    "ironbar",
+    "irondagger",
+    "bronzeplatelegs",
+    "bronzeplateskirt",
+    "ironaxe",
+    "ironmace",
+    "ironspit",
+    "ironboltsunf",
+    "ironmedhelm",
+    "ironsword",
+    "irondarttips",
+    "ironnails",
+    "ironscimitar",
+    "ironlongsword",
+    "prototypedarttip",
+    "silverbar",
+    "ironfullhelm",
+    "ironknife",
+    "ironsqshield",
+    "ironlimbs",
+    "ironwarhammer",
+    "ironbattleaxe",
+    "ironchainbody",
+    "ironkiteshield",
+    "ironclawsironbar",
+    "iron2hsword",
+    "ironclaws",
+    "ironplatebody",
+    "directionals",
+    "ornament",
+    "steelbar",
+    "steeldagger",
+    "weathervanepillar",
+    "ironplatelegs",
+    "ironplateskirt",
+    "steelaxe",
+    "steelmace",
+    "steelboltsunf",
+    "steelmedhelm",
+    "steelsword",
+    "steeldarttips",
+    "steelnails",
+    "steelscimitar",
+    "cannonball",
+    "steelarrowtips",
+    "steellongsword",
+    "steelfullhelm",
+    "steellimbs",
+    "steelstuds",
+    "steelknife",
+    "steelsqshield",
+    "steelwarhammer",
+    "steelbattleaxe",
+    "perfectgoldbar",
+    "goldbar",
+    "steelchainbody",
+    "steelkiteshield",
+    "steelclawssteelbar",
+    "steel2hsword",
+    "steelclaws",
+    "steelplatebody",
+    "steelplatelegs",
+    "steelplateskirt",
+    "bullseyelanternunf",
+    "goldbowl",
+    "goldhelmet",
+    "mithrilarrowtips",
+    "mithrilbar",
+    "mithrildagger",
+    "mithrilaxe",
+    "mithrilmace",
+    "mithrilboltsunf",
+    "mithrilmedhelm",
+    "mithrilsword",
+    "mithrildarttips",
+    "mithrilnails",
+    "mithrilscimitar",
+    "mithrillongsword",
+    "mithrilfullhelm",
+    "mithrillimbs",
+    "mithrilknife",
+    "mithrilsqshield",
+    "mithrilwarhammer",
+    "mithgrappletip",
+    "mithrilbattleaxe",
+    "dragonsqshield",
+    "mithrilchainbody",
+    "mithrilkiteshield",
+    "mithrilclawsmithrilbar",
+    "mithril2hsword",
+    "mithrilclaws",
+    "mithrilplatebody",
+    "mithrilplatelegs",
+    "mithrilplateskirt",
+    "adamantarrowtips",
+    "adamantdagger",
+    "adamantitebar",
+    "adamantaxe",
+    "adamantmace",
+    "adamantboltsunf",
+    "adamantmedhelm",
+    "adamantsword",
+    "adamantdarttips",
+    "adamantscimitar",
+    "adamantitenails",
+    "adamantlongsword",
+    "adamantspear",
+    "adamantfullhelm",
+    "adamantitelimbs",
+    "adamantknife",
+    "adamantsqshield",
+    "adamantwarhammer",
+    "adamantbattleaxe",
+    "adamantchainbody",
+    "adamantkiteshield",
+    "adamantclawsadamantitebar",
+    "adamant2hsword",
+    "adamantclaws",
+    "adamantplatebody",
+    "runearrowtips",
+    "runedagger",
+    "runitebar",
+    "adamantplatelegs",
+    "adamantplateskirt",
+    "runeaxe",
+    "runemace",
+    "runemedhelm",
+    "runesword",
+    "runedarttips",
+    "runenails",
+    "runescimitar",
+    "runelongsword",
+    "runefullhelm",
+    "runitelimbs",
+    "runeknife",
+    "runesqshield",
+    "runewarhammer",
+    "runiteboltsunf",
+    "runebattleaxe",
+    "runechainbody",
+    "runekiteshield",
+    "runeclawsrunitebar",
+    "runeclaws",
+    "rune2hsword",
+    "runeplatebody",
+    "runeplatelegs",
+    "runeplateskirt",
+    "clay",
+    "copperore",
+    "pureessence",
+    "tinore",
+    "bluriteore",
+    "limestone",
+    "ironore",
+    "silverore",
+    "coal",
+    "gemrock",
+    "gemrocks",
+    "goldore",
+    "mithrilore",
+    "adamantiteore",
+    "runiteore",
+    "lavascaleshard",
+    "attackpotion3",
+    "cleanardrigal",
+    "cleanguamleaf",
+    "cleanroguespurse",
+    "cleansitofoil",
+    "cleansnakeweed",
+    "cleanvolenciamoss",
+    "guamleaf",
+    "guampotionunf",
+    "imprepellent",
+    "antipoison3",
+    "cleanmarrentill",
+    "marrentill",
+    "cleantarromin",
+    "tarromin",
+    "strengthpotion3",
+    "guamtar",
+    "cleanharralander",
+    "guthixbalance3",
+    "restorepotion3",
+    "cleanranarrweed",
+    "energypotion3",
+    "cleantoadflax",
+    "defencepotion3",
+    "marrentilltar",
+    "agilitypotion3",
+    "combatpotion3",
+    "prayerpotion3",
+    "tarromintar",
+    "cleaniritleaf",
+    "harralandertar",
+    "superattack3",
+    "cleanavantoe",
+    "superantipoison3",
+    "fishingpotion3",
+    "superenergy3",
+    "cleankwuarm",
+    "superstrength3",
+    "magicessence3",
+    "cleansnapdragon",
+    "superrestore3",
+    "cleancadantine",
+    "superdefence3",
+    "cleanlantadyme",
+    "antidote4",
+    "antifirepotion3",
+    "cleandwarfweed",
+    "rangingpotion3",
+    "magicpotion3",
+    "cleantorstol",
+    "zamorakbrew3",
+    "saradominbrew3",
+    "extendedantifire4",
+    "gnomestrongholdagilitycourse",
+    "gnomestrongholdagilitycourselap",
+    "lumbridgeagilitycourse",
+    "lumbridgeagilitycourselap",
+    "draynoragilitycourselap",
+    "draynorvillageagilitycourse",
+    "alkharidagilitycourse",
+    "alkharidagilitycourselap",
+    "agilitypyramid",
+    "agilitypyramidlap",
+    "varrockagilitycourse",
+    "varrockagilitycourselap",
+    "barbarianoutpostagilitycourse",
+    "barbarianoutpostagilitycourselap",
+    "canifisagilitycourse",
+    "canifisagilitycourselap",
+    "edgevilleagilitycourse",
+    "edgevilleagilitycourselap",
+    "faladoragilitycourse",
+    "faladoragilitycourselap",
+    "wildernessagilitycourse",
+    "wildernessagilitycourselap",
+    "seersagilitycourselap",
+    "seersvillageagilitycourse",
+    "ardougneagilitycourse",
+    "ardougneagilitycourselap",
+    "apeatollagilitycourse",
+    "apeatollagilitycourselap",
+    "prifddinasagilitycourse",
+    "prifddinasagilitycourselap",
+    "man",
+    "oakblackjack",
+    "pickpocketman",
+    "pickpocketwoman",
+    "willowblackjack",
+    "woman",
+    "bakerystall",
+    "teastall",
+    "farmer",
+    "pickpocketfarmer",
+    "hammember",
+    "pickpockethammember",
+    "silkstall",
+    "winestall",
+    "alkharidwarrior",
+    "pickpocketalkharidwarrior",
+    "pickpocketdigsiteworkman",
+    "pickpocketwarrior",
+    "pickpocketwarriorwoman",
+    "warrior",
+    "warriorwoman",
+    "seedstall",
+    "chest",
+    "mapleblackjack",
+    "villager",
+    "pickpocketrogue",
+    "rogue",
+    "furstall",
+    "masterfarmer",
+    "pickpocketmartinthemastergardener",
+    "pickpocketmasterfarmer",
+    "guard",
+    "pickpocketguard",
+    "fishstall",
+    "beardedpollnivnianbandit",
+    "silverstall",
+    "wallsafe",
+    "pickpocketbandit",
+    "knightofardougne",
+    "pickpocketknightofardougne",
+    "pollnivnianbandit",
+    "pickpocketpirate",
+    "pirate",
+    "menaphitethug",
+    "spicestall",
+    "paladin",
+    "pickpocketpaladin",
+    "gemstall",
+    "gnome",
+    "pickpocketgnome",
+    "hero",
+    "pickpockethero",
+    "potato",
+    "potatoharvest",
+    "potatoplant",
+    "rakeweeds",
+    "marigold",
+    "marigoldharvest",
+    "marigoldplant",
+    "barley",
+    "barleyharvest",
+    "barleyplant",
+    "hammerstone",
+    "hammerstoneharvest",
+    "hammerstoneplant",
+    "onion",
+    "onionharvest",
+    "onionplant",
+    "cabbage",
+    "cabbageharvest",
+    "cabbageplant",
+    "asgarnian",
+    "asgarnianharvest",
+    "asgarnianplant",
+    "guam",
+    "guamharvest",
+    "guamplant",
+    "redberry",
+    "redberrycheckhealth",
+    "redberryharvest",
+    "redberryplant",
+    "rosemary",
+    "rosemaryharvest",
+    "rosemaryplant",
+    "tomato",
+    "tomatoharvest",
+    "tomatoplant",
+    "jute",
+    "juteharvest",
+    "juteplant",
+    "marrentillharvest",
+    "marrentillplant",
+    "oak",
+    "oakcheckhealth",
+    "oakplant",
+    "yanillian",
+    "yanillianharvest",
+    "yanillianplant",
+    "kelda",
+    "tarrominharvest",
+    "tarrominplant",
+    "sweetcorn",
+    "sweetcornharvest",
+    "sweetcornplant",
+    "krandorian",
+    "krandorianharvest",
+    "krandorianplant",
+    "cadava",
+    "cadavacheckhealth",
+    "cadavaharvest",
+    "cadavaplant",
+    "seaweed",
+    "seaweedharvest",
+    "seaweedplant",
+    "nasturtium",
+    "nasturtiumharvest",
+    "nasturtiumplant",
+    "woad",
+    "woadharvest",
+    "woadplant",
+    "harralander",
+    "harralanderharvest",
+    "harralanderplant",
+    "limpwurt",
+    "limpwurtharvest",
+    "limpwurtplant",
+    "apple",
+    "applecheckhealth",
+    "appleplant",
+    "wildblood",
+    "wildbloodharvest",
+    "wildbloodplant",
+    "willow",
+    "willowcheckhealth",
+    "willowplant",
+    "strawberry",
+    "strawberryharvest",
+    "strawberryplant",
+    "ranarr",
+    "ranarrharvest",
+    "ranarrplant",
+    "banana",
+    "bananacheckhealth",
+    "bananaplant",
+    "teak",
+    "dwellberry",
+    "dwellberrycheckhealth",
+    "dwellberryharvest",
+    "dwellberryplant",
+    "toadflax",
+    "toadflaxharvest",
+    "toadflaxplant",
+    "orange",
+    "orangecheckhealth",
+    "orangeplant",
+    "curry",
+    "currycheckhealth",
+    "curryplant",
+    "irit",
+    "iritharvest",
+    "iritplant",
+    "maple",
+    "maplecheckhealth",
+    "mapleplant",
+    "watermelon",
+    "watermelonharvest",
+    "watermelonplant",
+    "jangerberry",
+    "jangerberrycheckhealth",
+    "jangerberryharvest",
+    "jangerberryplant",
+    "avantoe",
+    "avantoeharvest",
+    "avantoeplant",
+    "pineapple",
+    "pineapplecheckhealth",
+    "pineappleplant",
+    "bittercapmushroom",
+    "bittercapmushroomharvest",
+    "bittercapmushroomplant",
+    "cactus",
+    "cactuscheckhealth",
+    "cactusharvest",
+    "cactusplant",
+    "mahogany",
+    "kwuarm",
+    "kwuarmharvest",
+    "kwuarmplant",
+    "papaya",
+    "papayacheckhealth",
+    "papayaplant",
+    "whitelily",
+    "whitelilyharvest",
+    "whitelilyplant",
+    "whiteberry",
+    "whiteberrycheckhealth",
+    "whiteberryharvest",
+    "whiteberryplant",
+    "yew",
+    "yewcheckhealth",
+    "yewplant",
+    "snapegrass",
+    "snapegrassharvest",
+    "snapegrassplant",
+    "snapdragon",
+    "snapdragonharvest",
+    "snapdragonplant",
+    "belladonna",
+    "belladonnaharvest",
+    "belladonnaplant",
+    "potatocactus",
+    "potatocactusharvest",
+    "potatocactusplant",
+    "cadantine",
+    "cadantineharvest",
+    "cadantineplant",
+    "palm",
+    "palmcheckhealth",
+    "palmplant",
+    "poisonivy",
+    "poisonivycheckhealth",
+    "poisonivyharvest",
+    "poisonivyplant",
+    "calquat",
+    "calquatcheckhealth",
+    "calquatplant",
+    "lantadyme",
+    "lantadymeharvest",
+    "lantadymeplant",
+    "magic",
+    "magiccheckhealth",
+    "magicplant",
+    "dwarfweed",
+    "dwarfweedharvest",
+    "dwarfweedplant",
+    "spirittree",
+    "torstol",
+    "torstolharvest",
+    "torstolplant",
+    "airrune",
+    "bringpureessence",
+    "bringtheotherelement",
+    "castingwiththem",
+    "clickthealtarandchoosebind",
+    "mindrune",
+    "waterrune",
+    "mistruneairaltar",
+    "mistrunewateraltar",
+    "mistruneattheairaltar",
+    "mistruneatthewateraltar",
+    "earthrune",
+    "dustruneairaltar",
+    "dustruneearthaltar",
+    "dustruneattheairaltar",
+    "dustruneattheearthaltar",
+    "mudruneearthaltar",
+    "mudrunewateraltar",
+    "mudruneattheearthaltar",
+    "mudruneatthewateraltar",
+    "firerune",
+    "smokeruneairaltar",
+    "smokerunefirealtar",
+    "smokeruneattheairaltar",
+    "smokeruneatthefirealtar",
+    "steamrunefirealtar",
+    "steamrunewateraltar",
+    "steamruneatthefirealtar",
+    "steamruneatthewateraltar",
+    "bodyrune",
+    "lavaruneearthaltar",
+    "lavarunefirealtar",
+    "lavaruneattheearthaltar",
+    "lavaruneatthefirealtar",
+    "cosmicrune",
+    "cosmictiara",
+    "makingone",
+    "chaosrune",
+    "naturerune",
+    "naturetiara",
+    "lawrune",
+    "deathrune",
+    "1trap",
+    "birdsnare",
+    "crimsonswift",
+    "polarkebbit",
+    "commonkebbit",
+    "birdhouseloot",
+    "goldenwarbler",
+    "seedstofill",
+    "feldipweasel",
+    "copperlongtail",
+    "ceruleantwitch",
+    "desertdevil",
+    "rubyharvest",
+    "babyimpling",
+    "tropicalwagtail",
+    "2traps",
+    "youngimpling",
+    "knife",
+    "wildkebbit",
+    "sapphireglacialis",
+    "boxtrap",
+    "ferret",
+    "whiterabbit",
+    "gourmetimpling",
+    "smallfishingnet",
+    "swamplizard",
+    "spinedlarupia",
+    "barbtailedkebbit",
+    "snowyknight",
+    "earthimpling",
+    "pricklykebbit",
+    "3traps",
+    "hornedgraahk",
+    "essenceimpling",
+    "spottedkebbit",
+    "blackwarlock",
+    "orangesalamander",
+    "razorbackedkebbit",
+    "eclecticimpling",
+    "sabretoothedkebbit",
+    "chinchompa",
+    "sabretoothedkyatt",
+    "darkkebbit",
+    "natureimpling",
+    "redsalamander",
+    "4traps",
+    "carnivorouschinchompa",
+    "magpieimpling",
+    "blacksalamander",
+    "dashingkebbit",
+    "imp",
+    "blackchinchompa",
+    "ninjaimpling",
+    "5traps",
+    "dragonimpling",
+    "crudewoodenchair",
+    "dockleaf",
+    "exitportal",
+    "fern",
+    "garden",
+    "lowlevelplant",
+    "parlour",
+    "plant",
+    "shortplant",
+    "brownrug",
+    "torncurtains",
+    "clayfireplace",
+    "woodenbookcase",
+    "catblanket",
+    "deadtree",
+    "decorativerock",
+    "firepit",
+    "kitchen",
+    "tree",
+    "bush",
+    "largeleafbush",
+    "midlevelplants",
+    "smallfern",
+    "thistle",
+    "woodenshelves1",
+    "beerbarrel",
+    "pumpanddrain",
+    "woodenchair",
+    "woodenlarder",
+    "diningroom",
+    "nicetree",
+    "pond",
+    "wooddiningtable",
+    "woodenbench",
+    "woodendiningbench",
+    "woodendiningtable",
+    "firepitwithhook",
+    "ciderbarrel",
+    "highlevelplants",
+    "hugeplant",
+    "kitchentable",
+    "reeds",
+    "tallplant",
+    "woodenkitchentable",
+    "woodenshelves2",
+    "rug",
+    "rockingchair",
+    "impstatue",
+    "oaktree",
+    "repairbench",
+    "toolstore1",
+    "workshop",
+    "craftingtable1",
+    "oakwalldecoration",
+    "plumingstand",
+    "firepitwithpot",
+    "woodenworkbench",
+    "asgarnianale",
+    "asgarnianalebarrel",
+    "curtains",
+    "catbasket",
+    "oakchair",
+    "bedroom",
+    "shoebox",
+    "woodenbed",
+    "shavingstand",
+    "woodenshavingstand",
+    "oakbench",
+    "oakdiningbench",
+    "oakdiningtable",
+    "woodenshelves3",
+    "smalloven",
+    "craftingtable2",
+    "hallskilltrophies",
+    "oakclock",
+    "toolstore2",
+    "greenmansale",
+    "greenmansalebarrel",
+    "oakarmchair",
+    "ropebellpull",
+    "oakchestofdrawers",
+    "oakdrawers",
+    "oakstaircase",
+    "pumpandtub",
+    "adamantarmour",
+    "cwarmour1",
+    "cwarmour2",
+    "cwarmour3",
+    "mithrilarmour",
+    "runitearmour",
+    "suitofarmour",
+    "largeoven",
+    "oakbookcase",
+    "oakshavingstand",
+    "gamesroom",
+    "hoopandstick",
+    "hoopandstickgame",
+    "oakbed",
+    "willowtree",
+    "carvedoakbench",
+    "carvedoakdiningbench",
+    "carvedoakdiningtable",
+    "carvedoaktable",
+    "boxingring",
+    "combatroom",
+    "oakkitchentable",
+    "oakworkbench",
+    "cushionedbasket",
+    "oaklarder",
+    "stonefireplace",
+    "boxinggloverack",
+    "craftingtable3",
+    "gloverack",
+    "largeoakbed",
+    "oakprizechest",
+    "oakshelves1",
+    "steelrange",
+    "elena",
+    "giantdwarf",
+    "hallquesttrophies",
+    "kingarthur",
+    "smallportrait",
+    "teakarmchair",
+    "toolstore3",
+    "whetstone",
+    "dragonbitter",
+    "dragonbitterbarrel",
+    "mountedbass",
+    "oakdisplay",
+    "teakwalldecoration",
+    "bellpull",
+    "grasslandhabitat",
+    "grasslandpethabitat",
+    "lessermagicalbalance",
+    "menagerie",
+    "oakdresser",
+    "oakfeeder",
+    "oakhouse",
+    "basiliskhead",
+    "cockatricehead",
+    "crawlinghand",
+    "petlist",
+    "smallmap",
+    "teakdiningbench",
+    "teakdiningtable",
+    "teakdisplay",
+    "teaktable",
+    "clayattackstone",
+    "jester",
+    "jestergame",
+    "oakscratchingpost",
+    "oakwardrobe",
+    "oakwardrobebedroom",
+    "mahoganybookcase",
+    "oaklectern",
+    "opulentcurtains",
+    "study",
+    "teakbed",
+    "tipjar",
+    "fencingring",
+    "globe",
+    "runecase1",
+    "runecase2",
+    "runecase3",
+    "runedisplaycases",
+    "shieldeasel",
+    "costumeroom",
+    "craftingtable4",
+    "crystalball",
+    "darklight",
+    "excalibur",
+    "fancyrange",
+    "mountedsword",
+    "oakwardrobecostumeroom",
+    "silverlight",
+    "alchemicalchart",
+    "teaklarder",
+    "carvedteakbench",
+    "carvedteakdiningbench",
+    "lumbridge",
+    "morytania",
+    "oakcostumebox",
+    "oakfancydressbox",
+    "oaktelescope",
+    "smalllandscape",
+    "teakchest",
+    "teakprizechest",
+    "thedesert",
+    "toolstore4",
+    "weaponsrack",
+    "carvedteakdiningtable",
+    "carvedteaktable",
+    "chapel",
+    "largeteakbed",
+    "mapletree",
+    "oakaltar",
+    "oakshelves2",
+    "steeltorches",
+    "steeltorcheschapel",
+    "oakarmourcase",
+    "steelframedworkbench",
+    "teakdresser",
+    "amuletofglory",
+    "antidragonshield",
+    "capeoflegends",
+    "demonlectern",
+    "eaglelectern",
+    "foresthabitat",
+    "forestpethabitat",
+    "mountedamuletofglory",
+    "mountedantidragonshield",
+    "mountedcapeoflegends",
+    "oakdemonlectern",
+    "oakeaglelectern",
+    "sink",
+    "chefsdelight",
+    "chefsdelightbarrel",
+    "combatdummy",
+    "guthixsymbol",
+    "oaktreasurechest",
+    "saradominsymbol",
+    "symbolofguthix",
+    "symbolofsaradomin",
+    "symbolofzamorak",
+    "teakfeeder",
+    "teakhouse",
+    "teakstaircase",
+    "zamoraksymbol",
+    "chapelwindchimes",
+    "shutteredchapelwindow",
+    "shutteredwindow",
+    "smallchapelstatue",
+    "smallstatue",
+    "teakscratchingpost",
+    "treasurehunt",
+    "treasurehuntfairyhouse",
+    "windchimes",
+    "woodentorches",
+    "woodentorcheschapel",
+    "mahoganyarmchair",
+    "oaktoybox",
+    "ornamentalglobe",
+    "portalchamber",
+    "teakaltar",
+    "teakportal",
+    "teleportfocus",
+    "carvedoakwardrobe",
+    "carvedoakwardrobecostumeroom",
+    "combatring",
+    "teakchestofdrawers",
+    "teakdrawers",
+    "mahoganybench",
+    "mahoganydiningbench",
+    "mahoganydiningtable",
+    "mahoganytable",
+    "teakkitchentable",
+    "4posterbed",
+    "mahoganyfourposterbed",
+    "steelcandlesticks",
+    "undeadcombatdummy",
+    "dartboard",
+    "elementalsphere",
+    "extraweaponsrack",
+    "mahoganyprizechest",
+    "oakcaperack",
+    "armourstand",
+    "boundarystones",
+    "formalgarden",
+    "largeportrait",
+    "miscellanians",
+    "teakclock",
+    "toolstore5",
+    "clothaltar",
+    "clothcoveredteakaltar",
+    "fancyteakdresser",
+    "gildeddecoration",
+    "gildedmahoganywalldecoration",
+    "mountedswordfish",
+    "teakshelves1",
+    "thornyhedge",
+    "deserthabitat",
+    "desertpethabitat",
+    "goldcandlesticks",
+    "mediumbalance",
+    "teakdemonlectern",
+    "teakeaglelectern",
+    "abyssaldemonhead",
+    "bells",
+    "chapelbells",
+    "kuraskhead",
+    "mahoganydisplay",
+    "mediummap",
+    "ornatecombatdummy",
+    "ornatekalphitecombatdummy",
+    "ornatekuraskcombatdummy",
+    "ornateundeadcombatdummy",
+    "ornatewildernesscombatdummy",
+    "servantsmoneybag",
+    "guthixicon",
+    "hangman",
+    "hangmangame",
+    "iconofguthix",
+    "iconofsaradomin",
+    "iconofzamorak",
+    "limestoneattackstone",
+    "lunarglobe",
+    "mahoganyfeeder",
+    "mahoganyhouse",
+    "mahoganyscratchingpost",
+    "saradominicon",
+    "woodenfence",
+    "zamorakicon",
+    "bed",
+    "clothcoveredmahoganyaltar",
+    "gildedmahoganyfourposterbed",
+    "mahoganyaltar",
+    "nicehedge",
+    "oakthrone",
+    "poshbellpull",
+    "spicerack",
+    "teakwardrobe",
+    "teakwardrobecostumeroom",
+    "throneroom",
+    "yewtree",
+    "floordecoration",
+    "gildedbench",
+    "gildedmahoganydiningbench",
+    "incenseburner",
+    "oakincenseburners",
+    "throneroomfloordecoration",
+    "benchwithvice",
+    "teakcostumebox",
+    "teakfancydressbox",
+    "workbenchwithvice",
+    "astronomicalchart",
+    "marblefireplace",
+    "simplearena",
+    "stonewall",
+    "teakcaperack",
+    "teakwardrobebedroom",
+    "limestonealtar",
+    "mahoganydresser",
+    "smallboxhedge",
+    "teakarmourcase",
+    "teaktelescope",
+    "abyssalsiretopiary",
+    "alchemicaltopiary",
+    "cerberustopiary",
+    "gazebo",
+    "greaterteleportfocus",
+    "isafdar",
+    "kalphitequeentopiary",
+    "karamja",
+    "krakentopiary",
+    "largelandscape",
+    "mahoganyburner",
+    "mahoganyincenseburners",
+    "mahoganyportal",
+    "nightmaretopiary",
+    "oakcage",
+    "opulentrug",
+    "oubliette",
+    "oubliettespikes",
+    "restorationpool",
+    "skotizotopiary",
+    "spikes",
+    "topiarybush",
+    "vorkathtopiary",
+    "zentheme",
+    "zulrahtopiary",
+    "bannereasel",
+    "crystalofpower",
+    "roundshield",
+    "roundwallmountedshield",
+    "sunflower",
+    "sunflowers",
+    "teakgardenbench",
+    "teaktreasurechest",
+    "ironrailings",
+    "mahoganydemon",
+    "mahoganydemonlectern",
+    "mahoganyeagle",
+    "mahoganyeaglelectern",
+    "polarhabitat",
+    "polarpethabitat",
+    "spiralstaircase",
+    "teakshelves2",
+    "teakthrone",
+    "celestialglobe",
+    "oakladder",
+    "oaklever",
+    "oaktrapdoor",
+    "steelcage",
+    "teaktoybox",
+    "topiaryhedge",
+    "carvedteakwardrobe",
+    "carvedteakwardrobecostumeroom",
+    "chapelorgan",
+    "decorativechapelwindow",
+    "decorativewindow",
+    "marbleburners",
+    "marbleincenseburner",
+    "mediumchapelstatue",
+    "mediumstatue",
+    "organ",
+    "consecratedhouse",
+    "dungeon",
+    "dungeonentrance",
+    "marblealtar",
+    "oakandsteelcage",
+    "revitalisationpool",
+    "skeletonguard",
+    "bobicon",
+    "daffodils",
+    "iconofbobthecat",
+    "marigolds",
+    "picketfence",
+    "rangingpedestals",
+    "smallfountain",
+    "tentaclepool",
+    "candles",
+    "decorativeblood",
+    "decorativedungeonbloodstain",
+    "dungeoncandles",
+    "fancyhedge",
+    "gildedmahoganyandmarbletable",
+    "mahoganycaperack",
+    "marbleportalnexus",
+    "mountedxericstalisman",
+    "opulenttable",
+    "spiketrap",
+    "advancedarena",
+    "gildeddresser",
+    "gildedmahoganydresser",
+    "guarddog",
+    "largetrapdoor",
+    "mahoganythrone",
+    "oakdoor",
+    "oakdungeondoor",
+    "trapdoor",
+    "demon",
+    "gardenfence",
+    "gildedaltar",
+    "gildedmarblealtar",
+    "largefountain",
+    "magictree",
+    "mahoganywardrobe",
+    "mahoganywardrobebedroom",
+    "otherworldlytheme",
+    "redwoodfence",
+    "treasureroom",
+    "woodencrate",
+    "woodendungeontreasurecrate",
+    "bluebells",
+    "mantrap",
+    "mountedshark",
+    "roses",
+    "squareshield",
+    "squarewallmountedshield",
+    "tallfancyhedge",
+    "armillarysphere",
+    "benchwithlathe",
+    "flamepit",
+    "gnomebench",
+    "greatermagicalbalance",
+    "marblelectern",
+    "oublietteflamepit",
+    "volcanichabitat",
+    "volcanicpethabitat",
+    "workbenchwithlathe",
+    "gildeddisplay",
+    "hobgoblinguard",
+    "kalphitequeenhead",
+    "kingblackdragonheads",
+    "largemap",
+    "mahoganywardrobecostumeroom",
+    "teakladder",
+    "teaklever",
+    "teaktrapdoor",
+    "marbleattackstone",
+    "marblewall",
+    "oakchest",
+    "oakdungeontreasurechest",
+    "ancientaltar",
+    "capehanger",
+    "darkaltar",
+    "kalphitesoldier",
+    "lunaraltar",
+    "mahoganycostumebox",
+    "mahoganyfancydressbox",
+    "marbleportal",
+    "mountedcoins",
+    "mountedemblem",
+    "obelisk",
+    "questlist",
+    "rejuvenationpool",
+    "scryingpool",
+    "spikedcage",
+    "tallboxhedge",
+    "tanglevine",
+    "archerytarget",
+    "balancebeam",
+    "basicjewellerybox",
+    "desecratedhouse",
+    "gildedcaperack",
+    "gildedmahoganycaperack",
+    "gildedmahoganythrone",
+    "gildedthrone",
+    "poshfountain",
+    "babyreddragon",
+    "gildedportalnexus",
+    "lessermagiccage",
+    "mahoganyarmourcase",
+    "marblestaircase",
+    "mounteddigsitependant",
+    "decorativedungeonpipe",
+    "decorativepipe",
+    "gloriousarena",
+    "infernalchart",
+    "mahoganyadventurelog",
+    "obsidianfence",
+    "rocnar",
+    "teakdungeontreasurechest",
+    "dungeontorches",
+    "mahoganytelescope",
+    "mahoganytreasurechest",
+    "marbletrap",
+    "steelplateddoor",
+    "steelplatedoakdoor",
+    "torches",
+    "bonecage",
+    "fairyring",
+    "fancyrejuvenationpool",
+    "gildedclock",
+    "gildedmahoganyclock",
+    "tokxil",
+    "volcanictheme",
+    "fancyjewellerybox",
+    "hugespider",
+    "kiteshield",
+    "mahoganytoybox",
+    "smallorrery",
+    "wallmountedkiteshield",
+    "bosslairdisplay",
+    "gildedmahoganywardrobebedroom",
+    "gildedmahoganywardrobecostumeroom",
+    "gildedwardrobe",
+    "mahoganychest",
+    "mahoganydungeontreasurechest",
+    "gildedadventurelog",
+    "mahoganyladder",
+    "mahoganylever",
+    "mahoganytrapdoor",
+    "marbledecorativebench",
+    "skeletonthrone",
+    "teleporttrap",
+    "greatermagiccage",
+    "largechapelstatue",
+    "largestatue",
+    "stainedglass",
+    "stainedglasschapelwindow",
+    "dagannoth",
+    "marblecaperack",
+    "occultaltar",
+    "ornaterejuvenationpool",
+    "trollguard",
+    "magicchest",
+    "magicdungeontreasurechest",
+    "ornatejewellerybox",
+    "crystallineportalnexus",
+    "naturehouse",
+    "marbleadventurelog",
+    "dungeonskulltorches",
+    "hangingdungeonskeleton",
+    "hangingskeleton",
+    "hellhound",
+    "marbledoor",
+    "marbledungeondoor",
+    "skulltorches",
+    "crystalthrone",
+    "largeorrery",
+    "spirittreefairyring",
+    "steeldragon",
+    "marblewardrobe",
+    "marblewardrobecostumeroom",
+    "marblespiral",
+    "obsidiandecorativebench",
+    "demonicthrone",
+    "magicstonecaperack",
+    "magicalcaperack",
+    "abyssalwhip",
+    "acorn",
+    "adamantboots",
+    "adamantfullhelmt",
+    "adamantpickaxe",
+    "agilitypotion4",
+    "amuletofdefence",
+    "amuletofglory6",
+    "amuletofmagic",
+    "amuletofpower",
+    "amuletofstrength",
+    "appletreeseed",
+    "armadylrobelegs",
+    "attackpotion4",
+    "bananatreeseed",
+    "bandospage3",
+    "bandosrobelegs",
+    "battlestaff",
+    "beanie",
+    "bindingnecklace",
+    "blackbead",
+    "blackdagger",
+    "blackdragonhide",
+    "blackflowers",
+    "blackfullhelmg",
+    "blackmask",
+    "blackplatebodyg",
+    "blackshieldh1",
+    "bloodrune",
+    "bluedragonleather",
+    "bluedragonhide",
+    "bluedye",
+    "bodytalisman",
+    "bonebolts",
+    "bonedagger",
+    "bonespear",
+    "bronzepickaxe",
+    "bronzeplatebodyg",
+    "bronzespear",
+    "bullseyelantern",
+    "candle",
+    "chaostalisman",
+    "combatbracelet",
+    "combatbracelet4",
+    "cosmictalisman",
+    "cowhide",
+    "currytreeseed",
+    "dharoksgreataxe",
+    "dharokshelm",
+    "dharoksplatebody",
+    "dharoksplatelegs",
+    "digsitependant5",
+    "dorgeshuuncrossbow",
+    "dragonarrowtips",
+    "dragonaxe",
+    "dragonplatelegs",
+    "dragonplateskirt",
+    "earthtalisman",
+    "emeraldamulet",
+    "enchantdragonstone",
+    "energypotion4",
+    "ensouleddragonhead",
+    "ensouledgianthead",
+    "eyeofnewt",
+    "feathers",
+    "fishingpotion4",
+    "flax",
+    "gamesnecklace8",
+    "goblinmask",
+    "granitemaul",
+    "graniteshield",
+    "greendragonhide",
+    "grimyavantoe",
+    "grimycadantine",
+    "grimydwarfweed",
+    "grimyguamleaf",
+    "grimyharralander",
+    "grimyiritleaf",
+    "grimykwuarm",
+    "grimymarrentill",
+    "grimyranarrweed",
+    "grimytarromin",
+    "guthanshelm",
+    "guthixrobetop",
+    "hamboots",
+    "hamcloak",
+    "hamlogo",
+    "hamrobe",
+    "hamshirt",
+    "hardleather",
+    "harralanderseed",
+    "holysymbol",
+    "iorwerthcampteleport",
+    "ironboots",
+    "ironfullhelmt",
+    "jug",
+    "jugofwater",
+    "kwuarmseed",
+    "lavascale",
+    "limpwurtroot",
+    "limpwurtseed",
+    "lobsterpot",
+    "loophalfofkey",
+    "magicseed",
+    "mapleseed",
+    "mindtalisman",
+    "mirrorshield",
+    "mithrilpickaxe",
+    "mudbattlestaff",
+    "mysticairstaff",
+    "mysticbootslight",
+    "mysticearthstaff",
+    "mysticfirestaff",
+    "mysticrobebottom",
+    "mysticrobebottomdark",
+    "mysticrobebottomlight",
+    "mysticwaterstaff",
+    "naturetalisman",
+    "oakplank",
+    "obsidiancape",
+    "orangedye",
+    "orangetreeseed",
+    "oyster",
+    "oysterpearl",
+    "palmtreeseed",
+    "papayatreeseed",
+    "pineappleseed",
+    "prayerpotion4",
+    "ranarrseed",
+    "rawbeef",
+    "rawchicken",
+    "rawshark",
+    "redbead",
+    "reddye",
+    "redelegantblouse",
+    "redflowers",
+    "redspiderseggs",
+    "ringofdueling8",
+    "runeboots",
+    "runehalberd",
+    "runejavelin",
+    "runepickaxe",
+    "runespearp",
+    "rustysword",
+    "sapphireamulet",
+    "seersring",
+    "shieldlefthalf",
+    "snapdragonseed",
+    "softclay",
+    "steelboots",
+    "steelkiteshieldg",
+    "steelplatebodyt",
+    "steelspear",
+    "strengthpotion4",
+    "superattack4",
+    "superrestore4",
+    "toadflaxseed",
+    "toothhalfofkey",
+    "torstolseed",
+    "uncutdragonstone",
+    "uncutemerald",
+    "uncutopal",
+    "uncutruby",
+    "uncutsapphire",
+    "unholyblessing",
+    "veracsflail",
+    "warriorring",
+    "weaponpoison",
+    "whitebead",
+    "whiteberries",
+    "willowseed",
+    "wizardsmindbomb",
+    "woodenshield",
+    "yellowbead",
+    "yellowboots",
+    "yellowdye",
+    "yellowgloves",
+    "yewseed",
+    "lumberjackhat",
+    "amuletofglory1",
+    "blackcuffedjacket",
+    "lumberjacktop",
+    "lumberjacklegs",
+    "lumberjackboots",
+    "ringofdueling4",
+    "ardougnecloak1",
+    "guildtabard",
+    "largeknapsack",
+    "defaultstationery",
+    "goldamulet",
+    "note",
+    "journal",
+    "narnodesorders",
+    "coins",
+    "roguetop",
+    "blackdefender",
+    "curryleaf",
+    "cluescrollmedium",
+    "newspaper",
+    "bluewizardhat",
+    "mithrildefender",
+    "plank",
+    "waterskin4",
+    "gnomeamulet",
+    "nettles",
+    "ausedspell",
+    "amuletofaccuracy",
+    "abyssalbook",
+    "adamantdefender",
+    "scythe",
+    "ashes",
+    "necklacemould",
+    "ringofdueling1",
+    "hammer",
+    "thread",
+    "fishingbait",
+    "runedefender",
+    "burntherring",
+    "khazardhelmet",
+    "warrant",
+    "holymould",
+    "bedabinkey",
+    "burnttuna",
+    "iou",
+    "ringofrecoil",
+    "tiaramould",
+    "spadefulofcoke",
+    "shears",
+    "khazardarmour",
+    "firetalisman",
+    "icegloves",
+    "spade",
+    "cluebottleeasy",
+    "fancyboots",
+    "bottleofwine",
+    "ardougneteleportscroll",
+    "staffofwater",
+    "rubbertube",
+    "purpledye",
+    "waterskin0",
+    "wolfbane",
+    "harpoon",
+    "lavarune",
+    "climbingboots",
+    "carnilleanarmour",
+    "ghostspeakamulet",
+    "flyfishingrod",
+    "gasmask",
+    "glarialspebble",
+    "cluegeodemedium",
+    "goblinmail",
+    "airtalisman",
+    "fishingrod",
+    "emptynest",
+    "cluebottlehard",
+    "metalkey",
+    "intelreport",
+    "sodaash",
+    "stethoscope",
+    "grain",
+    "glassblowingpipe",
+    "dragondefender",
+    "blackknife",
+    "priestgownbottom",
+    "zamorakmonktop",
+    "ensouledgoblinhead",
+    "ensouledchaosdruidhead",
+    "celldoorkey",
+    "mortmyrefungus",
+    "snakecharm",
+    "scrollboxeasy",
+    "blackaxe",
+    "priestgowntop",
+    "antipoison4",
+    "smallpouch",
+    "10thsquadsigil",
+    "roguegloves",
+    "gamesnecklace3",
+    "mediumpouch",
+    "runicleaves",
+    "ascruffynote",
+    "runicflakes",
+    "dragondagger",
+    "silk",
+    "cluegeodehard",
+    "boltmould",
+    "ironpickaxe",
+    "brokenglass",
+    "snakebasket",
+    "goldennugget",
+    "swamptar",
+    "khakishirt",
+    "dragondaggerp",
+    "braceletofethereumuncharged",
+    "blackshoes",
+    "turnipgrowingforbeginners",
+    "lootingbag",
+    "cluescrollhard",
+    "edibleseaweed",
+    "bucket",
+    "dragonscimitar",
+    "wroughtironkey",
+    "yanillianhops",
+    "harvestledger",
+    "mamuletmould",
+    "bucketofmilk",
+    "skull",
+    "translationbook",
+    "largepouch",
+    "picture",
+    "bronzekey",
+    "redhweenmask",
+    "abyssalpearls",
+    "warriorguildtokens",
+    "unicornhorn",
+    "glarialsamulet",
+    "braceletofethereum",
+    "ironkey",
+    "steelpickaxe",
+    "lavabattlestaff",
+    "hamhood",
+    "greenhweenmask",
+    "mspeakamulet",
+    "stardust",
+    "slaveshirt",
+    "grimylantadyme",
+    "summerpie",
+    "insectrepellent",
+    "klanksgauntlets",
+    "atlaxsdiary",
+    "mithrilseeds",
+    "slaveboots",
+    "bluehweenmask",
+    "ensouledimphead",
+    "caketin",
+    "emptyoyster",
+    "tyrashelm",
+    "ibansstaff",
+    "cadavaberries",
+    "tinderbox",
+    "greencape",
+    "wineofzamorak",
+    "karamjanmonkeygreegree",
+    "pestleandmortar",
+    "markofgrace",
+    "vialofwater",
+    "chocolatebar",
+    "medicalgown",
+    "cupoftea",
+    "slaverobe",
+    "chisel",
+    "desertdisguise",
+    "silversickleb",
+    "potofflour",
+    "fishfood",
+    "certificate",
+    "halfaredberrypie",
+    "chefshat",
+    "burntlobster",
+    "bluritesword",
+    "bronzedefender",
+    "burntshrimp",
+    "avasattractor",
+    "varrockarmour1",
+    "braceletmould",
+    "sicklemould",
+    "staffofair",
+    "attackpotion2",
+    "bailingbucket",
+    "jugofbadwine",
+    "cluescrolleasy",
+    "lumberorder",
+    "boltrack",
+    "blackshirtjacket",
+    "littorch",
+    "irondefender",
+    "burntfish",
+    "ghostmushroom",
+    "palmleaf",
+    "druidpouch",
+    "oysterpearls",
+    "spottedcape",
+    "saw",
+    "karidiandisguise",
+    "rightskullhalf",
+    "cluenesthard",
+    "blessedaxe",
+    "staff",
+    "gnomeroyalseal",
+    "steeldefender",
+    "greenpants",
+    "zamorakmonkbottom",
+    "weeds",
+    "blackrobe",
+    "antipoison2",
+    "cluenesteasy",
+    "ringmould",
+    "bookonbaxtorian",
+    "fightingboots",
+    "magiclamp2150xp",
+    "essenceimplingjar",
+    "spottedkebbitfur",
+    "rawbirdmeat",
+    "polarcamotop",
+    "hitpointscape",
+    "huntercapet",
+    "orangetabbykitten",
+    "birdnestseeds",
+    "redfeather",
+    "yellowfeather",
+    "orangefeather",
+    "bluefeather",
+    "stripyfeather",
+    "kebbitclaws",
+    "barbtailharpoon",
+    "longkebbitspike",
+    "kebbitteeth",
+    "darkkebbitfur",
+    "dashingkebbitfur",
+    "babyimplingjar",
+    "youngimplingjar",
+    "gourmetimplingjar",
+    "earthimplingjar",
+    "eclecticimplingjar",
+    "natureimplingjar",
+    "magpieimplingjar",
+    "ninjaimplingjar",
+    "dragonimplingjar",
+    "larupiafur",
+    "graahkfur",
+    "kyattfur",
+    "rabbitsnare",
+    "polarkebbitfur",
+    "commonkebbitfur",
+    "feldipweaselfur",
+    "desertdevilfur",
+    "razorbackedkebbitfur",
+    "polarcamolegs",
+    "woodcamotop",
+    "woodcamolegs",
+    "junglecamotop",
+    "junglecamolegs",
+    "desertcamotop",
+    "desertcamolegs",
+    "spottiercape",
+    "glovesofsilence",
+    "larupiahat",
+    "larupiatop",
+    "larupialegs",
+    "graahkheaddress",
+    "graahktop",
+    "graahklegs",
+    "kyatthat",
+    "kyatttop",
+    "kyattlegs",
+    "huntercape",
+    "ringofdueling6",
+    "desertrobe",
+    "ringofdueling2",
+    "staffoffire",
+    "gamesnecklace5",
+    "larranskey",
+    "gamesnecklace4",
+    "magicsecateurs",
+    "halfasummerpie",
+    "gamesnecklace6",
+    "desertboots",
+    "featherpack",
+    "desertshirt",
+    "emptybucketpack",
+    "shantaypass",
+    "bowlofwater",
+    "waterskin3",
+    "waterskin2",
+    "waterskin1",
+    "forestryhat",
+    "woodcuttingcapetshouldersvisual",
+    "blackshirt",
+    "forestrytop",
+    "forestrylegs",
+    "forestryboots",
+    "celestialring",
+    "woodcuttingcapet",
+    "gracefultop",
+    "gracefullegs",
+    "ringofforgingused",
+    "fletchingcape",
+    "bluritebolts",
+    "kebbitspike",
+    "dragoncrossbowunstrung",
+    "dragonbolts",
+    "dragonboltsunf",
+    "blacknails",
+    "amethystarrows",
+    "amethystarrowtips",
+    "dragondarttips",
+    "slenderblade",
+    "fletchingcapet",
+    "fletchinghood",
+    "whiteshirt",
+    "redshorts",
+    "celestialringuncharged",
+    "gracefulhood",
+    "bootsoflightness",
+    "gracefulgloves",
+    "gracefulboots",
+    "gracefulcape",
+    "amuletofglory4",
+    "ringofwealth5",
+    "blackshirtstitches",
+    "crimsonbelt",
+    "blackpants",
+    "amuletofglory3",
+    "ringofwealth4",
+    "explorersring1",
+    "prospectorhelmet",
+    "prospectorjacket",
+    "prospectorlegs",
+    "blackskirt",
+    "archerhelm",
+    "avasaccumulator",
+    "damagedbook",
+    "roguemask",
+    "rogueboots",
+    "mystichatlight",
+    "mysticlightshouldersvisual",
+    "mysticrobetoplight",
+    "blackbelt",
+    "splitbarklegs",
+    "mysticgloves",
+    "ringofdueling7",
+    "ringofwealth",
+    "farseerhelm",
+    "mysticshouldersvisual",
+    "mysticrobetop",
+    "mysticboots",
+    "saradomincape",
+    "ibansstaffunstrung",
+    "elementalshield",
+    "berserkerhelm",
+    "adamantshouldersvisual",
+    "blackcape",
+    "amuletoffury",
+    "ahrimrobetopshouldersvisual",
+    "ahrimsrobetop100",
+    "barrowsgloves",
+    "zamorakcape",
+    "ahrimsstaff100",
+    "karilscoif100",
+    "karilshouldersvisual",
+    "karilsleathertop100",
+    "whitebelt",
+    "karilsleatherskirt100",
+    "archersring",
+    "ancientrobetop",
+    "dragonmedhelm",
+    "runeshouldersvisual",
+    "ringofwealth2",
+    "purplecape",
+    "ringoflife",
+    "helmofneitiznot",
+    "initiateshouldersvisual",
+    "initiatehauberk",
+    "initiatecuisse",
+    "berserkerring",
+    "firecape",
+    "purplelongshirt",
+    "redspikyvambraces",
+    "turquoisehat",
+    "mystichat",
+    "nosepeg",
+    "monksrobetop",
+    "monksrobe",
+    "steelgloves",
+    "dodgynecklace",
+    "crimsonlongjacket",
+    "pinkrobetop",
+    "ardougnecloak2",
+    "dragonmace",
+    "proselytehauberk",
+    "proselytecuisse",
+    "hatoftheeye",
+    "robetopoftheeye",
+    "digsitependant1",
+    "robebottomsoftheeye",
+    "bootsoftheeye",
+    "bluewizardrobe",
+    "antiquelamp",
+    "karilscrossbow",
+    "karilscoif",
+    "rangingcape",
+    "diamondboltse",
+    "phoenixcrossbow",
+    "hunterscrossbow",
+    "icearrows",
+    "broadarrows",
+    "dragonarrows",
+    "opalboltse",
+    "jadeboltse",
+    "pearlboltse",
+    "topazboltse",
+    "sapphireboltse",
+    "emeraldboltse",
+    "rubyboltse",
+    "dragonstoneboltse",
+    "onyxboltse",
+    "karilsleathertop",
+    "karilsleatherskirt",
+    "decorativearmourrangedtop",
+    "decorativearmourrangedlegs",
+    "decorativearmourquiver",
+    "greendhideshield",
+    "greenspikyvambraces",
+    "bluedhideshield",
+    "bluespikyvambraces",
+    "reddhideshield",
+    "blackdhideshield",
+    "blackspikyvambraces",
+    "hardleathershield",
+    "spikyvambraces",
+    "rangerboots",
+    "rangedcape",
+    "cannonbase",
+    "redchinchompa",
+    "steeldartp",
+    "blackdarts",
+    "blackdartp",
+    "mithrildartp",
+    "adamantdartp",
+    "runedartp",
+    "dragondartp",
+    "steeljavelin",
+    "mithriljavelin",
+    "adamantjavelin",
+    "dragonjavelin",
+    "steelknifep",
+    "blackknifep",
+    "mithrilknifep",
+    "adamantknifep",
+    "runeknifep",
+    "dragonknife",
+    "dragonknifep",
+    "toktzxilul",
+    "rangingcapet",
+    "ranginghood",
+    "smithingcape",
+    "ammomould",
+    "lunarore",
+    "brokenvanepart",
+    "perfectgoldore",
+    "shieldrighthalf",
+    "smithingcapet",
+    "smithinghood"
+  ]
+}
