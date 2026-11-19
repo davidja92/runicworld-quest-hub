@@ -74,7 +74,8 @@ function questPointStatus(q){if(q.questPoints==null)return 'Not verified';if(sta
 function renderQuestPointsControl(){const el=$('questPoints');if(el)el.value=state.questPoints==null?'':String(state.questPoints);const hint=$('questPointsHint');if(hint)hint.textContent=state.name?`Current total for ${state.name} · updated when quests are marked complete`:'Fetch a character to save points separately for each player';}
 function skillsCheck(q){const req=q.skills||{},entries=Object.entries(req);if(!entries.length)return {verified:false,missing:[]};if(!Object.keys(state.skills).length)return {verified:false,missing:[]};return {verified:true,missing:entries.filter(([k,v])=>(state.skills[k]||1)<v)}}
 function reqChain(q,seen=new Set()){let arr=[];for(let name of q.quests||[]){let matched=quests.find(x=>normalizeName(x.name)===normalizeName(name));let key=matched?.name||name;if(seen.has(key))continue;seen.add(key);if(matched)arr.push(...reqChain(matched,seen));arr.push(key)}return arr}
-function renderList(){let query=$('search').value.toLowerCase(),filter=$('filter').value;let filtered=quests.filter(q=>{const r=skillsCheck(q);return q.name.toLowerCase().includes(query)&&(filter==='all'||(filter==='done'&&state.done[q.name])||(filter==='todo'&&!state.done[q.name])||(filter==='ready'&&r.verified&&!r.missing.length)||(filter==='locked'&&r.verified&&r.missing.length))});$('count').textContent=`(${filtered.length})`;$('questList').innerHTML=filtered.map(q=>{let r=skillsCheck(q);return `<button class="quest-item ${q.name===state.selected.name?'active':''}" data-quest="${escapeHtml(q.name)}"><strong>${escapeHtml(q.name)}</strong><div class="badgeRow">${state.done[q.name]?'<span class="pill good">Completed</span>':''}${r.verified?`<span class="pill ${r.missing.length?'bad':'good'}">${r.missing.length?r.missing.length+' skills missing':'Skills met'}</span>`:'<span class="pill">Requirements to verify</span>'}</div></button>`}).join('')||'<div class="empty">No matching quests.</div>';
+function renderKudos(){const result=QuestKudos.calculate(state.done,quests);$('kudosTotal').textContent=String(result.total);$('kudosBreakdown').innerHTML='<ul>'+result.entries.map(r=>'<li>'+(r.complete?'✓ ':'○ ')+escapeHtml(r.name)+' — '+(r.complete?r.value:0)+' / '+r.value+(r.note?'<span class="small"> · '+escapeHtml(r.note)+'</span>':'')+'</li>').join('')+'</ul>';}
+function renderList(){renderKudos();let query=$('search').value.toLowerCase(),filter=$('filter').value;let filtered=quests.filter(q=>{const r=skillsCheck(q);return q.name.toLowerCase().includes(query)&&(filter==='all'||(filter==='done'&&state.done[q.name])||(filter==='todo'&&!state.done[q.name])||(filter==='ready'&&r.verified&&!r.missing.length)||(filter==='locked'&&r.verified&&r.missing.length))});$('count').textContent=`(${filtered.length})`;$('questList').innerHTML=filtered.map(q=>{let r=skillsCheck(q);return `<button class="quest-item ${q.name===state.selected.name?'active':''}" data-quest="${escapeHtml(q.name)}"><strong>${escapeHtml(q.name)}</strong><div class="badgeRow">${state.done[q.name]?'<span class="pill good">Completed</span>':''}${r.verified?`<span class="pill ${r.missing.length?'bad':'good'}">${r.missing.length?r.missing.length+' skills missing':'Skills met'}</span>`:'<span class="pill">Requirements to verify</span>'}</div></button>`}).join('')||'<div class="empty">No matching quests.</div>';
  $('questList').querySelectorAll('[data-quest]').forEach(btn=>btn.addEventListener('click',()=>{state.selected=quests.find(q=>q.name===btn.dataset.quest);render();}));}
 // Resolve OSRS Wiki quest links to our RunicWorld quest catalogue.
 // Supports canonical wiki titles, in-game aliases, underscore URLs and quick-guide links.
@@ -170,7 +171,12 @@ function openTraining(skill,target,general=false){
  const xp=known?Number(state.xp[skill]):xpForLevel(have);
  target=Math.max(1,Math.min(99,target||have+1));
  const needed=Math.max(0,xpForLevel(target)-xp);
- $('trainingTitle').textContent=skill+' training';
+ $('trainingTitle').textContent=skill+' — RunicWorld planner';
+ $('trainingSearch').value='';
+ $('trainingView').value=(TRAINING[skill]||[]).length?'recipes':'guide';
+ $('trainingCategory').dataset.scope='';
+ for(const id of ['trainingView','trainingCategory'])$(id).onchange=()=>fillTraining(state.activeTrainingSkill);
+ $('trainingSearch').oninput=()=>fillTraining(state.activeTrainingSkill);
  $('trainingTarget').value=target;
  $('trainingTarget').oninput=()=>fillTraining(state.activeTrainingSkill);
  $('trainingSort').onchange=()=>fillTraining(state.activeTrainingSkill);
@@ -181,21 +187,33 @@ function openTraining(skill,target,general=false){
  $('closeTraining').focus();
 }
 function fillTraining(skill){
- const level=state.skills[skill]??1,xpKnown=state.xp[skill]!=null;
+ const levelKnown=Number.isFinite(state.skills[skill]),level=state.skills[skill]??1,xpKnown=state.xp[skill]!=null;
  const xp=xpKnown?Number(state.xp[skill]):xpForLevel(level);
  const target=Math.max(1,Math.min(99,parseInt($('trainingTarget').value,10)||level+1));
- const remaining=Math.max(0,xpForLevel(target)-xp);
- const sortOrder=$('trainingSort').value;
- const availableOnly=$('trainingAvailableOnly').checked;
- const rows=[...(TRAINING[skill]||[])].filter(([req])=>!availableOnly||req<=level).sort((a,b)=>sortOrder==='xp-desc'?(b[1]-a[1]||a[0]-b[0]):sortOrder==='level'?(a[0]-b[0]||a[1]-b[1]):(a[1]-b[1]||a[0]-b[0]));
- $('trainingCount').textContent=rows.length+' shown • '+(TRAINING[skill]||[]).length+' total recorded • '+(TRAINING[skill]||[]).filter(([req])=>req<=level).length+' currently unlocked';
- $('trainingSummary').innerHTML=`<div class="training-metrics"><div><span>Current level</span><b>${level}</b></div><div><span>Target level</span><b>${target}</b></div><div><span>XP remaining</span><b>${fmt(remaining)}</b></div></div><p class="small">${xpKnown?'Exact hiscores XP: '+fmt(xp):'XP estimated from the start of level '+level+'. Fetch skills for an exact remainder.'} Level ${target} begins at ${fmt(xpForLevel(target))} XP.</p>`;
- $('trainingMethods').innerHTML=rows.length?rows.map(([req,gain,action,materials])=>{
-  const unlocked=req<=level,usable=unlocked&&remaining>0;
-  const count=gain>0?fmt(Math.ceil(remaining/gain)):'—';
-  return `<div class="training-method ${unlocked?'':'training-locked'}"><div><b>${escapeHtml(action)}</b><div class="small">Level ${req} • ${escapeHtml(materials)}</div><span class="training-availability">${unlocked?'✓ Available now':'🔒 Unlock at level '+req}</span></div><div class="training-numbers"><strong>${gain.toLocaleString('en-US')} XP/action</strong><span class="small">${usable?count+' actions to target':unlocked?'Target met':'Not yet available'}</span></div></div>`
- }).join(''):'<p class="muted">No classic training entries listed for this skill and target.</p>';
- $('trainingNote').textContent='Action counts are comparisons assuming you use one method for all remaining XP. Locked methods require training to their unlock level first. Combat XP depends on damage; failure/burning rates, quest rewards, and server modifiers are not included. Modern OSRS-only activities are identified when included. Verify available recipes and XP in RunicWorld.';
+ const remaining=Math.max(0,xpForLevel(target)-xp),mode=$('trainingView').value;
+ const all=mode==='guide'?(SKILL_UNLOCKS[skill]||[]):(TRAINING[skill]||[]);
+ const scope=skill+'|'+mode,category=$('trainingCategory');
+ if(category.dataset.scope!==scope){
+  category.innerHTML='<option value="">All categories</option>'+[...new Set(all.map(row=>row[4]?.category||'Other'))].sort().map(name=>'<option value="'+escapeHtml(name)+'">'+escapeHtml(name)+'</option>').join('');
+  category.value='';category.dataset.scope=scope;
+ }
+ const query=$('trainingSearch').value.trim().toLowerCase(),sortOrder=$('trainingSort').value,availableOnly=$('trainingAvailableOnly').checked;
+ const knownXp=row=>Number.isFinite(row[1])&&row[1]>0;
+ const rows=all.filter(row=>(!availableOnly||!levelKnown||row[0]<=level)&&(!category.value||(row[4]?.category||'Other')===category.value)&&(!query||[row[2],row[3],row[4]?.itemId,row[4]?.category,row[4]?.subcategory].join(' ').toLowerCase().includes(query))).sort((a,b)=>{
+  if(sortOrder==='level')return a[0]-b[0]||a[2].localeCompare(b[2]);
+  if(knownXp(a)!==knownXp(b))return knownXp(a)?-1:1;
+  return (sortOrder==='xp-desc'?(b[1]??0)-(a[1]??0):(a[1]??0)-(b[1]??0))||a[0]-b[0]||a[2].localeCompare(b[2]);
+ });
+ $('trainingCount').textContent=rows.length+' shown · '+all.length+' client-listed '+(mode==='guide'?'unlocks':'recipes / methods')+(levelKnown?' · '+all.filter(row=>row[0]<=level).length+' meet your level':' · load your character to check levels');
+ $('trainingSummary').innerHTML='<div class="training-metrics"><div><span>Current level</span><b>'+(levelKnown?level:'Not loaded')+'</b></div><div><span>Target level</span><b>'+target+'</b></div><div><span>XP remaining</span><b>'+fmt(remaining)+'</b></div></div><p class="small">'+(xpKnown?'Hiscores XP: '+fmt(xp):levelKnown?'XP estimated from the start of level '+level+'. Fetch skills for exact XP.':'Load your character for an accurate remainder; this preview assumes 0 XP.')+' Level '+target+' begins at '+fmt(xpForLevel(target))+' XP.</p>';
+ $('trainingMethods').innerHTML=rows.length?rows.map(([req,gain,name,detail,meta={}])=>{
+  const conflict=Number.isFinite(meta.guideListedXp)&&Number.isFinite(gain)&&meta.guideListedXp!==gain;
+  const met=levelKnown&&req<=level,usable=!conflict&&knownXp([req,gain])&&met&&remaining>0;
+  const xpLabel=knownXp([req,gain])?gain.toLocaleString('en-US')+' XP/action':mode==='guide'&&Number.isFinite(meta.listedXp)?meta.listedXp.toLocaleString('en-US')+' XP listed in note':'XP not recorded';
+  const countLabel=conflict?'Guide lists '+meta.guideListedXp+' XP; verify in game':usable?fmt(Math.ceil(remaining/gain))+' actions to target':mode==='guide'?'Skill-guide entry':!knownXp([req,gain])?'Action count unavailable':!levelKnown?'Load character for action count':!met?'Level not met':remaining===0?'Target met':'Action count unavailable';
+  return '<div class="training-method '+(levelKnown&&!met?'training-locked':'')+'"><div><b>'+escapeHtml(name)+'</b><div class="small">Level '+req+' · '+escapeHtml(detail||'Materials and requirements are not recorded here.')+'</div><span class="training-availability">'+(!levelKnown?'Level '+req+' required':met?'✓ Level met':'🔒 Requires level '+req)+'</span><span class="runic-source">'+escapeHtml(meta.source||'RunicWorld client')+(meta.itemId?' · Item #'+meta.itemId:'')+'</span></div><div class="training-numbers"><strong>'+escapeHtml(xpLabel)+'</strong><span class="small">'+escapeHtml(countLabel)+'</span></div></div>';
+ }).join(''):'<p class="muted">No RunicWorld client entries match these filters. Try clearing the search or level filter.</p>';
+ $('trainingNote').textContent='From your installed RunicWorld skill calculator and skill guide (build '+RUNIC_TRAINING_META.clientBuild+', extracted '+RUNIC_TRAINING_META.extractedAt+'). Level met does not confirm quest, tool, station or material requirements. Client lists can include disabled content; crafting menus are the final check. XP modifiers, failed attempts and batch output are not inferred. Unknown XP and uncached item names are left explicit.';
 }
 
 // Refresh at most once per minute, using the same Worker as manual lookup.

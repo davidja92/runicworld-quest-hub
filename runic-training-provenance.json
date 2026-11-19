@@ -1,0 +1,392 @@
+{
+  "extractedAt": "2026-11-18",
+  "clientBuild": 12340,
+  "sourceFiles": {
+    "RW_SkillCalcData.lua": "76899a4df2c7a02a2b5a9feddcb321ce162332d3bb0f56a6fa49c820baa1a7fc",
+    "RW_SkillGuideData.lua": "089025275b49400db18f85f45aa63d0f333a9ff029e80d54b0a61ea4c198bbd0"
+  },
+  "bakedVersions": [
+    "2772-170996-498672221"
+  ],
+  "skills": {
+    "Attack": {
+      "calculator": 0,
+      "planner": 0,
+      "guide": 151,
+      "categories": {
+        "Equipment": 7,
+        "Weapons": 140,
+        "Other": 3,
+        "Pet": 1
+      }
+    },
+    "Defence": {
+      "calculator": 0,
+      "planner": 0,
+      "guide": 261,
+      "categories": {
+        "Body": 51,
+        "Boots": 16,
+        "Capes": 2,
+        "Equipment": 2,
+        "Gloves": 14,
+        "Helmets": 58,
+        "Legs": 63,
+        "Shields": 51,
+        "Other": 3,
+        "Pet": 1
+      }
+    },
+    "Strength": {
+      "calculator": 0,
+      "planner": 0,
+      "guide": 25,
+      "categories": {
+        "Equipment": 15,
+        "Milestones": 7,
+        "Other": 2,
+        "Pet": 1
+      }
+    },
+    "Hitpoints": {
+      "calculator": 0,
+      "planner": 0,
+      "guide": 59,
+      "categories": {
+        "Equipment": 4,
+        "Food": 48,
+        "Milestones": 4,
+        "Other": 2,
+        "Pet": 1
+      }
+    },
+    "Ranged": {
+      "calculator": 0,
+      "planner": 0,
+      "guide": 166,
+      "categories": {
+        "Bows": 14,
+        "Crossbows": 12,
+        "Ammunition": 48,
+        "Armour": 44,
+        "Milestones": 3,
+        "Salamanders": 4,
+        "Thrown": 37,
+        "Other": 3,
+        "Pet": 1
+      }
+    },
+    "Prayer": {
+      "calculator": 54,
+      "planner": 70,
+      "guide": 57,
+      "categories": {
+        "Bones & Ashes": 22,
+        "Equipment": 3,
+        "Prayers": 28,
+        "Other": 3,
+        "Pet": 1
+      }
+    },
+    "Magic": {
+      "calculator": 80,
+      "planner": 91,
+      "guide": 175,
+      "categories": {
+        "Ancient Magicks": 24,
+        "Equipment": 4,
+        "Magic Armour": 47,
+        "Salamanders": 4,
+        "Standard Spells": 67,
+        "Staves": 25,
+        "Other": 3,
+        "Pet": 1
+      }
+    },
+    "Cooking": {
+      "calculator": 45,
+      "planner": 138,
+      "guide": 148,
+      "categories": {
+        "Meat": 9,
+        "Fish": 21,
+        "Bread": 1,
+        "Pie": 7,
+        "Pizza": 9,
+        "Stew": 2,
+        "Wine": 1,
+        "Tools": 2,
+        "Bones": 5,
+        "Brewing": 20,
+        "Cake": 8,
+        "Dairy": 5,
+        "Gnome": 21,
+        "Potato": 8,
+        "Quest": 8,
+        "Other": 20,
+        "Pet": 1
+      }
+    },
+    "Woodcutting": {
+      "calculator": 11,
+      "planner": 13,
+      "guide": 54,
+      "categories": {
+        "Tools": 8,
+        "": 14,
+        "Quest": 1,
+        "Trees": 12,
+        "Other": 7,
+        "Pet": 12
+      }
+    },
+    "Fletching": {
+      "calculator": 106,
+      "planner": 133,
+      "guide": 134,
+      "categories": {
+        "Shafts": 7,
+        "Bows": 27,
+        "Crossbows": 44,
+        "Arrows": 17,
+        "Darts": 7,
+        "Tools": 3,
+        "Bolt tips": 13,
+        "Quest": 5,
+        "Shields": 6,
+        "Staves": 1,
+        "Other": 3,
+        "Pet": 1
+      }
+    },
+    "Fishing": {
+      "calculator": 18,
+      "planner": 41,
+      "guide": 64,
+      "categories": {
+        "Tools": 10,
+        "Small net": 4,
+        "Big net": 3,
+        "Rod": 5,
+        "Barbarian rod": 3,
+        "Harpoon": 3,
+        "Barehanded": 3,
+        "Cage": 1,
+        "": 27,
+        "Karambwan vessel": 1,
+        "Other": 3,
+        "Pet": 1
+      }
+    },
+    "Firemaking": {
+      "calculator": 9,
+      "planner": 10,
+      "guide": 15,
+      "categories": {
+        "Logs": 10,
+        "Tools": 1,
+        "Other": 3,
+        "Pet": 1
+      }
+    },
+    "Crafting": {
+      "calculator": 109,
+      "planner": 237,
+      "guide": 208,
+      "categories": {
+        "Spinning": 5,
+        "Pottery": 8,
+        "Jewellery": 48,
+        "Leather": 12,
+        "Glass": 8,
+        "Gems": 9,
+        "Tools": 14,
+        "Ammo": 1,
+        "Battlestaves": 4,
+        "Bird houses": 9,
+        "Dragonhide": 12,
+        "Masonry": 1,
+        "Quest": 54,
+        "Slayer": 1,
+        "Snakeskin": 6,
+        "Snelms": 9,
+        "Weaving": 3,
+        "Other": 3,
+        "Pet": 1
+      }
+    },
+    "Smithing": {
+      "calculator": 164,
+      "planner": 253,
+      "guide": 180,
+      "categories": {
+        "Smelting": 8,
+        "Bronze": 25,
+        "Iron": 25,
+        "Steel": 26,
+        "Mithril": 25,
+        "Adamant": 25,
+        "Rune": 24,
+        "Tools": 2,
+        "Ammo": 1,
+        "Quest": 15,
+        "Other": 3,
+        "Pet": 1
+      }
+    },
+    "Mining": {
+      "calculator": 14,
+      "planner": 22,
+      "guide": 66,
+      "categories": {
+        "Ore": 19,
+        "Tools": 8,
+        "Guild": 1,
+        "": 21,
+        "Other": 3,
+        "Pet": 14
+      }
+    },
+    "Herblore": {
+      "calculator": 50,
+      "planner": 133,
+      "guide": 111,
+      "categories": {
+        "Unfinished": 16,
+        "Potions": 37,
+        "Tools": 2,
+        "Cleaning Herbs": 14,
+        "Grinding": 7,
+        "Imp repellent": 13,
+        "Quest": 14,
+        "Tars": 4,
+        "Other": 3,
+        "Pet": 1
+      }
+    },
+    "Agility": {
+      "calculator": 15,
+      "planner": 30,
+      "guide": 43,
+      "categories": {
+        "Courses": 15,
+        "Equipment": 1,
+        "Shortcuts": 24,
+        "Other": 2,
+        "Pet": 1
+      }
+    },
+    "Thieving": {
+      "calculator": 33,
+      "planner": 57,
+      "guide": 41,
+      "categories": {
+        "Tools": 1,
+        "Blackjacking": 8,
+        "Disguise": 1,
+        "Pickpocketing": 16,
+        "Stalls": 10,
+        "Other": 4,
+        "Pet": 1
+      }
+    },
+    "Slayer": {
+      "calculator": 0,
+      "planner": 0,
+      "guide": 141,
+      "categories": {
+        "Masters": 7,
+        "Monsters": 42,
+        "Required Items": 15,
+        "Tasks": 73,
+        "Other": 3,
+        "Pet": 1
+      }
+    },
+    "Farming": {
+      "calculator": 126,
+      "planner": 189,
+      "guide": 74,
+      "categories": {
+        "Allotments": 8,
+        "Bushes": 6,
+        "Farming": 1,
+        "Flowers": 6,
+        "Fruit Trees": 7,
+        "Herbs": 14,
+        "Hops": 8,
+        "Other": 3,
+        "Special": 6,
+        "Tools": 7,
+        "Trees": 8
+      }
+    },
+    "Runecraft": {
+      "calculator": 22,
+      "planner": 86,
+      "guide": 111,
+      "categories": {
+        "Tiaras": 10,
+        "Combination Runes": 18,
+        "": 12,
+        "Air Runes": 10,
+        "Astral Runes": 2,
+        "Body Runes": 3,
+        "Chaos Runes": 2,
+        "Cosmic Runes": 2,
+        "Death Runes": 2,
+        "Earth Runes": 4,
+        "Fire Runes": 3,
+        "Law Runes": 2,
+        "Mind Runes": 8,
+        "Nature Runes": 2,
+        "Talismans": 11,
+        "Water Runes": 6,
+        "Other": 13,
+        "Pet": 1
+      }
+    },
+    "Hunter": {
+      "calculator": 44,
+      "planner": 68,
+      "guide": 90,
+      "categories": {
+        "Bird houses": 11,
+        "Creatures": 43,
+        "Equipment": 20,
+        "Milestones": 1,
+        "Techniques": 8,
+        "Traps": 5,
+        "Other": 1,
+        "Pet": 1
+      }
+    },
+    "Construction": {
+      "calculator": 446,
+      "planner": 606,
+      "guide": 399,
+      "categories": {
+        "Tools": 2,
+        "Rooms": 20,
+        "Skills": 28,
+        "Surfaces": 38,
+        "Storage": 64,
+        "Decorative": 35,
+        "Trophies": 29,
+        "Games": 23,
+        "Garden": 44,
+        "Dungeon": 38,
+        "Chapel": 30,
+        "Workbench": 9,
+        "Other": 38,
+        "Pet": 1
+      }
+    }
+  },
+  "calculatorRows": 1346,
+  "guideRows": 2773,
+  "duplicateCalculatorRows": 0,
+  "unresolvedItemNames": 835,
+  "cacheRecords": 1003,
+  "guideOnlyRecipes": 831
+}
