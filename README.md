@@ -26,3 +26,4 @@ The OSRS Wiki is a community project; provide attribution and follow its reuse a
 ## RunicWorld screenshot quest inventory (November 1, 2026)
 
 The quest list has been replaced with the **130 distinct entries** shown in the user-provided in-game screenshots. No newer OSRS quests are shown. In-game labels have been preserved, with wiki aliases for renamed quest pages. The screenshots show 13 green entries, but these are **not automatically marked completed**: browser progress is manually tracked because screenshots may show a different character than the current username. The green names are recorded in `screenshotCompleted` for reference. Some listings are activities or custom entries rather than OSRS quest pages.
+
