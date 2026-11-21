@@ -1,0 +1,1 @@
+Upload index.html, quest-map-data.js and quest-map-ui.js to the root of your runicworld-quest-hub repository, replacing the old versions. Wait for GitHub Pages to finish publishing, then press Ctrl+F5. Map images are now embedded in quest-map-data.js; no maps folder upload is needed. Saved quest progress and step pins are preserved.
