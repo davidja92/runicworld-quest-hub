@@ -85,3 +85,4 @@ const screenshotCompleted=['Biohazard', 'Cook\'s Assistant','Fight Arena','Monke
 const quests=[...new Set(names)].filter(x=>!x.includes('Diary')).map(name=>({name,...(overridesByKey.get(normalizeName(name))||{})})).sort((a,b)=>a.name.localeCompare(b.name));
 
 
+

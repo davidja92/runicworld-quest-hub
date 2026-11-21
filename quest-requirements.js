@@ -2229,3 +2229,4 @@ const QuestRequirements={
   }
 };
 for(const q of quests){const r=QuestRequirements[q.name];if(r)Object.assign(q,r);}
+

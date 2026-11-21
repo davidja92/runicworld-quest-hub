@@ -1,3 +1,7 @@
+# RunicWorld progression pathway
+
+Read START-HERE.txt for installation and usage. The new Progression pathway button combines your quest catalogue, skill targets, bank preparation and client-listed methods. Self-sourcing and no minigames are the defaults.
+
 # Runic Quest Hub
 
 This version adds GE & profits, skill-linked recipe costs, a watchlist, observed trade charts, and client-matched Wiki vendor fallback. Price priority is current directional GE quotes, then actual trade history, then NPC fallback. Guide prices are not trade history. All Wiki shop prices remain reference estimates; client presence does not confirm server stock. Upload every file in this website folder to the repository root. Full use/source/maintenance notes are supplied alongside this folder.

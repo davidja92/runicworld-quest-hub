@@ -1,0 +1,85 @@
+RUNICWORLD PROGRESSION PATHWAY
+
+INSTALL ON YOUR EXISTING WEBSITE
+1. Extract this ZIP.
+2. Upload its files directly to the ROOT of davidja92/runicworld-quest-hub.
+   Replace matching files. Do not put them in a new subfolder.
+3. Keep your existing GitHub workflows and other repository files.
+4. Wait for GitHub Pages to deploy, then refresh your site with Ctrl+F5.
+5. Click the gold "Progression pathway" button at the top.
+
+USE IT
+Fetch your character's skills and enter your current quest points.
+Make sure your completed quests are marked correctly.
+Choose a goal, then click "Resume next step".
+
+Goals:
+- Quests & useful unlocks: available quest requirements plus practical milestones.
+- Available quest catalogue: work through your site's available quests.
+- Quests + Fletching 80: keep questing while building your bow-making chain.
+- Quests + all skills 70 or 99: continue skill targets after quest requirements.
+- Add your own skill targets under Preferences.
+
+Quest steps open your existing full quest helper.
+Preparation steps list a starter quest kit; check the full guide for alternatives.
+Skill steps show client-listed methods, XP remaining and action estimates.
+Choose a method or save your observed XP if RunicWorld differs from the client.
+Refresh skills after training AND quest rewards so the plan can shorten the grind.
+Your actual progress is never advanced just because the plan predicts a step.
+
+The rolling bank checklist combines the next three quest kits.
+Enter your actual bank/inventory counts; update them after spending materials.
+Reusable tools are reserved once, consumables are added across those quests.
+Some items, quantities and alternatives require a full guide check.
+"Kit prepared" saves that preparation step; it does not complete the quest.
+
+Self-sourcing and no minigames are the defaults.
+Fletching prefers yew longbows unstrung when your actual level allows them.
+Woodcutting prefers yew logs. You can change methods in a skill step.
+"Find source" shows production options, matched shop references and a Wiki link.
+Enable "Show GE links" if you want the existing market tools instead.
+
+The quest-start map uses your client's coordinates. Its lines show step order,
+not a safe walking route or obstacle-aware navigation.
+
+BACKUP
+Export/import saves pathway preferences, bank counts, observed XP and kit checks.
+It does not overwrite quest completions, hiscores or quest-point balances.
+Pathway settings are saved separately per character in your browser.
+
+WHAT IS INCLUDED
+- All 130 entries from your quest catalogue.
+- 127 Wiki requirement references; 3 RunicWorld-specific entries need checking.
+- 123 client quest-start locations.
+- 423 simple item-reference entries for quest starter kits.
+- Your existing RunicWorld recipes, GE tracker, Kudos and total-level card.
+
+ABOUT "OPTIMAL"
+The route favors quests before avoidable grinding, useful unlocks, prerequisite
+chains and smaller training gaps. It uses quest XP as an OSRS reference to rank
+opportunities, not as confirmed future RunicWorld XP. Same-map start proximity
+breaks later ties. No minimum-time or maximum-profit guarantee is made without
+measured action rates, travel data and server reward verification.
+
+Modern OSRS quests absent from your catalogue are not added.
+Minigame methods are hidden by default. Server-specific unlocks, combat,
+equipment, partial quest starts, farming timers and item sources need checking.
+Skill targets use unboosted levels; guides may allow boosts or bypasses.
+
+SOURCES
+Original pathway content inspired by the progression approach at:
+https://ironman.guide/
+https://ironman.guide/quests
+https://ironman.guide/herblore
+https://ironman.guide/crafting
+
+Factual requirement/item references: individual OSRS Wiki quest pages and
+https://oldschool.runescape.wiki/w/Optimal_quest_guide
+OSRS Wiki contributors, CC BY-NC-SA 3.0:
+https://creativecommons.org/licenses/by-nc-sa/3.0/
+Client recipes and start locations: your installed RunicWorld build 12340.
+Reference data checked 20 November 2026.
+
+This package is ready to upload. It has not been deployed by Codex.
+Logic and integration checks passed. Browser visual preview could not reach
+the local server in this environment.

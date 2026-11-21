@@ -46,3 +46,4 @@
  }
  const api={create};if(typeof module==='object'&&module.exports)module.exports=api;else root.QuestOrder=api;
 })(typeof globalThis!=='undefined'?globalThis:this);
+
