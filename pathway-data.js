@@ -26,6 +26,7 @@ const PathwayData={
       "source": "RunicWorld client quest map",
       "start": null,
       "itemsSource": "https://oldschool.runescape.wiki/w/A_Soul's_Bane",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 1,
       "itemsComplete": false
     },
@@ -135,6 +136,7 @@ const PathwayData={
         "z": 5.34
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/A_Tail_of_Two_Cats",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -152,6 +154,7 @@ const PathwayData={
         "z": 3.92
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Alfred_Grimhand's_Barcrawl",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -224,6 +227,7 @@ const PathwayData={
         "z": 5
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Animal_Magnetism",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -267,6 +271,7 @@ const PathwayData={
         "z": 8.7852
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Between_a_Rock...",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 3,
       "itemsComplete": false
     },
@@ -359,6 +364,7 @@ const PathwayData={
         "z": 4.79
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Big_Chompy_Bird_Hunting",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -393,6 +399,7 @@ const PathwayData={
         "z": 7.04718
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Biohazard",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -425,6 +432,7 @@ const PathwayData={
         "z": 31.2525
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Black_Knights'_Fortress",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -446,6 +454,7 @@ const PathwayData={
         "z": 5.83697
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Cabin_Fever",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -465,6 +474,7 @@ const PathwayData={
         "z": 6.25695
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Clock_Tower",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -571,6 +581,7 @@ const PathwayData={
         "z": 5.19
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Cold_War",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -590,6 +601,7 @@ const PathwayData={
         "z": 5.3575
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Contact!",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 1,
       "itemsComplete": false
     },
@@ -624,6 +636,7 @@ const PathwayData={
         "z": 7.7273
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Cook's_Assistant",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -686,6 +699,7 @@ const PathwayData={
         "z": 3.89
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Creature_of_Fenkenstrain",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -720,6 +734,7 @@ const PathwayData={
         "z": 4.90769
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Death_Plateau",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 2,
       "itemsComplete": false
     },
@@ -748,6 +763,7 @@ const PathwayData={
         "z": 0.1
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Death_to_the_Dorgeshuun",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 1,
       "itemsComplete": false
     },
@@ -780,6 +796,7 @@ const PathwayData={
         "z": 4.32803
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Demon_Slayer",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -884,6 +901,7 @@ const PathwayData={
         "z": 5.2
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Desert_Treasure_I",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 5,
       "itemsComplete": false
     },
@@ -905,6 +923,7 @@ const PathwayData={
         "z": 13.6
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Devious_Minds",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 2,
       "itemsComplete": false
     },
@@ -946,6 +965,7 @@ const PathwayData={
         "z": 5.67327
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Doric's_Quest",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -1031,6 +1051,7 @@ const PathwayData={
         "z": 4.85111
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Dragon_Slayer_I",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -1079,6 +1100,7 @@ const PathwayData={
         "z": 8.24907
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Druidic_Ritual",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -1098,6 +1120,7 @@ const PathwayData={
         "z": 9.45
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Dwarf_Cannon",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -1167,6 +1190,7 @@ const PathwayData={
         "z": 7.21744
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Eadgar's_Ruse",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -1201,6 +1225,7 @@ const PathwayData={
         "z": 5.03
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Eagles'_Peak",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -1264,6 +1289,7 @@ const PathwayData={
         "z": 5.36714
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Elemental_Workshop_I",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -1299,6 +1325,7 @@ const PathwayData={
         "z": 5.5
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Elemental_Workshop_II",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 1,
       "itemsComplete": false
     },
@@ -1350,6 +1377,7 @@ const PathwayData={
         "z": 7.25
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Enakhra's_Lament",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 12,
       "itemsComplete": false
     },
@@ -1372,6 +1400,7 @@ const PathwayData={
         "z": 6.72706
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Enlightened_Journey",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 2,
       "itemsComplete": false
     },
@@ -1389,6 +1418,7 @@ const PathwayData={
         "z": 4.82891
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Enter_the_Abyss",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -1428,6 +1458,7 @@ const PathwayData={
         "z": 4.63349
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Ernest_the_Chicken",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -1478,6 +1509,7 @@ const PathwayData={
         "z": 4.57194
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Fairytale_I_-_Growing_Pains",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 1,
       "itemsComplete": false
     },
@@ -1520,6 +1552,7 @@ const PathwayData={
         "z": 0.44
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Fairytale_II_-_Cure_a_Queen",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -1598,6 +1631,7 @@ const PathwayData={
         "z": 4.58396
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Family_Crest",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 2,
       "itemsComplete": false
     },
@@ -1618,6 +1652,7 @@ const PathwayData={
         "z": 4.77
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Fight_Arena",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -1666,6 +1701,7 @@ const PathwayData={
         "z": 7.12
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Fishing_Contest",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -1743,6 +1779,7 @@ const PathwayData={
         "z": 30.7
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Forgettable_Tale...",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 1,
       "itemsComplete": false
     },
@@ -1777,6 +1814,7 @@ const PathwayData={
         "z": 4.21458
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Garden_of_Tranquillity",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 8,
       "itemsComplete": false
     },
@@ -1811,6 +1849,7 @@ const PathwayData={
         "z": 6.83877
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Gertrude's_Cat",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -1829,6 +1868,7 @@ const PathwayData={
       "source": "RunicWorld client quest map",
       "start": null,
       "itemsSource": "https://oldschool.runescape.wiki/w/Curse_of_the_Empty_Lord",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 1,
       "itemsComplete": false
     },
@@ -1905,6 +1945,7 @@ const PathwayData={
         "z": 6.23
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Ghosts_Ahoy",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 3,
       "itemsComplete": false
     },
@@ -1939,6 +1980,7 @@ const PathwayData={
         "z": -0.150135
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Goblin_Diplomacy",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -1951,6 +1993,7 @@ const PathwayData={
       "source": "RunicWorld client quest map",
       "start": null,
       "itemsSource": "https://oldschool.runescape.wiki/w/Haunted_Mine",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -1970,6 +2013,7 @@ const PathwayData={
         "z": 6.16
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Hazeel_Cult",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -2057,6 +2101,7 @@ const PathwayData={
         "z": 5.38733
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Heroes'_Quest",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 1,
       "itemsComplete": false
     },
@@ -2077,6 +2122,7 @@ const PathwayData={
         "z": 13.59
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Holy_Grail",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -2155,6 +2201,7 @@ const PathwayData={
         "z": 15.9
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Horror_from_the_Deep",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 4,
       "itemsComplete": false
     },
@@ -2212,6 +2259,7 @@ const PathwayData={
         "z": 4.7292
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Icthlarin's_Little_Helper",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 2,
       "itemsComplete": false
     },
@@ -2253,6 +2301,7 @@ const PathwayData={
         "z": 28.78
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Imp_Catcher",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -2347,6 +2396,7 @@ const PathwayData={
         "z": 6.96
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/In_Aid_of_the_Myreque",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 10,
       "itemsComplete": false
     },
@@ -2392,6 +2442,7 @@ const PathwayData={
         "z": 5.9
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/In_Search_of_the_Myreque",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 6,
       "itemsComplete": false
     },
@@ -2411,8 +2462,46 @@ const PathwayData={
         "z": 4.73518
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Jungle_Potion",
+      "itemsStatus": "none",
       "extraItemsToCheck": 0,
-      "itemsComplete": false
+      "itemsComplete": false,
+      "gatherItems": [
+        {
+          "name": "Snake weed",
+          "quantity": 1,
+          "during": true
+        },
+        {
+          "name": "Ardrigal",
+          "quantity": 1,
+          "during": true
+        },
+        {
+          "name": "Sito foil",
+          "quantity": 1,
+          "during": true
+        },
+        {
+          "name": "Volencia moss",
+          "quantity": 1,
+          "during": true
+        },
+        {
+          "name": "Rogue's purse",
+          "quantity": 1,
+          "during": true
+        }
+      ],
+      "recommendedItems": [
+        {
+          "name": "Antipoison potion",
+          "quantity": "1–2"
+        },
+        {
+          "name": "Food",
+          "quantity": null
+        }
+      ]
     },
     "King's Ransom": {
       "items": [
@@ -2446,6 +2535,7 @@ const PathwayData={
         "z": 3.1
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/King's_Ransom",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 3,
       "itemsComplete": false
     },
@@ -2576,6 +2666,7 @@ const PathwayData={
         "z": 10.09
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Legends'_Quest",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 1,
       "itemsComplete": false
     },
@@ -2604,6 +2695,7 @@ const PathwayData={
         "z": 3.31385
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Lost_City",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -2632,6 +2724,7 @@ const PathwayData={
         "z": 0.173775
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Lunar_Diplomacy",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 12,
       "itemsComplete": false
     },
@@ -2649,6 +2742,7 @@ const PathwayData={
         "z": 0
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Mage_Arena_I",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 1,
       "itemsComplete": false
     },
@@ -2684,6 +2778,7 @@ const PathwayData={
         "z": 6.42844
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Making_History",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 1,
       "itemsComplete": false
     },
@@ -2725,6 +2820,7 @@ const PathwayData={
         "z": 13.59
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Merlin's_Crystal",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -2744,6 +2840,7 @@ const PathwayData={
         "z": 16.5792
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Monk's_Friend",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 1,
       "itemsComplete": false
     },
@@ -2769,6 +2866,7 @@ const PathwayData={
         "z": 17.1779
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Monkey_Madness_I",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 3,
       "itemsComplete": false
     },
@@ -2825,6 +2923,7 @@ const PathwayData={
         "z": 24.787
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Mountain_Daughter",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -2909,6 +3008,7 @@ const PathwayData={
         "z": 6.03702
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Mourning's_End_Part_I",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 2,
       "itemsComplete": false
     },
@@ -2928,6 +3028,7 @@ const PathwayData={
         "z": 3.1351
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Murder_Mystery",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -2963,6 +3064,7 @@ const PathwayData={
         "z": 0
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/My_Arm's_Big_Adventure",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 1,
       "itemsComplete": false
     },
@@ -2980,6 +3082,7 @@ const PathwayData={
         "z": 10.3088
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Natural_history_quiz",
+      "itemsStatus": "none",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -3009,6 +3112,7 @@ const PathwayData={
         "z": 26.1348
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Nature_Spirit",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 1,
       "itemsComplete": false
     },
@@ -3043,6 +3147,7 @@ const PathwayData={
         "z": 4.13109
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Observatory_Quest",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -3103,6 +3208,7 @@ const PathwayData={
         "z": 7.70762
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/One_Small_Favour",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 2,
       "itemsComplete": false
     },
@@ -3151,6 +3257,7 @@ const PathwayData={
         "z": 5.00383
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Pirate's_Treasure",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -3199,6 +3306,7 @@ const PathwayData={
         "z": 5.33279
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Plague_City",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 1,
       "itemsComplete": false
     },
@@ -3226,6 +3334,7 @@ const PathwayData={
         "z": 13.9256
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Priest_in_Peril",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -3317,6 +3426,7 @@ const PathwayData={
         "z": 9.76107
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Prince_Ali_Rescue",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 1,
       "itemsComplete": false
     },
@@ -3338,6 +3448,7 @@ const PathwayData={
       "source": "RunicWorld client quest map",
       "start": null,
       "itemsSource": "https://oldschool.runescape.wiki/w/Rag_and_Bone_Man_I",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -3421,6 +3532,7 @@ const PathwayData={
         "z": 6.83877
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Ratcatchers",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 2,
       "itemsComplete": false
     },
@@ -3442,6 +3554,7 @@ const PathwayData={
         "z": 5.05483
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Recruitment_Drive",
+      "itemsStatus": "none",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -3532,6 +3645,7 @@ const PathwayData={
         "z": 15.25
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Regicide",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -3564,6 +3678,7 @@ const PathwayData={
       "source": "RunicWorld client quest map",
       "start": null,
       "itemsSource": "https://oldschool.runescape.wiki/w/Recipe_for_Disaster%2FAnother_Cook's_Quest",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 1,
       "itemsComplete": false
     },
@@ -3601,6 +3716,7 @@ const PathwayData={
         "z": 7.73
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Recipe_for_Disaster%2FFreeing_Pirate_Pete",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 4,
       "itemsComplete": false
     },
@@ -3658,6 +3774,7 @@ const PathwayData={
         "z": 7.73
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Recipe_for_Disaster%2FFreeing_the_Goblin_generals",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 1,
       "itemsComplete": false
     },
@@ -3721,6 +3838,7 @@ const PathwayData={
         "z": 7.73
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Recipe_for_Disaster%2FFreeing_the_Mountain_Dwarf",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -3738,6 +3856,7 @@ const PathwayData={
         "z": 4.51766
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Romeo_%26_Juliet",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -3779,6 +3898,7 @@ const PathwayData={
         "z": 4.39
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Roving_Elves",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -3815,6 +3935,7 @@ const PathwayData={
         "z": 4.64
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Rum_Deal",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 1,
       "itemsComplete": false
     },
@@ -3834,6 +3955,7 @@ const PathwayData={
         "z": 14.187
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Rune_Mysteries",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -3853,6 +3975,7 @@ const PathwayData={
         "z": 44.4374
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Scorpion_Catcher",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -3872,6 +3995,7 @@ const PathwayData={
         "z": 1.29931
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Sea_Slug",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -3928,6 +4052,7 @@ const PathwayData={
         "z": 2.9
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Shades_of_Mort'ton",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -3967,6 +4092,7 @@ const PathwayData={
         "z": 3.97
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Shadow_of_the_Storm",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 2,
       "itemsComplete": false
     },
@@ -3986,6 +4112,7 @@ const PathwayData={
         "z": 5.63327
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Sheep_Herder",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -4005,6 +4132,7 @@ const PathwayData={
         "z": 4.65206
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Sheep_Shearer",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -4022,6 +4150,7 @@ const PathwayData={
         "z": 4.56372
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Shield_of_Arrav",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 1,
       "itemsComplete": false
     },
@@ -4063,6 +4192,7 @@ const PathwayData={
         "z": 5.81
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Shilo_Village",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 2,
       "itemsComplete": false
     },
@@ -4095,6 +4225,7 @@ const PathwayData={
         "z": 5.2
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Skippy_and_the_Mogres",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -4166,6 +4297,7 @@ const PathwayData={
         "z": 4.18408
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Spirits_of_the_Elid",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 3,
       "itemsComplete": false
     },
@@ -4216,6 +4348,7 @@ const PathwayData={
         "z": 5.1
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Swan_Song",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 6,
       "itemsComplete": false
     },
@@ -4316,6 +4449,7 @@ const PathwayData={
         "z": 13
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Tai_Bwo_Wannai_Trio",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -4357,6 +4491,7 @@ const PathwayData={
         "z": 2.56
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Tears_of_Guthix",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -4377,6 +4512,7 @@ const PathwayData={
         "z": 13.43
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Temple_of_Ikov",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 2,
       "itemsComplete": false
     },
@@ -4468,6 +4604,7 @@ const PathwayData={
         "z": 5.45889
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/The_Dig_Site",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -4533,6 +4670,7 @@ const PathwayData={
         "z": 8.7497
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/The_Eyes_of_Glouphrie",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -4602,6 +4740,7 @@ const PathwayData={
         "z": 4.22909
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/The_Feud",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -4659,6 +4798,7 @@ const PathwayData={
         "z": 0.0647463
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/The_Fremennik_Isles",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 3,
       "itemsComplete": false
     },
@@ -4709,6 +4849,7 @@ const PathwayData={
         "z": 8.59031
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/The_Fremennik_Trials",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 1,
       "itemsComplete": false
     },
@@ -4769,6 +4910,7 @@ const PathwayData={
         "z": 8.01
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/The_Giant_Dwarf",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 3,
       "itemsComplete": false
     },
@@ -4818,6 +4960,7 @@ const PathwayData={
         "z": 4.25
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/The_Golem",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 1,
       "itemsComplete": false
     },
@@ -4839,6 +4982,7 @@ const PathwayData={
         "z": 17.1779
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/The_Grand_Tree",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -4895,6 +5039,7 @@ const PathwayData={
         "z": 4.9011
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/The_Hand_in_the_Sand",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 2,
       "itemsComplete": false
     },
@@ -4928,6 +5073,7 @@ const PathwayData={
         "z": 7.79066
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/The_Knight's_Sword",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 3,
       "itemsComplete": false
     },
@@ -4955,6 +5101,7 @@ const PathwayData={
         "z": 14.187
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/The_Lost_Tribe",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -4974,6 +5121,7 @@ const PathwayData={
         "z": 6.90509
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/The_Restless_Ghost",
+      "itemsStatus": "none",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -5017,6 +5165,7 @@ const PathwayData={
         "z": 5.1
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/The_Slug_Menace",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 5,
       "itemsComplete": false
     },
@@ -5037,6 +5186,7 @@ const PathwayData={
       "source": "RunicWorld client quest map",
       "start": null,
       "itemsSource": "https://oldschool.runescape.wiki/w/The_Tourist_Trap",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 4,
       "itemsComplete": false
     },
@@ -5067,6 +5217,7 @@ const PathwayData={
         "z": 20.8839
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Throne_of_Miscellania",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 2,
       "itemsComplete": false
     },
@@ -5103,6 +5254,7 @@ const PathwayData={
         "z": 6.1986
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Tower_of_Life",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -5122,6 +5274,7 @@ const PathwayData={
         "z": 4.2231
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Tree_Gnome_Village",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 2,
       "itemsComplete": false
     },
@@ -5141,6 +5294,7 @@ const PathwayData={
         "z": 11.3602
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Tribal_Totem",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -5190,6 +5344,7 @@ const PathwayData={
         "z": 0
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Troll_Romance",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -5209,6 +5364,7 @@ const PathwayData={
         "z": 4.91
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Troll_Stronghold",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -5265,6 +5421,7 @@ const PathwayData={
         "z": 15.25
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Underground_Pass",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 1,
       "itemsComplete": false
     },
@@ -5299,6 +5456,7 @@ const PathwayData={
         "z": 5.87054
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Vampyre_Slayer",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -5326,6 +5484,7 @@ const PathwayData={
         "z": 5.05483
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Wanted!",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 1,
       "itemsComplete": false
     },
@@ -5416,6 +5575,7 @@ const PathwayData={
         "z": 27.89
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Watchtower",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 1,
       "itemsComplete": false
     },
@@ -5458,6 +5618,7 @@ const PathwayData={
         "z": 27.5108
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Waterfall_Quest",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -5485,6 +5646,7 @@ const PathwayData={
         "z": 6.23866
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Witch's_House",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -5526,6 +5688,7 @@ const PathwayData={
         "z": 5
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Witch's_Potion",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     },
@@ -5562,6 +5725,7 @@ const PathwayData={
         "z": 7.67
       },
       "itemsSource": "https://oldschool.runescape.wiki/w/Zogre_Flesh_Eaters",
+      "itemsStatus": "listed",
       "extraItemsToCheck": 0,
       "itemsComplete": false
     }

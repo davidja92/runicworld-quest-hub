@@ -59,7 +59,6 @@
    const partial=(q.partialQuests||[]).filter(n=>!done[n]&&!settings.started?.[n]);
    const pointsUnknown=q.questPoints>0&&qp===null,pointsMissing=qp===null?0:Math.max(0,(q.questPoints||0)-qp);
    const phase=priority[q.name]?'Unlocks & travel':Object.keys(q.skills||{}).some(s=>q.skills[s]>=50)||q.questPoints>=55?'Advanced quest chains':'Foundations';
-   steps.push({id:'prepare:'+q.name,type:'prepare',name:q.name,reason:'Bank once and prepare the next quest kit.',phase});
    steps.push({id:'quest:'+q.name,type:'quest',name:q.name,reason:priority[q.name]||'Progress this prerequisite chain and collect its quest-point reward.',phase,partial,pointsUnknown,pointsMissing,qpReward:reward(q),projectedQp:qp});
    planned.add(q.name);if(qp!==null&&reward(q)!==null)qp+=reward(q);last=data.quests?.[q.name]?.start||last;
   }

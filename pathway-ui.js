@@ -11,7 +11,7 @@
  panel.innerHTML=`<div class="pathway-heading"><div><div class="eyebrow">Your RunicWorld journey</div><h2>Progression pathway</h2><p>Quest first. Train the gaps. Prepare once. Turn your gathered resources into your next unlock.</p></div><button id="pathwayBack">Back to quests</button></div>
  <div id="pathwaySummary"></div><p id="pathwayStatus" class="small" role="status" aria-live="polite"></p>
  <div class="pathway-toolbar"><label>Journey goal<select id="pathwayGoal"><option value="balanced">Quests & useful unlocks</option><option value="quests">Available quest catalogue</option><option value="fletching">Quests + Fletching 80</option><option value="all70">Quests + all skills 70</option><option value="all99">Quests + all skills 99</option></select></label><button id="pathwayResume" class="primary">Resume next step</button><button id="pathwayRefresh">Refresh my skills</button></div>
- <div class="pathway-grid"><nav aria-label="Progression route"><div class="pathway-toolbar"><label>Find a step<input id="pathwaySearch" type="search" placeholder="Quest, skill or item preparation"></label><label>Steps<select id="pathwayView"><option value="all">All steps</option><option value="quest">Quests</option><option value="train">Skill targets</option><option value="prepare">Preparation</option><option value="verify">Verify in game</option></select></label><label>Status<select id="pathwayFilter"><option value="all">All progress</option><option value="pending">Not finished</option><option value="complete">Finished</option></select></label></div><div id="pathwayRoute" class="pathway-route"></div></nav><article id="pathwayFocus" class="pathway-focus" aria-live="polite"></article></div>
+ <div class="pathway-grid"><nav aria-label="Progression route"><div class="pathway-toolbar"><label>Find a step<input id="pathwaySearch" type="search" placeholder="Quest, skill or item preparation"></label><label>Steps<select id="pathwayView"><option value="all">All steps</option><option value="quest">Quests</option><option value="train">Skill targets</option><option value="verify">Verify in game</option></select></label><label>Status<select id="pathwayFilter"><option value="all">All progress</option><option value="pending">Not finished</option><option value="complete">Finished</option></select></label></div><div id="pathwayRoute" class="pathway-route"></div></nav><article id="pathwayFocus" class="pathway-focus" aria-live="polite"></article></div>
  <details open><summary>Next quest kits & bank checklist</summary><p class="small">A rolling three-quest kit. Reusable tools use the highest quantity; consumables are added. Items obtained during a quest and alternatives stay in its individual guide. Your counts are manual snapshots, not a live bank reader.</p><div id="pathwayBank" class="pathway-supplies"></div></details>
  <details><summary>Quest-start map</summary><p class="small">Nearby start points from your installed RunicWorld client. Lines show the suggested order on one client map, not a walkable route through terrain.</p><div id="pathwayMap"></div></details>
  <details><summary>Resource loops that train more than one skill</summary><div class="pathway-chains"><article><h3>Logs into levels & coins</h3><p>Keep quest logs aside. Fletch the rest, spin flax for bow strings, then compare selling and alching. Nature runes and strings have a resource cost even when gathered.</p><button data-path-skill="Fletching" data-path-target="80">Plan Fletching</button></article><article><h3>Food, ore & equipment</h3><p>Cook your catches for quest food. Bank ores for bars and future Smithing targets. Keep useful products rather than treating every resource as disposable XP.</p><button data-path-skill="Cooking" data-path-target="53">Plan Cooking</button></article><article><h3>Farms into potions</h3><p>Use your farming overview to check patch state. Keep herbs, secondaries and seeds together; make potions that support the next quest. RunicWorld growth times need checking in game.</p><button data-path-skill="Herblore" data-path-target="38">Plan Herblore</button></article></div></details>
@@ -41,23 +41,29 @@
  }
  function header(s){return '<div class="pathway-kind">'+esc(s.phase)+' · '+esc(s.type==='train'?'Training':s.type==='prepare'?'Bank preparation':s.type==='verify'?'Manual check':'Quest')+'</div><h3>'+esc(title(s))+'</h3><p>'+esc(s.reason)+'</p>';}
  function questGuide(q){return '<div class="pathway-actions"><button class="primary" data-open-quest="'+esc(q.name)+'">Open quest helper</button><button data-complete-quest="'+esc(q.name)+'">'+(state.done[q.name]?'Undo quest completion':'Mark completed in game')+'</button></div>';}
+
+ function questItems(q,ref){
+  const items=ref.items||[],bring=items.filter(i=>!i.during),gather=[...items.filter(i=>i.during),...(ref.gatherItems||[])];
+  const list=rows=>'<ul>'+rows.map(i=>{const id='supply:'+q.name+':'+C.key(i.name);return '<li><label class="pathway-check"><input type="checkbox" data-supply="'+esc(id)+'" '+(prefs.done[id]?'checked':'')+'>'+esc(i.quantity==null?i.name:String(i.quantity)+' × '+i.name)+'</label></li>';}).join('')+'</ul>';
+  let html='<h4>Bring</h4>'+(bring.length?list(bring):'<p>'+(ref.itemsStatus==='none'?'No items required before starting.':'Item quantities need checking in the quest guide.')+'</p>');
+  if(gather.length)html+='<h4>Collect during the quest</h4>'+list(gather);
+  if(ref.recommendedItems?.length)html+='<h4>Recommended</h4>'+list(ref.recommendedItems);
+  if(ref.extraItemsToCheck||bring.some(i=>i.alternative))html+='<p class="small">Some supplies have alternatives. <a href="'+esc(ref.itemsSource||q.source||'#')+'" target="_blank" rel="noopener noreferrer">View item details</a></p>';
+  return html;
+ }
  function renderFocus(){
   const s=plan.steps.find(s=>s.id===selected);if(!s){$('pathwayFocus').innerHTML='<h3>Goals met</h3><p>Select a higher skill goal to continue your journey.</p>';return;}
   let html=header(s);
   if(s.type==='train')html+=trainingHtml(s);
   else if(s.type==='quest'){
    const q=quests.find(q=>q.name===s.name),r=QuestOrder.create(quests,player()).assess(q),ref=D.quests[q.name]||{},start=ref.start;
+   html+=questItems(q,ref);
    const warnings=[...r.missingSkills.map(([n,l])=>n+' '+l+' needed'),r.missingQuests.length?r.missingQuests.length+' prerequisites not marked complete':'',r.qpMissing?r.qpMissing+' more current QP needed':'',r.qpUnknown?'Enter current quest points':'',r.unknownSkills.length?'Refresh missing player skills':''].filter(Boolean);
    html+='<div class="pathway-callout '+(warnings.length?'bad':'')+'">'+(warnings.length?esc(warnings.join(' · ')):'Your recorded skill, completed-quest and QP gates are met. Check combat and special conditions in game.')+'</div>';
    for(const n of r.partial.filter(n=>!prefs.started[n]))html+='<label class="pathway-check"><input type="checkbox" data-started="'+esc(n)+'"> I have reached the required partial stage of '+esc(n)+' in game</label>';
    if(start)html+='<p><b>Start:</b> '+esc(start.name)+'<br><span class="small">Client coordinates '+fmt(start.x)+', '+fmt(start.y)+', '+fmt(start.z)+'</span></p><button data-copy-start="'+esc(q.name)+'">Copy start coordinates</button>';
    if(Object.keys(ref.xpReference||{}).length)html+='<p><b>Why quest first:</b> <span class="small">OSRS reference rewards: '+Object.entries(ref.xpReference).map(([n,v])=>esc(n)+' '+fmt(v)+' XP').join(' · ')+'. Refresh your skills after the actual RunicWorld reward.</span></p>';
    html+=questGuide(q)+'<p class="small">Mark completion only after finishing in game. Your existing quest tracker updates QP using the recorded reward.</p>';
-  }else if(s.type==='prepare'){
-   const ref=D.quests[s.name]||{},q=quests.find(q=>q.name===s.name);
-   html+='<p>Keep tools accessible, reserve quest supplies, carry food and leave room for quest objects. Check the full item list before leaving the bank.</p>';
-   const items=ref.items||[];html+=items.length?'<ul>'+items.map(r=>'<li>'+esc(r.quantity===null?'Choose an alternative: ':String(r.quantity)+' × ')+esc(r.name)+(r.tool?' <span class="small">Reusable tool</span>':'')+(r.during?' <span class="small">Obtain during quest</span>':'')+'</li>').join('')+'</ul>':'<p class="muted">Open the quest helper for this quest’s supplies.</p>';
-   html+='<p class="small">This is a starter kit from Wiki item references, not a complete or server-verified shopping list. Conditional and nested alternatives may be absent.</p><div class="pathway-actions"><button class="primary" data-finish-step="'+esc(s.id)+'">'+(finished(s)?'Reopen preparation':'Kit prepared')+'</button><button data-open-quest="'+esc(q.name)+'">Check full quest guide</button></div>';
   }else html+='<p>Keep this entry outside the automatic route until its requirements are checked in RunicWorld. It has not been counted as a safe unlock.</p><div class="pathway-actions"><button data-open-quest="'+esc(s.name)+'">Open entry</button><button data-finish-step="'+esc(s.id)+'">'+(finished(s)?'Reopen check':'I reviewed this entry')+'</button></div>';
   html+='<div class="pathway-actions"><button data-next-step>Next unfinished step</button></div>';$('pathwayFocus').innerHTML=html;
  }
@@ -104,7 +110,7 @@
   else if(b.dataset.copyStart){const p=D.quests[b.dataset.copyStart]?.start;if(p){try{await navigator.clipboard.writeText(p.map+' '+p.x+', '+p.y+', '+p.z);statusMessage='Start coordinates copied.';}catch{statusMessage='Coordinates: '+p.map+' '+p.x+', '+p.y+', '+p.z;}render();}}
  });
  panel.addEventListener('change',e=>{
-  const el=e.target;if(el.dataset.bank){prefs.bank[el.dataset.bank]=Math.max(0,Math.floor(Number(el.value)||0));save();renderBank();}
+  const el=e.target;if(el.dataset.supply){prefs.done[el.dataset.supply]=el.checked;save();return;}if(el.dataset.bank){prefs.bank[el.dataset.bank]=Math.max(0,Math.floor(Number(el.value)||0));save();renderBank();}
   if(el.dataset.started){prefs.started[el.dataset.started]=el.checked;save();render();}
   if(el.id==='pathwayMethod'){const s=plan.steps.find(s=>s.id===selected);prefs.methodPrefs[s.skill]=el.value;save();renderFocus();}
  });
