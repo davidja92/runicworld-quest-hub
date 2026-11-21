@@ -1,0 +1,14 @@
+QUEST STEP MAP
+
+Upload the contents of this website folder to your runicworld-quest-hub repository. Keep the maps folder and its three WebP images. This is a full site package; existing browser quest completion data is preserved.
+
+Open a quest and click Show all steps on map. Start (S) and finish (F) use coordinates from your RunicWorld client. Loaded walkthrough steps appear in the list; when the walkthrough is unavailable, the existing quick outline is used.
+
+Select a numbered step, then Pin selected step on map and click its location. Alternatively enter RunicWorld X/Y world coordinates. Choose the correct surface or underground layer first. Pins save in this browser. Export pins to back them up or share them; Import pins merges a previously exported file.
+
+Drag to pan. Use + and - to zoom. Select a located step to center it. Fit map shows the whole current layer. Reset selected pin restores the client location for starts/finishes or removes a manually placed step pin.
+
+IMPORTANT DATA LIMIT
+The client files contain quest starts and finishes, not all intermediate quest-step coordinates. The in-game helper receives those from the server. Unavailable locations are explicitly unpinned; the site does not guess them. This release provides a map and pinning tools, not a complete automatic route for every quest. It does not track your live character, read memory, or require an addon.
+
+Map imagery: converted from your local RunicWorld client minimap tiles. Coordinate projection copied from its BuildCoordinateConverters. Extracted 21 November 2026. Image layers: osrs4 (221 tiles), ugtwo (196), underground1 (196). Start/finish data: quest_map_data.lua.
